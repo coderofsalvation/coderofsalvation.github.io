@@ -6,8 +6,8 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
+title:            Leon van Kammen
+tagline:          micro devtrepeneur / tech ninja from Europe
 url:              http://coderofsalvation.github.io
 paginate:         1
 baseurl:          /
@@ -19,4 +19,4 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/foo
