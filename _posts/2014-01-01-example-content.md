@@ -3,7 +3,7 @@ layout: post
 title: Example content
 ---
 
-<iframe src="//player.vimeo.com/video/26532298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/26532298">Starting with everyauth</a> from <a href="http://vimeo.com/pedroteixeira">Pedro Teixeira</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="//player.vimeo.com/video/26532298" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/26532298">Starting with everyauth</a> from <a href="http://vimeo.com/pedroteixeira">Pedro Teixeira</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 </div>
