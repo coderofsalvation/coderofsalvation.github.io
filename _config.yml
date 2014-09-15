@@ -1,0 +1,22 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Poole
+tagline:          The Jekyll Butler
+url:              http://coderofsalvation.github.io
+paginate:         1
+baseurl:          /
+author:
+  name:           Leon van Kammen
+  url:            https://twitter.com/coderofsalvatio
+  email:          info@leon.vankammen.eu
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/poole/poole
