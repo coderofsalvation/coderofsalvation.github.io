@@ -1,4 +1,6 @@
 body{
+  background: #FFF url(/public/gustavo.gif) no-repeat top right;
+  background-size: 33%;
 }
 
 .masthead-title small {
