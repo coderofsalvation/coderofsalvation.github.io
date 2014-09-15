@@ -4,6 +4,10 @@ body{
   margin-top: -15px;
 }
 
+.masthead-title{
+  margin-top:15px;
+}
+
 .masthead-title small {
 font-size: 50%;
 font-weight: 400;
