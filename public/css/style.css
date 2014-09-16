@@ -1,11 +1,9 @@
 body{
-  background: #FFF url(/public/gustavo.gif) no-repeat top right -15px;
+  background: #FFF url(/public/corner.gif) no-repeat top right;
   background-size: 18%;
-  margin-top: -15px;
 }
 
 .masthead-title{
-  margin-top:15px;
 }
 
 .masthead-title small {
