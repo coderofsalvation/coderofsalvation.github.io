@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Deploying node-red on openshift
 ---
 
