@@ -18,19 +18,19 @@ the deployscript sitting outside the repo.
 
 First being by logging in to your server using ssh:
 
-    [your-yourapp.rhcloud.com 541830823456cad7fd000041]\> cd app-root/data/
+    [your-yourapp.rhcloud.com 6cad7fd000041]\> cd app-root/data/
 
-    [your-yourapp.rhcloud.com 541830823456cad7fd000041]\> cd app-root/data/
+    [your-yourapp.rhcloud.com 6cad7fd000041]\> cd app-root/data/
     [your-yourapp.rhcloud.com data]\> ls -la
     total 32
-    drwxr-x---. 4 541830823456cad7fd000041 541830823456cad7fd000041 4096 Sep 16 11:38 .
-    drwxr-xr-x. 5 root                     541830823456cad7fd000041 4096 Sep 16 08:43 ..
-    -rw-------. 1 541830823456cad7fd000041 541830823456cad7fd000041 1321 Sep 16 12:47 .bash_history
-    -rwxr-x---. 1 541830823456cad7fd000041 541830823456cad7fd000041  116 Sep 16 08:43 .bash_profile
-    -rwxr-xr-x. 1 541830823456cad7fd000041 541830823456cad7fd000041  543 Sep 16 10:34 deploy
-    drwx------. 3 541830823456cad7fd000041 541830823456cad7fd000041 4096 Sep 16 10:11 lib
-    drwxr-xr-x. 2 541830823456cad7fd000041 541830823456cad7fd000041 4096 Sep 16 08:44 .nodewatch
-    -rwxr-x---. 1 541830823456cad7fd000041 541830823456cad7fd000041   80 Sep 16 08:43 .vimrc
+    drwxr-x---. 4 5418 54183 4096 Sep 16 11:38 .
+    drwxr-xr-x. 5 root 54183 4096 Sep 16 08:43 ..
+    -rw-------. 1 5418 54183 1321 Sep 16 12:47 .bash_history
+    -rwxr-x---. 1 5418 54183  116 Sep 16 08:43 .bash_profile
+    -rwxr-xr-x. 1 5418 54183  543 Sep 16 10:34 deploy
+    drwx------. 3 5418 54183 4096 Sep 16 10:11 lib
+    drwxr-xr-x. 2 5418 54183 4096 Sep 16 08:44 .nodewatch
+    -rwxr-x---. 1 5418 54183   80 Sep 16 08:43 .vimrc
 
 This data-directory is nice, because it doesnt get erased during deployment.
 Now make sure you have this 'deploy' file sitting in this directory:
