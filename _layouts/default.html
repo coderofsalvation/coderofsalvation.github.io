@@ -16,7 +16,9 @@
               gridSize: 3,
               weightFactor: 2,
               fontFamily: 'sans-serif',
-              color: '#ccc',
+              color: function (word, weight) {
+                return (weight === 12) ? '#268bd2' : #ccc';
+              },
               origin: [0,200],
               hover: window.drawBox,
               click: function(item) {
