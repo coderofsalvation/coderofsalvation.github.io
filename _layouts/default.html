@@ -8,7 +8,28 @@
     <div class="container content">
       <div class="masthead">
         <h3 class="masthead-title">
-          <img alt="" src="{{ site.baseurl }}public/logo.gif" style="width:10.0em"/>
+          <!--<img alt="" src="{{ site.baseurl }}public/logo.gif" style="width:10.0em"/> -->
+          <canvas id="my_canvas" style="height:200px"></canvas>
+          <script type="text/javascript">
+            WordCloud.miniumFontSize = 30;
+            WordCloud(document.getElementById('my_canvas'), { 
+              gridSize: 18,
+              weightFactor: 3,
+              fontFamily: 'Finger Paint, cursive, sans-serif',
+              color: '#888',
+              hover: window.drawBox,
+              click: function(item) {
+                alert(item[0] + ': ' + item[1]);
+              },
+              backgroundColor: '#FFF',
+              list: [
+                ['Integration',10],
+                ['json',12],
+                ['bar',12]
+              ] 
+            });
+          </script>
+    
           <a href="{{ site.baseurl }}" title="Home" style="font-size:0.5em">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
           <a style="float:left;margin-right:0.5em" href="http://nl.linkedin.com/pub/leon-van-kammen/18/aa/a45" target="_blank"><img src='{{ site.baseurl }}public/icon.linkedin.png'/></a>
