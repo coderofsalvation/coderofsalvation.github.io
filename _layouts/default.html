@@ -15,8 +15,9 @@
             WordCloud(document.getElementById('my_canvas'), { 
               gridSize: 10,
               weightFactor: 3,
-              fontFamily: 'Finger Paint, cursive, sans-serif',
+              fontFamily: 'Finger Paint, sans-serif',
               color: '#888',
+              origin: [199,0],
               hover: window.drawBox,
               click: function(item) {
                 alert(item[0] + ': ' + item[1]);
