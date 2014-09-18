@@ -18,7 +18,7 @@ Thats why I see myself as a micropreneur, bootstrapper, soloSaaS (you name it).
 
 * Email: info@leon.vankammen.eu 
 * Date of Birth: 12-04-1981 
-* IT wizkid, worked for companies as a freelancer and employee.
+* worked for companies as devops, VP Engineering, lead dev, lead deployment, lead test, and consultant (freelance and as employee)
 * Gender: Male
 * Worldposition: Europe
 * City: Groningen (Holland) and Budapest (Hungary)
