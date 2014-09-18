@@ -3,8 +3,9 @@ layout: post
 title: About me 
 ---
 
-Leon van Kammen started out as a softwareengineer after getting his Bachelor degree in Computer Science. After a startup-experience, he became an independent devtrepeneur. 
-When he\'s not busy riding his [heelys](http://www.heelys.com) or playing his bassguitar, he loves 
+I started out as a softwareengineer after getting my Bachelor degree in Computer Science. 
+After an awesome startup-experience, I became an independent devtrepeneur. 
+When I'm not busy riding my [heelys](http://www.heelys.com) or playing my bassguitar, I love 
 to help people with lean and mean IT-ideas and api/opensource/SaaS/BaaS/PaaS-technology.
 
 # Factoids
@@ -17,31 +18,38 @@ to help people with lean and mean IT-ideas and api/opensource/SaaS/BaaS/PaaS-tec
 * Platform: Windows, Linux, BSD, Sun Solaris, and a bit of mac. 
 * Favourite Tech: coffeescript, nodejs, docker, bash
 * IT wizkid, worked for companies as a freelancer and employee.
+* Favourite quote: "lean and mean is the 'good enough'-sweetspot"
 
-# Hire me (not)
+# Contact me
 
-Strangely enough, I\'m no longer taking on programming projects.
+I'm happy to receive mail, so you can contact me at info@leon.vankammen.eu for business- or techrelated topics.
+
+# Hire me
+
+I'm available for consulting thru skype or google hangout.
 My goal is to enjoy life and protect my freetime with friends.
-However I\'m available for consulting thru skype or google hangout.
+I'm no longer taking on programming projects, since my solo-projects are my current focus atm.
 
 # Favourite books
 
-'psychology of computer programming' (Gerald M. Weinberg)
-'getting real' (37 signals)
-'the mythical man month' (Fred Brooks)
-'Yoga Sutras' (Patanjali)
+* 'psychology of computer programming' (Gerald M. Weinberg)
+* 'getting real' (37 signals)
+* 'the mythical man month' (Fred Brooks)
+* 'Yoga Sutras' (Patanjali)
 
 # Vision on software development
 
-There are 2 ways of making software: the correct way, and the incorrect way, and both of them are wrong.
+Inmho there are 2 ways of making software: the correct way, and the incorrect way, and both of them are wrong.
 In the end it boils down to transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations real by using MoSCoW.
-My favourite model is the 'Chaos model' since its one of the few models which promotes non-linear progress. 
+I have met and followed many engineers, architects and hobbyist developers.
+My conclusion is that many things can be done in many ways: with/without planning, with/without fancy methodology XYZ.
+In the end my favourite model is the 'Chaos model' since its one of the few models which promotes non-linear progress. 
 
 # Real-world achievements
 
 In the past I was responsible for setting up an physical office for a developerteam. In parallel I was setting up a cloud office (private chat/issuetracker/pastesystem/GIT infrastructure/server infrastructure/continues deployment, testing and documentation). 
-I was also responsible for interviewing and hiring back- and frontend developers, architect of software projects, reviewing of code, license-compatibility research, devops, lead programmer of REST- and/or API integrations.
 
+I was also responsible for interviewing and hiring back- and frontend developers, architect of software projects, reviewing of code, license-compatibility research, devops, lead programmer of REST- and/or API integrations.
 
 # Cloud environments
 
