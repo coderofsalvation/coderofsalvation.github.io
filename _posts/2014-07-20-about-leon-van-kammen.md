@@ -3,21 +3,28 @@ layout: post
 title: About me 
 ---
 
+I like to ride [heelys](http://www.heelys.com) for transportation, talk about opensource technology, 
+and love creating electronic music.
+
 I started out as a softwareengineer after getting my Bachelor degree in Computer Science. 
-After an awesome startup-experience, I became an independent devtrepeneur. 
-When I'm not busy riding my [heelys](http://www.heelys.com) or playing my bassguitar, I love 
-to help people with lean and mean IT-ideas and api/opensource/SaaS/BaaS/PaaS-technology.
+After an awesome startup-experience, I became an independent devtrepeneur.
+Becoming independent was scary, but one of the best decisions of my life.
+Technology allows individuals to accomplish amazing things which do not necessarily require managers,offices etc (a startup).
+Thats why I see myself as a micropreneur, bootstrapper, soloSaaS (you name it).
+
 
 # Factoids
 
 * Email: info@leon.vankammen.eu 
 * Date of Birth: 12-04-1981 
+* IT wizkid, worked for companies as a freelancer and employee.
 * Gender: Male
-* City: Utrecht (The Netherlands) 
+* Worldposition: Europe
+* City: Groningen (Holland) and Budapest (Hungary)
+* Languages: Dutch (native), English (good), Hungarian (should be improved)
 * Education: Bachelor degree in CS (Saxion Enschede/The Netherlands)
 * Platform: Windows, Linux, BSD, Sun Solaris, and a bit of mac. 
 * Favourite Tech: coffeescript, nodejs, docker, bash
-* IT wizkid, worked for companies as a freelancer and employee.
 * Favourite quote: "lean and mean is the 'good enough'-sweetspot"
 
 # Contact me
