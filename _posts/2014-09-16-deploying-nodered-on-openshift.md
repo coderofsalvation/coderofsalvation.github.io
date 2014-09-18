@@ -3,7 +3,8 @@ layout: post
 title: Deploying node-red on openshift
 ---
 
-<iframe src="//player.vimeo.com/video/26532298" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/26532298">Starting with everyauth</a> from <a href="http://vimeo.com/pedroteixeira">Pedro Teixeira</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe src="//player.vimeo.com/video/106518767" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+
 <div class="message">
   Howdy! In this post I will explain how to deploy node-red easily to openshift.
 </div>
