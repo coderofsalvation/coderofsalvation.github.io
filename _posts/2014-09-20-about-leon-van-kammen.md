@@ -1,0 +1,72 @@
+---
+layout: post
+title: About me 
+---
+
+Leon van Kammen started out as a softwareengineer after getting his Bachelor degree in Computer Science. After a startup-experience, he became an independent devtrepeneur. 
+When he\'s not busy riding his [heelys](http://www.heelys.com) or playing his bassguitar, he loves 
+to help people with lean and mean IT-ideas and api/opensource/SaaS/BaaS/PaaS-technology.
+
+# Factoids
+
+* Email: info@leon.vankammen.eu 
+* Date of Birth: 12-04-1981 
+* Gender: Male
+* City: Utrecht (The Netherlands) 
+* Education: Bachelor degree in CS (Saxion Enschede/The Netherlands)
+* Platform: Windows, Linux, BSD, Sun Solaris, and a bit of mac. 
+* Favourite Tech: coffeescript, nodejs, docker, bash
+* IT wizkid, worked for companies as a freelancer and employee.
+
+# Hire me (not)
+
+Strangely enough, I\'m no longer taking on programming projects.
+My goal is to enjoy life and protect my freetime with friends.
+However I\'m available for consulting thru skype or google hangout.
+
+# Favourite books
+
+'psychology of computer programming' (Gerald M. Weinberg)
+'getting real' (37 signals)
+'the mythical man month' (Fred Brooks)
+'Yoga Sutras' (Patanjali)
+
+# Vision on software development
+
+There are 2 ways of making software: the correct way, and the incorrect way, and both of them are wrong.
+In the end it boils down to transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations real by using MoSCoW.
+My favourite model is the 'Chaos model' since its one of the few models which promotes non-linear progress. 
+
+# Real-world achievements
+
+In the past I was responsible for setting up an physical office for a developerteam. In parallel I was setting up a cloud office (private chat/issuetracker/pastesystem/GIT infrastructure/server infrastructure/continues deployment, testing and documentation). 
+I was also responsible for interviewing and hiring back- and frontend developers, architect of software projects, reviewing of code, license-compatibility research, devops, lead programmer of REST- and/or API integrations.
+
+
+# Cloud environments
+
+Google App Engine, AWS, Rackspace, New relic, papertrail, Heroku, OpenShift, Appfog, cloud9, github, bitbucket, issuetrackers, HAL, basecamp.
+
+# Past Projects keywords
+
+Integration, PaaS, SaaS, BaaS, Opensource, RESTful API, integration, aggregation, webpipes, service bus, docker, backend, hooks fanatic, longrunning jobs, syslog logging.
+
+# methodologies
+
+Distributed (sys)logging setups & alerting. 
+continuous testing, continuous deployment, continuous documentation, ZenCoding, Dutch Government-compliant websites (not easy!),
+fully automated deployment/unittesting, black- white- and grayboxtesting. 
+
+* Rapid Application development
+* Extreme programming
+* Chaos model
+* Waterfall
+
+But also Agile, Scrum, RUP, Spiral- and V-model when budgets are sufficient.
+And last but not least the 'forget-models-we-have-a-deadline'-model :)
+
+# Look mum!
+
+Parser Generators, Lexical analyzers, Win32/GDI programming, Macromedia Flash MX/8/CS12345.5, MS Visual Studio & Borland Builder Family, DevCPP, Cygwin, OpenGL, OpenAL, c++ VST plugins , BASS, FMOD, FLTK, FreeFrame, GNU GCC / G++, dreamcast game programming. Electribe ESX, Cubase VST/SX, Ableton Live, Buzz/Buze, WaveLab, VST/VSTI/Directx, all MIDI apps, and all other software which has buttons and sliders. Adobe Photoshop, 3D Studio MAX, Blender 3D, GIMP, Inkscape, Artgem, gfx2, AcidDraw, and other software which uses a mouse. 
+nodejs, docker, coffeescript, PHP, Javascript, Actionscript 1/2/3, Flex, Haxe, C/C++, PYTHON, Lua, Bash/Shellscript, Java, MySQL, mongodb, redis, Google BigQuery. HTML4/5, CSS1/2/3, WebKit, Websocket, Mobile webapps,PHP/AJAX, MySQL, Javascript frameworks (Mootools,Jquery,Ext,Prototype,Sencha,jstypes,Modernizr,iUI), Flex, Flash, Haxe, shockwave(3D), (X)HTML, XML, Json, YAML, CSS, Javascript, W3C, DHTML, Google Analytics, Adsense, Adwords, Facebook Apps, Facebook Graph API, Facebookwebdevelopers toolkit, PixelBender, Google APP engine, Twitter API, REST API, Layar API, travel API's like Expedia, Agoda, Paypal API, phonegap api. Rsyslog, winston.
+
