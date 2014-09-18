@@ -10,6 +10,7 @@ I started out as a softwareengineer after getting my Bachelor degree in Computer
 After an awesome startup-experience, I became an independent devtrepeneur.
 Becoming independent was scary, but one of the best decisions of my life.
 Technology allows individuals to accomplish amazing things which do not necessarily require managers,offices etc (a startup).
+
 Thats why I see myself as a micropreneur, bootstrapper, soloSaaS (you name it).
 
 
