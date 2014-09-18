@@ -6,7 +6,7 @@ title: About me
 I like to ride [heelys](http://www.heelys.com) for transportation, talk about opensource technology, 
 and love creating electronic music.
 
-I started out as a softwareengineer after getting my Bachelor degree in Computer Science. 
+I started out as a dutch softwareengineer after getting my Bachelor degree in Computer Science. 
 After an awesome startup-experience, I became an independent devtrepeneur.
 Becoming independent was scary, but one of the best decisions of my life.
 Technology allows individuals to accomplish amazing things which do not necessarily require managers,offices etc (a startup).
@@ -34,8 +34,7 @@ I'm happy to receive mail, so you can contact me at info@leon.vankammen.eu for b
 
 # Hire me
 
-I'm available for consulting thru skype or google hangout.
-My goal is to enjoy life and protect my freetime with friends.
+I'm available for consulting using skype or google hangout.
 I'm no longer taking on programming projects, since my solo-projects are my current focus atm.
 
 # Favourite books
