@@ -75,4 +75,5 @@ Commit it, push it, and voila!
 ### What happened here?
 
 > Instead of storing passwords/deployscripts in the repo (not always a good idea), we let our hook call a script which is outside the repo.
+> Also, your flows will not be gone during deployment since they are saved openshift's data-dir: $OPENSHIFT_HOMEDIR/app-root/data 
 
