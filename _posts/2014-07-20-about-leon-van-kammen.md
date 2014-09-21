@@ -45,8 +45,8 @@ I'm no longer taking on programming projects, since my solo-projects are my curr
 
 # Real-world achievements
 
-In the past I've managed all B2B integrations in a startup from design till production-ready.
-B2B middle-ware-ish integrations to travel-partners like [Booking.com](http://www.booking.com), [Agoda](http://www.agoda.com), [Easytobook.com](http://www.easytobook.com).
+In the past I've managed all B2B integrations in a startup from design till production-ready till support-flows.
+I was responsible for realizing middle-ware-ish integrations to travel-partners like [Booking.com](http://www.booking.com), [Agoda](http://www.agoda.com), [Easytobook.com](http://www.easytobook.com).
 
 I've also been responsible for setting up an physical office for developers, as well as a virtual (cloud) office. 
 I created an infrastructure with private chat/issuetracker/pastesystem/GIT infrastructure/server infrastructure/automated deployment, testing and documentation.
