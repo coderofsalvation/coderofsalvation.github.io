@@ -48,10 +48,10 @@ I'm no longer taking on programming projects, since my solo-projects are my curr
 In the past I've managed all B2B integrations in a startup from design till production-ready till support-flows.
 I was responsible for realizing middle-ware-ish integrations to travel-partners like [Booking.com](http://www.booking.com), [Agoda](http://www.agoda.com), [Easytobook.com](http://www.easytobook.com).
 
-I've also been responsible for setting up an physical office for developers, as well as a virtual (cloud) office. 
-I created an infrastructure with private chat/issuetracker/pastesystem/GIT infrastructure/server infrastructure/automated deployment, testing and documentation.
+Another achievement is being responsible for setting up an physical office for developers, as well as a virtual (cloud) office. 
+This also involved creating an infrastructure with private chat/issuetracker/pastesystem/GIT infrastructure/server infrastructure/automated deployment, testing and documentation.
 
-I also have experiences in interviewing and hiring back- and frontend developers, architect of software projects, reviewing of code, license-compatibility research, devops, lead programmer of REST- and/or API integrations.
+During this, I also became acquanted with interviewing and hiring back- and frontend developers, architect of software projects, reviewing of code, license-compatibility research, devops, lead programmer of REST- and/or API integrations.
 
 Last but not least: I have contributed to- and started opensource projects, opensource and free-software has been
  my greatest teacher of all.
