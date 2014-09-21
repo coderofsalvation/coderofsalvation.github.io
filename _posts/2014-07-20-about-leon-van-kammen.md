@@ -13,7 +13,6 @@ Technology allows individuals to accomplish amazing things which do not necessar
 
 Thats why I see myself as a micropreneur, bootstrapper, soloSaaS (you name it).
 
-
 # Factoids
 
 * Email: info@leon.vankammen.eu 
