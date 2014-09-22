@@ -21,7 +21,7 @@ Thats why I see myself as a micropreneur, bootstrapper, soloSaaS (you name it).
 * Gender: Male
 * Worldposition: Europe
 * City: Groningen (Holland) and Budapest (Hungary)
-* Languages: Dutch (native), English (good), Hungarian (should be improved)
+* Languages: Dutch (native), English (writing good, speech good enough), Hungarian (should be improved)
 * Education: Bachelor degree in CS (Saxion Enschede/The Netherlands)
 * Platform: Windows, Linux, BSD, Sun Solaris, and a bit of mac. 
 * Favourite Tech: coffeescript, nodejs, docker, bash
