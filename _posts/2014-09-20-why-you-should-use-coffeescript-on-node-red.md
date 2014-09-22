@@ -16,5 +16,5 @@ For more on nodejs javascript and coffeescript see [this excellent post](https:/
 
 # Getting it
 
-see the [node-red-coffeescript node here](https://www.npmjs.org/package/node-red-node-coffeescript)
+see the [node-red-coffeescript node here](https://www.npmjs.org/package/node-red-contrib-coffeescript)
 
