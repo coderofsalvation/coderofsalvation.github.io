@@ -3,8 +3,6 @@ layout: post
 title: EBH, emergency break hooks to minimize risks for your webservice
 ---
 
-<iframe src="//player.vimeo.com/video/106518767" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
 <div class="message">
   Howdy! In this post I will explain some disastermanagement tricks for webservices.
 </div>
