@@ -25,5 +25,31 @@ That's why this article promotes implementing emergency breaks, which allow deve
 painlessly.
 Best practice is to implement these from the start.
 
-### Example
+### Modular is good, but it can turn against you
 
+Creating scalable applications is great, but it can become out of control when there's no
+ central control (an EBH).
+
+### Example EBH
+
+<img src="/public/img/EHB.png"/>
+
+### Explanation
+
+The flowchart above illustrates a 'macro-api'.
+Basically it is your webservice exposed as an REST UNIX Daemon.
+On the left you'll see api-entrypoints (the emergency breaks) which can be called thru Hubot or any other backend.
+
+> NOTE: when I use the word `component` it can mean `frontend`, `backend`, `api`, `esb`, `queue`, `servers` etc.
+
+* start - start all components using REST-calls
+* stop - stops all components using REST-calls
+* maintenance - in case of heavy problems: let API + website output a maintenance message
+* cleanup - do REST calls to components (to clean up database, cache e.g.)
+* test - emits REST-calls to all components, so they can run a few  unittest to ensure basic integrity
+* backup - emits REST-calls to all components, so they can write backup files e.g.
+* status - allow all components to obtain the overall status (can prevent triggering test emails e.g.)
+
+### Conclusion
+
+EHB traditionally exist as UNIX cli-commands, but can also be thought of as an REST macro-controller.
