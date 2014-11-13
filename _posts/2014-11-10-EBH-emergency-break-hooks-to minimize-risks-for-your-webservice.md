@@ -4,12 +4,12 @@ title: EBH, emergency break hooks to minimize risks for your webservice
 ---
 
 <div class="message">
-  Howdy! In this post I will explain some disastermanagement tricks for webservices.
+  Howdy! In this post I will explain some disaster-management tricks for webservices.
 </div>
 
 ### The Problem
 
-Developing a webservice is easy, but it's tempting to overlook disastermanagement.
+Developing a webservice is easy, but it's tempting to overlook disaster-management.
 Maybe companies tell you otherwise, but *every* company experiences massive failures.
 If you are one of the developers who thinks "unittests will keep us safe"...well..read on.
 
@@ -18,17 +18,19 @@ If you are one of the developers who thinks "unittests will keep us safe"...well
 > "The software failed because our tests did not expect this unexpected situation".
 
 It doesn't matter how pro you are, at some point you/your team will have to deal with bugs.
-This is a given fact, we make misstakes.
+This is a given fact, we make mistakes.
 That's why this article promotes implementing emergency breaks, which allow developers to fix bugs
 painlessly.
 Best practice is to implement these from the start.
 
-### Modular is good, but it can turn against you
+### Modularity, from a designers dream to a developers nightmare
 
 Creating scalable applications is great, but it can become out of control when there's no
  central control (an EBH).
 
 ### Example EBH
+
+Here's a basic set of emergency break hooks API:
 
 <img src="/public/img/EHB.png"/>
 
