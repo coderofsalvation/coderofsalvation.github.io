@@ -13,22 +13,7 @@ published: false
 For some reason, I've always been intrigued by visual programming environments.
 It is a lot of fun to patch around and it feels less tiring to `program` things.
 Think of modular synthesizer environments or a Servicebus on the web.
-
-### Routing in code 
-
-Depending on your project, static routing of messages in code can become evil.
-Loose coupled routing is a lot more flexible, but it'll still requires:
-
-* a proper editorGUI
-* a proper dataformat
-
-In my past I've build things like this, or looked at applications like this (servicebus).
-As will all things, it's always worth looking for free existing tools.
-
-> Benefits: stability, community, focus on your core problem
-
-I was wondering if could use PureData as a flexible, visual router of messages, and 
-coffeescript for processing.
+I had the crazy idea of mashing up some coffeescript inside PureData.
 
 ### PureData (PD)
 
@@ -41,4 +26,8 @@ So this is what I came up with after discovering the ['port'-npmjs module](https
 
 <img alt="" src="img/puredata-coffeescript.png"/>
 
+### Results 
 
+I didn't do any latency-tests, but I would be interested in using this setup to 
+visualize webdata in realtime.
+HTML5 is great and all that, but the PD-realm has its advantages too.
