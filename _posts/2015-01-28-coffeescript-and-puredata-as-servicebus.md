@@ -16,7 +16,7 @@ Think of modular synthesizer environments or a Servicebus on the web.
 
 ### Routing in code 
 
-Static routing of messages in code is evil.
+Depending on your project, static routing of messages in code can become evil.
 Loose coupled routing is a lot more flexible, but it'll still requires:
 
 * a proper editorGUI
