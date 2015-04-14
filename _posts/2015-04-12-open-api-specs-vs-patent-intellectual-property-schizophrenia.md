@@ -19,8 +19,6 @@ This is great, but hold on, wasn't the traditional business about protecting one
 
 # Who are pushing open specs?
 
-<img src="https://media2.giphy.com/media/rAoMu8fJ0bsZ2/200.gif"/>
-
 Companies, Privacy soldiers, Security fanatics, API fanatics and Free/Opensource are pushing this open specs forward. Their impact is quite big these days.
 
 # How does the traditional businesman(ager) deal with this?
