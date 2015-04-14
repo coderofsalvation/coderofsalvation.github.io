@@ -3,8 +3,6 @@ layout: post
 title: Why you should use coffeescript on node-red
 ---
 
-<iframe src="//player.vimeo.com/video/106729013" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-
 <div class="message">
   Hi! In this post I will explain how to use coffeescript in node-red.
 </div>
