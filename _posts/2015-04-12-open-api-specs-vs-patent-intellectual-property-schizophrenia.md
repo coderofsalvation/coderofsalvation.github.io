@@ -26,10 +26,10 @@ Companies, Privacy soldiers, Security fanatics, API fanatics and Free/Opensource
 <img src="https://media4.giphy.com/media/UuIpr1iwXkRgY/200.gif" style="width:200px"/>
 
 Here's the struggle.
-Fundamental building blocks of technological progress are transparency, understanding, and acceptance.
+There's something about tech which pushes transparency forward.
+Transparency to understand and accept, adopt and to tweak.
+In the last years I see more companies seeing the benefit of making their API's highly adoptable thru transparent  api spec-standards (mentioned above).
 But if we're going to publish everything out there in the future, what will the aftermath look like?
-Will companies only push fully opensource API's to see the market response?
-Will it become a humanright to use certain API's for free?
 
 # The good thing about open api specs, is that you can generate api's from it..or not?
 
@@ -37,12 +37,17 @@ One could argue that the apidesign itself doesn't need protection, and that its 
 However, in my (humble) experience I have always found the design of an API is of higher value than code.
 Your team cannot beat an flawed api design with adding more spaghetti, it will sink the ship eventually.
 
-# My (maybe odd) conclusion: business likely to lose
+# Future 
+
+If connectivity is the key these days, the word `api development` might become something like 'serial cable' over time.
+Will the api-developers of today swap their tools for an enterprise account where they can drag-drop blocks and build integrations?
+
+# My (odd) conclusion: business likely to lose
 
 `Disclaimer: usually my opinion changes over time ;)`
 
 > I'm not sure whether patents will dig its own grave in the future.
-> But I do feel that technological progress seems to move exponentially.
+> But I do feel that technological progress seems to move exponentially forward without it.
 > A webproduct is launched, and the next month a kid from russia published
 > his 'clone' on a opensource repository website.
 > I wouldnt be surprised seeing proprietary software not being able to 
