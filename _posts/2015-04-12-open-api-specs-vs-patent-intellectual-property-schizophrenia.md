@@ -59,7 +59,7 @@ Anyone can do it.
 
 `Disclaimer: usually my opinion changes over time ;)`
 
-> Great times ahead! (because I'm a positivist)
+> Great times ahead! (because I'm a positivist).
 > I'm not sure whether patents will dig its own grave in the future.
 > But I do feel that technological progress seems to move exponentially forward without it.
 > In todays myriad of emerging technologies, todays secret is tomorrows bad practice.
