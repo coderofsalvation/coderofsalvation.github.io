@@ -24,7 +24,7 @@ Companies, Privacy soldiers, Security fanatics, API fanatics and Free/Opensource
 So in the future we'll have a myriad of usable api specs online, because all the companies want to make their API highly adoptable.
 Oh wait, its already [happening](http://apicommons.org/)!
 
-# How does the traditional businesman(ager) deal with this?
+# How does the traditional businessman(ager) deal with this?
 
 <img src="https://media4.giphy.com/media/UuIpr1iwXkRgY/200.gif" style="width:200px"/>
 
