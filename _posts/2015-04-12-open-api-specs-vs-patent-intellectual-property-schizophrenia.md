@@ -13,14 +13,17 @@ title: Open API Specs vs Patent / Intellectual Property schizophrenia
 # Why?
 
 We are entering an ERA which introduces a businessmind vs techmind schizofrenia syndrome.
-Open API specifications (swaggerspec/raml/wsdl/jsonschema/etc) are becoming vital for others to embrace cloud services.
+Open API specifications (swaggerspec/raml/wsdl/jsonschema/etc) are a vital resource for companies adopting eachothers technology. This is great, but hold on, wasn't the traditional business about protecting one's intellectual property? 
 
-# Do people care?
+# Who are pushing open specs?
 
-Privacy soldiers, Security fanatics, API fanatics and Free/Opensource are pushing this open specs forward.
-Their impact is quite big these days.
+<img src="https://media2.giphy.com/media/rAoMu8fJ0bsZ2/200.gif"/>
+
+Companies, Privacy soldiers, Security fanatics, API fanatics and Free/Opensource are pushing this open specs forward. Their impact is quite big these days.
 
 # How does the traditional businesman(ager) deal with this?
+
+<img src="https://media4.giphy.com/media/UuIpr1iwXkRgY/200.gif" style="width:200px"/>
 
 Here's the struggle.
 Fundamental building blocks of technological progress are transparency, understanding, and acceptance.
@@ -28,7 +31,15 @@ But if we're going to publish everything out there in the future, what will the 
 Will companies only push fully opensource API's to see the market response?
 Will it become a humanright to use certain API's for free?
 
-# My conclusion: business likely to lose
+# The good thing about open api specs, is that you can generate api's from it..or not?
+
+One could argue that the apidesign itself doesn't need protection, and that its code, databasecontent and users is of higher importance.
+However, in my (humble) experience I have always found the design of an API is of higher value than code.
+Your team cannot beat an flawed api design with adding more spaghetti, it will sink the ship eventually.
+
+# My (maybe odd) conclusion: business likely to lose
+
+`Disclaimer: usually my opinion changes over time ;)`
 
 > I'm not sure whether patents will dig its own grave in the future.
 > But I do feel that technological progress seems to move exponentially.
