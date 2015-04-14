@@ -50,9 +50,10 @@ Will we end up taking a membership to a 'Borg'-apicompany (`startrek pun`), whic
 
 If `connectivity` is the key, will the word `api development` become something like `serial cable' over time?
 
-Who know the `api-developers` of today, will be called `web-plumbers` in the future.
+Who know `api-developers` of today, will be called `web-plumbers` in the future.
 They just log in to some enterprise account, where they drag wires from one block to another block.
 Bugs are nearly non-existent since the quantum laptop already simulated the software for billions of multiverses.
+Anyone can do it.
 
 # My (odd) conclusion: business likely to leave api's
 
