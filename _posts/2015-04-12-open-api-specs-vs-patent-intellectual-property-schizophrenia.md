@@ -13,7 +13,9 @@ title: Open API Specs vs Patent / Intellectual Property schizophrenia
 # Why?
 
 We are entering an ERA which introduces a businessmind vs techmind schizofrenia syndrome.
-Open API specifications (swaggerspec/raml/wsdl/jsonschema/etc) are a vital resource for companies adopting eachothers technology. This is great, but hold on, wasn't the traditional business about protecting one's intellectual property? 
+Open API specifications (swaggerspec/raml/wsdl/jsonschema/etc) are a vital resource for companies adopting eachothers technology. 
+
+This is great, but hold on, wasn't the traditional business about protecting one's intellectual property? 
 
 # Who are pushing open specs?
 
@@ -28,12 +30,15 @@ Companies, Privacy soldiers, Security fanatics, API fanatics and Free/Opensource
 Here's the struggle.
 There's something about tech which pushes transparency forward.
 Transparency to understand and accept, adopt and to tweak.
+
 In the last years I see more companies seeing the benefit of making their API's highly adoptable thru transparent  api spec-standards (mentioned above).
+
 But if we're going to publish everything out there in the future, what will the aftermath look like?
 
 # The good thing about open api specs, is that you can generate api's from it..or not?
 
 One could argue that the apidesign itself doesn't need protection, and that its code, databasecontent and users is of higher importance.
+
 However, in my (humble) experience I have always found the design of an API is of higher value than code.
 Your team cannot beat an flawed api design with adding more spaghetti, it will sink the ship eventually.
 
