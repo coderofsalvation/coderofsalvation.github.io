@@ -55,19 +55,21 @@ They just log in to some enterprise account, where they drag wires from one bloc
 Bugs are nearly non-existent since the quantum laptop already simulated the software for billions of multiverses.
 Anyone can do it.
 
-# My (odd) conclusion: business likely to leave api's
+# My (odd) conclusion
 
 `Disclaimer: usually my opinion changes over time ;)`
 
+> Great times ahead! (because I'm a positivist)
 > I'm not sure whether patents will dig its own grave in the future.
 > But I do feel that technological progress seems to move exponentially forward without it.
 > In todays myriad of emerging technologies, todays secret is tomorrows bad practice.
+> Patents are in a way, a waste of money and time in that perspective.
 > This used to be different.
-> Today a webproduct is launched, and the next month a kid from russia published
+> Also, today a webproduct is launched, and the next month a kid from russia published
 > his 'clone' as an opensource repository.
 > I wouldnt be surprised seeing proprietary software not being able to 
 > catch up with the variety of open cloud technology.
-> I guess in the future we don't design, write or test api's.
+> Especially since (I guess) in the future we don't design, write or test api's.
 > We let software do it for us based on specs.
 
 # Interesting links
