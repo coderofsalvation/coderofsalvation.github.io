@@ -15,11 +15,14 @@ title: Open API Specs vs Patent / Intellectual Property schizophrenia
 We are entering an ERA which introduces a businessmind vs techmind schizofrenia syndrome.
 Open API specifications (swaggerspec/raml/wsdl/jsonschema/etc) are a vital resource for companies adopting eachothers technology. 
 
-This is great, but hold on, wasn't the traditional business about protecting one's intellectual property? 
+This is great, but hold on, wasn't traditional business about protecting one's intellectual property? 
 
 # Who are pushing open specs?
 
 Companies, Privacy soldiers, Security fanatics, API fanatics and Free/Opensource are pushing this open specs forward. Their impact is quite big these days.
+
+So in the future we'll have a myriad of usable api specs online, because all the companies want to make their API highly adoptable.
+Oh wait, its already [happening](http://apicommons.org/)!
 
 # How does the traditional businesman(ager) deal with this?
 
@@ -27,7 +30,7 @@ Companies, Privacy soldiers, Security fanatics, API fanatics and Free/Opensource
 
 Here's the struggle.
 There's something about tech which pushes transparency forward.
-Transparency to understand and accept, adopt and to tweak.
+Transparency is needed to let users understand and accept, adopt and to tweak.
 
 In the last years I see more companies making their API's highly adoptable by pushing transparent api spec-standards (mentioned above).
 
@@ -36,34 +39,35 @@ In the last years I see more companies making their API's highly adoptable by pu
 One could argue that the apidesign itself isnt IP worthy, and that its code, databasecontent and users is of higher importance.
 But is this really true?
 
-The weird thing is that most software is already been written by software.
+The weird thing is that lots of software is already been written by software.
 So if we're generating the software by combining previously generated software..who's writing it?
 I guess businesses have to look in other ways to protect their business.
 
 So publishing the api design (and its spec format) is another step into this direction.
-Who knows we'll end up with a 'Borg'-apicompany (`startrek pun`), which assimilates all API-specs out there, to build the ultimate API.
+Will we end up taking a membership to a 'Borg'-apicompany (`startrek pun`), which scrapes all API-specs out there, to build the ultimate API?
 
 # Future 
 
-If connectivity is the key, the word `api development` might become something like 'serial cable' over time.
-Maybe the api-developers of today, will be called wire-developers.
-They just login to some enterprise account, where they drag wires from one block to another block.
+If `connectivity` is the key, will the word `api development` become something like `serial cable' over time?
+
+Who know the `api-developers` of today, will be called `web-plumbers` in the future.
+They just log in to some enterprise account, where they drag wires from one block to another block.
 Bugs are nearly non-existent since the quantum laptop already simulated the software for billions of multiverses.
 
-# My (odd) conclusion: business likely to lose
+# My (odd) conclusion: business likely to leave api's
 
 `Disclaimer: usually my opinion changes over time ;)`
 
 > I'm not sure whether patents will dig its own grave in the future.
 > But I do feel that technological progress seems to move exponentially forward without it.
-> A webproduct is launched, and the next month a kid from russia published
-> his 'clone' on a opensource repository website.
 > In todays myriad of emerging technologies, todays secret is tomorrows bad practice.
 > This used to be different.
+> Today a webproduct is launched, and the next month a kid from russia published
+> his 'clone' as an opensource repository.
 > I wouldnt be surprised seeing proprietary software not being able to 
-> catch up with open technology.
-> Connections and Integrations will become more stable, yes.
-
+> catch up with the variety of open cloud technology.
+> I guess in the future we don't design, write or test api's.
+> We let software do it for us based on specs.
 
 # Interesting links
 
