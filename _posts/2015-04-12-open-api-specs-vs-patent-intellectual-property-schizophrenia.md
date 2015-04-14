@@ -39,7 +39,8 @@ In the last years I see more companies making their API's highly adoptable by pu
 One could argue that the apidesign itself isnt IP worthy, and that its code, databasecontent and users is of higher importance.
 But is this really true?
 
-The weird thing is that lots of software is already been written by software.
+Lots of software, in some way or another, gets written by software itself.
+Sure there's some gluecode, but most of the basic components have been written by others already.
 So if we're generating the software by combining previously generated software..who's writing it?
 I guess businesses have to look in other ways to protect their business.
 
