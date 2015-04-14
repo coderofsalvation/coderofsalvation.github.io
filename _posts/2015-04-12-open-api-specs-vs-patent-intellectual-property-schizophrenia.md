@@ -31,21 +31,25 @@ Here's the struggle.
 There's something about tech which pushes transparency forward.
 Transparency to understand and accept, adopt and to tweak.
 
-In the last years I see more companies seeing the benefit of making their API's highly adoptable thru transparent  api spec-standards (mentioned above).
+In the last years I see more companies making their API's highly adoptable by pushing transparent api spec-standards (mentioned above).
 
-But if we're going to publish everything out there in the future, what will the aftermath look like?
+But if we're publishing everything out there in the future..what will the aftermath look like?
 
 # The good thing about open api specs, is that you can generate api's from it..or not?
 
-One could argue that the apidesign itself doesn't need protection, and that its code, databasecontent and users is of higher importance.
+One could argue that the apidesign itself isnt IP worthy, and that its code, databasecontent and users is of higher importance.
 
-However, in my (humble) experience I have always found the design of an API is of higher value than code.
-Your team cannot beat an flawed api design with adding more spaghetti, it will sink the ship eventually.
+However, in my (humble) experience I have always found the design of an API of higher value than code.
+Your team can't beat an flawed api design with adding more spaghetti, it will sink the ship eventually.
+
+So publishing the api design (and its spec format) is a weird one.
 
 # Future 
 
-If connectivity is the key these days, the word `api development` might become something like 'serial cable' over time.
-Will the api-developers of today swap their tools for an enterprise account where they can drag-drop blocks and build integrations?
+If connectivity is the key, the word `api development` might become something like 'serial cable' over time.
+Maybe the api-developers of today, will be called wire-developers.
+They just login to some enterprise account, where they drag wires from one block to another block.
+Bugs are nearly non-existent since the quantum laptop already simulated the software for billions of multiverses.
 
 # My (odd) conclusion: business likely to lose
 
@@ -55,8 +59,12 @@ Will the api-developers of today swap their tools for an enterprise account wher
 > But I do feel that technological progress seems to move exponentially forward without it.
 > A webproduct is launched, and the next month a kid from russia published
 > his 'clone' on a opensource repository website.
+> In todays myriad of emerging technologies, todays secret is tomorrows bad practice.
+> This used to be different.
 > I wouldnt be surprised seeing proprietary software not being able to 
 > catch up with open technology.
+> Connections and Integrations will become more stable, yes.
+
 
 # Interesting links
 
