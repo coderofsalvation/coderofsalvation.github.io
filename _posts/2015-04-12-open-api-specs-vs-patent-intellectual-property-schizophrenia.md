@@ -31,16 +31,17 @@ Transparency to understand and accept, adopt and to tweak.
 
 In the last years I see more companies making their API's highly adoptable by pushing transparent api spec-standards (mentioned above).
 
-But if we're publishing everything out there in the future..what will the aftermath look like?
-
 # The good thing about open api specs, is that you can generate api's from it..or not?
 
 One could argue that the apidesign itself isnt IP worthy, and that its code, databasecontent and users is of higher importance.
+But is this really true?
 
-However, in my (humble) experience I have always found the design of an API of higher value than code.
-Your team can't beat an flawed api design with adding more spaghetti, it will sink the ship eventually.
+The weird thing is that most software is already been written by software.
+So if we're generating the software by combining previously generated software..who's writing it?
+I guess businesses have to look in other ways to protect their business.
 
-So publishing the api design (and its spec format) is a weird one.
+So publishing the api design (and its spec format) is another step into this direction.
+Who knows we'll end up with a 'Borg'-apicompany (`startrek pun`), which assimilates all API-specs out there, to build the ultimate API.
 
 # Future 
 
