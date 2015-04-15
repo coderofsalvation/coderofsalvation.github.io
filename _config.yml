@@ -10,7 +10,7 @@ title:            Leon van Kammen
 tagline:          micro devtrepeneur / tech integration ninja from Europe
 url:              http://coderofsalvation.github.io
 paginate:         4
-baseurl:          /
+baseurl:          /coderofsalvation.github.io
 author:
   name:           Leon van Kammen
   url:            https://twitter.com/coderofsalvatio
@@ -19,4 +19,4 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/foo
+  repo:           https://github.com/coderofsalvation/coderofsalvation.github.io
