@@ -3,10 +3,8 @@ layout: page
 title: About me
 ---
 
-## Who am I 
-
-My name is Leon van Kammen, I'm originally from an awesome place called 'Stadskanaal' in Groningen/NL.<br>
-Nowadays I'm a micro devtrepeneur, in other words somebody who is pretty comfortable with code and business.<br>
+My name is Leon van Kammen, I was originally born in the beautiful [Stadskanaal](https://www.google.hu/maps/place/Stadskanaal,+Netherlands/@50.5653345,6.6503423,6z/data=!4m2!3m1!1s0x47c83bb57e3000c9:0xb8497bdac29f4022?hl=en) in Groningen/NL.<br>
+Nowadays I'm a micro devtrepeneur, in other words somebody who is comfortable with code *and* business.<br>
 After graduating I started out as a softwareengineer, and nowadays I love work with people on api/opensource/SaaS/BaaS/PaaS-technology.
 
 ## Achievements
