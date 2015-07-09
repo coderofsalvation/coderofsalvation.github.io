@@ -1,30 +1,41 @@
 ---
 layout: page
-title: About
+title: About me
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+## Who am I 
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My name is Leon van Kammen, I'm originally from an awesome place called 'Stadskanaal' in Groningen/NL.
+Nowadays I'm a micro devtrepeneur, in other words somebody who is pretty comfortable with code and business.
+After graduating I started out as a softwareengineer, and nowadays I love work with people on api/opensource/SaaS/BaaS/PaaS-technology.
 
-There are currently two themes built on Poole:
+## Achievements
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+* realized websites and custom webapplications for clients
+* designed and/or implemented API's and webintegrations
+* founded a tech office in a foreign country for a startup 
+* managed employees
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Other achievements 
 
-## Setup
+* I can do a cool trick with a cup of coffee and a spoon
+* I'm heavily into music creation
 
-Some fun facts about the setup of this project include:
+## My take on software creation
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+There are 3 ways of making software: the correct way, and the incorrect way, and the succesful way.
+In the end it boils down to transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations real by using [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method).
+My favourite model is the [Chaos model](http://en.wikipedia.org/wiki/Chaos_model) since its one of the few models which promotes non-linear progress. A methodology which also does this well is [kanban](https://en.wikipedia.org/wiki/Kanban)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
-Thanks for reading!
+## Favorite books
+
+* 'psychology of computer programming' (Gerald M. Weinberg)
+* 'getting real' (37 signals)
+* 'the mythical man month' (Fred Brooks)
+* 'Yoga Sutras' (Patanjali)
+
+## Backyard: things I've worked with 
+
+linux / coffeescript / nodejs / docker / PHP / Javascript / Actionscript 1/2/3 / Flex / Haxe / C/C++ / PYTHON / Lua / Bash/Shellscript / Java / MySQL / mongodb / redis / Google BigQuery / continuous testing / continuous deployment / continuous documentation / Docker / ZenCoding / HTML4/5 / CSS1/2/3 / WebKit / Websocket / Mobile webapps,PHP/AJAX / MySQL / Javascript frameworks (Mootools,Jquery,Ext,Prototype,Sencha,jstypes,Modernizr,iUI) / Flex / Flash / Haxe / shockwave(3D) / (X)HTML / XML / Json / YAML / CSS / Javascript / W3C / DHTML / Dutch Government-compliant optimizations. / Google Analytics / Adsense / Adwords / Facebook Apps / Facebook Graph API / Facebookwebdevelopers toolkit / PixelBender / Google APP engine / Twitter API / REST API / Layar API / travel API's like Expedia / Agoda / Paypal API / phonegap api / Distributed syslog setup / AWS / Rackspace / vim / cli / bash / svn / git / gitlist / github / eclipse / zendstudio / doxygen / phpdocumenter / phpdoctor / cloud9 / new relic / papertrail / fully continuous deployment/unittesting / black- white- and grayboxtesting / PaaS / SaaS / BaaS / Opensource / RESTful API / integration / aggregation / webpipes / service bus / docker / backend / hooks fanatic / longrunning jobs / cron/scheduling / syslog logging / markdown / bashdown / graphviz (dot) / LaTeX / asciidoc / mscgen sequence diagrams / continuous documentation toolchains / Parser Generators / Lexical analyzers / Win32/GDI programming / Macromedia Flash MX/8/CS12345.5 / MS Visual Studio & Borland Builder Family / DevCPP / Cygwin / OpenGL / OpenAL / c++ VST plugins  / BASS / FMOD / FLTK / FreeFrame / GNU GCC / G++ / dreamcast game programming / Electribe ESX reverse engineering / Cubase VST/SX / Ableton Live / Buzz/Buze / WaveLab / VST/VSTI/Directx / all MIDI apps / and all other software which has buttons and sliders.
+Adobe Photoshop / 3D Studio MAX / Blender 3D / GIMP / Inkscape / Artgem / gfx2 / AcidDraw / and other software which uses a mouse. 
