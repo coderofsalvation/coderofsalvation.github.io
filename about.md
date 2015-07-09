@@ -5,8 +5,8 @@ title: About me
 
 ## Who am I 
 
-My name is Leon van Kammen, I'm originally from an awesome place called 'Stadskanaal' in Groningen/NL.
-Nowadays I'm a micro devtrepeneur, in other words somebody who is pretty comfortable with code and business.
+My name is Leon van Kammen, I'm originally from an awesome place called 'Stadskanaal' in Groningen/NL.<br>
+Nowadays I'm a micro devtrepeneur, in other words somebody who is pretty comfortable with code and business.<br>
 After graduating I started out as a softwareengineer, and nowadays I love work with people on api/opensource/SaaS/BaaS/PaaS-technology.
 
 ## Achievements
@@ -23,8 +23,8 @@ After graduating I started out as a softwareengineer, and nowadays I love work w
 
 ## My take on software creation
 
-There are 3 ways of making software: the correct way, and the incorrect way, and the succesful way.
-In the end it boils down to transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations real by using [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method).
+There are 3 ways of making software: the correct way, and the incorrect way, and the succesful way.<br>
+In the end it boils down to transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations real by using [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method).<br>
 My favourite model is the [Chaos model](http://en.wikipedia.org/wiki/Chaos_model) since its one of the few models which promotes non-linear progress. A methodology which also does this well is [kanban](https://en.wikipedia.org/wiki/Kanban)
 
 
