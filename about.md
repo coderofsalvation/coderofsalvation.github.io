@@ -9,22 +9,22 @@ After graduating I started out as a softwareengineer, and nowadays I love work w
 
 ## Achievements
 
-* realized websites and custom webapplications for clients
+* realized custom websolutions for clients
 * designed and/or implemented API's and webintegrations
-* founded a tech office in a foreign country for a startup 
+* founded a tech office in a foreign country for a startup
 * managed employees
+* own a couple of supercool projects
 
 ## Other achievements 
 
 * I can do a cool trick with a cup of coffee and a spoon
-* I'm heavily into music creation
+* I love electronic music, and am heavily into music creation
 
 ## My take on software creation
 
 There are 3 ways of making software: the correct way, and the incorrect way, and the succesful way.<br>
 In the end it boils down to transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations real by using [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method).<br>
 My favourite model is the [Chaos model](http://en.wikipedia.org/wiki/Chaos_model) since its one of the few models which promotes non-linear progress. A methodology which also does this well is [kanban](https://en.wikipedia.org/wiki/Kanban)
-
 
 ## Favorite books
 
