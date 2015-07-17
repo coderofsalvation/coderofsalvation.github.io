@@ -10,10 +10,13 @@ After graduating I started out as a softwareengineer, and nowadays I love work w
 ## Achievements
 
 * realized custom websolutions for clients
-* designed and/or implemented API's and webintegrations
-* founded a tech office in a foreign country for a startup
-* managed employees
-* own a couple of supercool projects
+* designed and implemented API's and webintegrations
+* founding of a tech office in a foreign country for a startup
+* managing of developerteam
+* founded a couple of supercool projects
+* experience with travel industry & B2B integrations (booking.com, agoda, expedia, airbnb)
+* I love electronic music and have released for recording labels.
+* I can do a cool trick with a cup of coffee and a spoon 
 
 ## Other achievements 
 
