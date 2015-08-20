@@ -15,8 +15,6 @@ I'm a european DEVTREPENEUR: developer by heart, entrepeneur in mind, running in
 * managing of developerteam
 * founded a couple of supercool projects
 * experience with travel industry & B2B integrations (booking.com, agoda, expedia, airbnb)
-* I love electronic music and have released for recording labels.
-* I can do a cool trick with a cup of coffee and a spoon 
 
 ## Other achievements 
 
