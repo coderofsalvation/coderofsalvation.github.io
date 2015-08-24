@@ -1,0 +1,43 @@
+digraph G {
+  graph[size=9,9]
+  you [label="you", URL="http://en.wikipedia.org/wiki/Purusha",style=filled,fillcolor="grey"];
+  world [label="world / daily life / work",style=filled,fillcolor="grey"];
+
+
+  mods [label="( modifications of the mind )\n", dir="none",style=filled,fillcolor="gray"];
+  vikalpa [label="(vikalpa)\nmental speculation\nverbal misconception\nnot visualizable as object",color="red",];
+  pramana [label="( pramana )\ncorrect knowledge",color="azure4",URL="http://en.wikipedia.org/wiki/Pram%C4%81%E1%B10%87a"];
+  viparyaya [label="( viparyaya )\nincorrect knowledge",color="azure4",URL="http://fr.wikipedia.org/wiki/Viparyaya"];
+  nidra [label="( nidra )\ndeep sleep / dreamless",color="azure4",URL="http://en.wikipedia.org/wiki/Yoga-nidra"];
+  smriti [label="( smriti )\npast memories",color="azure4",URL="http://en.wikipedia.org/wiki/Smriti"];
+  vikalpa -> mods [dir="none",color="azure4"];
+  smriti -> mods [dir="none",color="azure4"];
+  nidra -> mods [dir="none",color="azure4"];
+  viparyaya -> mods [dir="none",color="azure4"];
+  pramana -> mods [dir="none",color="azure4"];
+  vikalpa -> world [color="red",label="manas.export( talk )",fontsize=10,fontcolor="red"];
+  vikalpa -> viparyaya [dir="none",color="red"];
+
+  perception [label="perception",color="azure4",URL="http://en.wikipedia.org/wiki/Perception"];
+  inference [label="inference / measurements",color="azure4",URL="http://en.wikipedia.org/wiki/Inference"];
+  testimony [label="testimony",color="azure4",URL="http://en.wikipedia.org/wiki/Testimony"];
+  fact [label="",URL="http://en.wikipedia.org/wiki/Fact"];
+  perception -> fact [dir="none",color="azure4"];
+  testimony -> fact [dir="none",color="azure4"];
+  inference -> fact [dir="none",color="azure4"];
+  testimony -> viparyaya [color="red",label="manas.import( listen,read )",fontsize=10,fontcolor="red"];
+  perception -> viparyaya [color="red",label="manas.import( 'world is flat' )",fontsize=10,fontcolor="red"];
+
+
+  world -> perception [dir="none",color="azure4"];
+  world -> testimony [dir="none",color="azure4"];
+  world -> inference [dir="none",color="azure4"];
+
+  fact -> pramana [label="manas.import( listen,read )",fontsize=10];
+
+  you -> mods [dir="both",label="yoga / control",URL="http://en.wikipedia.org/wiki/Yoga"];
+  mods -> world [label=" 'I' feeling"];
+
+  overlap=false;
+  label="Above an illustration of the mindfield as described in the Yoga sutras.\nAll thoughtpatterns can fall into 5 categories, Patanjali advices to witness these 5 to get rid of 'the monkeymind'.\nThey can be coloured (red as example) or uncoloured ( favorable / grey as example ). \nManas is the bridge between senses and the mindfield.\nPramana indicates the psychological buildingblocks for our modern, scientific paradigm today.\nTherefore, Yoga (meaning 'union') acknowledges and integrates modern science as uncoloured and valid.\nTherefore, opposing yoga vs modern science is like opposing apple vs appleseed, impossible.\n\nhttp://leon.vankammen.eu/yoga"
+}

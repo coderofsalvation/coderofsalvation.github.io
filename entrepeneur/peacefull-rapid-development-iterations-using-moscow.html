@@ -1,0 +1,124 @@
+<h1>MoSCoW and RAD = Peace of mind</h1>
+<p><br> <img align="right" src="/data/upload/images/comic/out/comic_moscow.jpg"/></p>
+<h3>Quote </h3>
+<blockquote>
+<p><em>If you don't plan to achieve rapid development, you can't expect to achieve it.</em></p>
+<p>&#8212; quote by <a href="http://www.stevemcconnell.com/rdenum.htm">Steve Mcconnel</a></p>
+</blockquote>
+<h3>What is RAD </h3>
+<p>Rapid application development (R.A.D) is a software development methodology that uses minimal planning in favor of rapid prototyping. </p>
+<h3>The reality </h3>
+<p>Everybody agrees with <strong>Rapid Development</strong> and <strong>planning stuff</strong>. But it can be tempting for developers &amp; managers to think like : <em>"Hey if we forget about planning stuff, we  can do more <strong>rapid development</strong>!"</em>. When dealing with serious projects, this is a myth imho.</p>
+<h3>Side Product: Confusion on time </h3>
+<p><em>Planningless</em> RAD might be ok for a while, but at some point, as the project becomes more and more succesfull, soon:</p>
+<ul>
+<li>
+more and more features need to be implemented.
+</li><li>
+the developers will realize its too risky to deploy/upgrade productioncode every day.
+</li><li>
+the developers realize, that they dont feel confident about the software.
+</li><li>
+more and more the focus will have to go to testing and riskmanagement
+</li><li>
+the staff experiences an unhealthy bugs/feature-ratio
+</li><li>
+the idea of <em>lets plan!</em> gets easily rejected "<em>because we always worked like this from the start</em>"
+</li>
+</ul>
+<p>Anyways, without planning, nobody knows anymore what can be done succesfully in any given timeframe.</p>
+<h3>Side Product: Hypnosis </h3>
+<p>It became too big, the RAD-methology starts too work against the team. If the team is ignorant about this, usually the negative effects are 'solved' using a traditional counterproductive method:  hypnotising/manipulating eachothers.</p>
+<ul>
+<li>
+Manager to Developer-hypnosis on the last day before update: <code>can you pleeease also do feature x before tomorrow?</code>
+</li><li>
+Manager to Developer-hypnosis: <code>Why is feature y in the next update, and x is not?</code>
+</li><li>
+Developer to Manager-hypnosis: <code>Look its RAD ok..we agreed on not planning stuff to get feature z in this upgrade</code>
+</li><li>
+Manager to Developer-hypnosis: <code>Its always a mystery what will be in the next release</code>
+</li><li>
+Developer to Manager-hypnosis: <code>I can add the small logo..but it will take me 5 days to test all platforms</code>
+</li>
+</ul>
+<h3>Longterm RAD Project results </h3>
+<ul>
+<li>
+Having the illusion that RAD will give turbo to your project
+</li><li>
+Starting off with highquality planning-ethos, and ending up with none
+</li><li>
+Stockholder x is not happy because his proposed feature isnt in the update 
+</li><li>
+Code-smell: hairy code will control the developers instead of vice versa
+</li><li>
+Worstcase: people will start pointing fingers to one another
+</li>
+</ul>
+<h3>Why </h3>
+<p>RAD doesnt really force people to say- or expect a 'no' during upgrades. Development needs a 'no' sometimes, and usually good programmers can say 'no'. Approved Feature/BugFix-requests usually get associated with 'promises' (a <em>yes</em>), this is a big danger. The IT catchphrase <em>The sky is the limit</em>, should be rephrased in this case to <em>The 'yes' is the limit</em>.</p>
+<h3>Solution: Keep it RAD and real </h3>
+<p>So how to go from RAD to Planned RAD? I've tried many software development metholodies, but throughout the years I've found this particular combination very powerfull:</p>
+<ul>
+<li>
+RAD
+</li><li>
+MoSCoW
+</li>
+</ul>
+<h3>What is MoSCoW </h3>
+<p>The MoSCoW-method is a priority-system in future software development iterations (updates). If you would ask me, I would call it "keeping things real" between the staff/devteam/stakeholders. MoSCoW kills false expectations, because every approved feature- or bugfix-request is categorized democratically like this:</p>
+<ul>
+<li>
+M - must haves   (must be in the next upgrade)
+</li><li>
+S - should haves (very wanted functionality, but upgrade is usable without them)
+</li><li>
+C - could haves  (if there's enough time)
+</li><li>
+W - won't haves  (not included, but maybe in the future some day)
+</li>
+</ul>
+<p>Approved Feature/BugFix-requests usually get associated with 'promises', this is a big danger.</p>
+<p><br></p>
+<blockquote>
+<p><strong>"The more heads, the more thoughts"</strong></p>
+<p>This is a dutch expression, and it means that brainstorming can work counterproductive. A good startingpoint would be to let the leaddevelopers and CTO or one stakeholder take care of the 'end round' concerning this democratic process. More than 3 persons might introduce endless brainstorms. Make sure every employee has the opportunity to vote for a feature/issue. This will stop manipulation between collegues to push his/her agenda forward. A more strict approach would be the asian Kanban-method in which the developmentteam always reports an x amount of free slots for new issues/features.</p>
+</blockquote>
+<h3>Possible examples </h3>
+<p>Ok, assuming that you somehow manage/log your features/bugs:</p>
+<ul>
+<li>
+in an issue/bugtracker
+</li><li>
+a spreadsheet
+</li><li>
+a whiteboard
+</li><li>
+a kanban-style interface
+</li><li>
+in todo.txt 
+</li>
+</ul>
+<h3>How to implement?</h3>
+<p>Bugtracker-users can add a 'M','S','C' or 'W' to their ticket-titles. Or even better, a 'MoSCoW'-field to each ticket, it could look like this: &nbsp;&nbsp; <strong>MoSCoW</strong>: <select style="width:5.0em">     <option value="">M</option>     <option value="">S</option>     <option value="">C</option>     <option value="">W</option>   </select></p>
+<p>Or, in case of a spreadsheet/textfile (personal projects eg.), here's what to do..suppose you have this list:</p>
+<code><pre>
+1. [bug] fonts are too big on platform x, need size 12
+2. [feature] data needs to automatically do y
+3. [feature] data needs to automatically do y
+</pre></code>
+<p>If you communicate this to your staff/collegues, you could also do it like this:</p>
+<code><pre>
+
+M. [bug] fonts are too big on platform x, need size 12
+C. [feature] data needs to automatically do y
+S. [feature] data needs to automatically do y
+</pre></code>
+<p>This is just an example, but it can be very powerfull as soon as you start using it right.</p>
+<h3>Conclusion </h3>
+<p>RAD is great in certain situations, but if the software needs to be well managed, you better plan stuff. I have no idea if I understood Steve Mcconnel's quote correctly, but in the above describe scenario he's right. I also hope that I inspired many people with this. Whether you are a (freelance) programmer, devteam, managementteam or stockholder: MoSCoW can be very effective. I wish i had a timemachine; could go back in time; and hand over this article to myself..it would be such a productivity-booster!</p>
+<h3>Further Reading </h3>
+<p>I think Steve Mcconnel probably has observed many different outcomes for many different projects, and that many people can learn from him. You probably want to read his <a href="http://www.stevemcconnell.com/rdenum.htm">website</a>. He has many great advices which address many pittfalls for developmentteams. How could one ignore such free knowledge?</p>
+
