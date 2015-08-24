@@ -1,7 +1,7 @@
 Tracing handdrawn scans
 =======================
 
-<img src="/data/upload/images/comic/out/comic_pencilrules.jpg" width="100%"/>
+<img src="/public/img/comic/out/comic_pencilrules.jpg" width="100%"/>
 
 Ever wanted a quick simple way to convert your handdrawn scans into something fancy?
 
@@ -39,23 +39,23 @@ You need a linux system with the following packages:
 
 Before:
 
-<img src="/data/upload/images/comic/tag_1.jpg" width="400"/>
+<img src="/public/img/comic/tag_1.jpg" width="400"/>
 
 Commandline:
 
     /comicize tag_1.jpg tag_1_out.jpg "tag 1" 600 1 100 20 1
 
-<img src="/data/upload/images/comic/out/tag_1_out.jpg" width="400"/>
+<img src="/public/img/comic/out/tag_1_out.jpg" width="400"/>
 
 Before:
 
-<img src="/data/upload/images/comic/tag_2.jpg" width="400"/>
+<img src="/public/img/comic/tag_2.jpg" width="400"/>
 
 Commandline:
 
     /comicize tag_2.jpg tag_2_out.jpg "tag 2" 600 1 100 20 1
 
-<img src="/data/upload/images/comic/out/tag_2_out.jpg" width="400"/>
+<img src="/public/img/comic/out/tag_2_out.jpg" width="400"/>
 
 ### Notes ###
 
