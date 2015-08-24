@@ -10,6 +10,34 @@ title: Portfolio
 <p class="help-block"><a href="http://leon.vankammen.eu/portfolio#" class="icon-exclamation-sign"></a>&nbsp;The following projects are a glimpse of what I've worked on in the past (as lead dev, devops, architect or consultant, with a lot, a lot of passion). </p><hr>
 
 <div class="row">
+<h3>BOOMPJE APP webapp</h3>
+<blockquote>
+<div class="curved-s"><img align="left" src="/public/img/portfolio/webapp_boompje_.gif"></div> app for design studio
+<br><br><small>Tags: Webapp, Smartphone, Tablet, HTML5, CSS5, offline caching, Sencha</small>
+</blockquote>
+</div>
+<div class="row">
+<h3>HELLOROOM APP webapp</h3>
+<blockquote>
+<div class="curved-s"><img align="left" src="/public/img/portfolio/webapp_helloroom_.gif"></div> app for apartment rental company in Budapest/Hungary
+<br><br><small>Tags: Webapp, Smartphone, Tablet, HTML5, CSS5, offline caching, Sencha</small>
+</blockquote>
+</div>
+<div class="row">
+<h3>DAILYTIMES NG APP webapp</h3>
+<blockquote>
+<div class="curved-s"><img align="left" src="/public/img/portfolio/webapp_dailytimes_.gif"></div> newsreader app for international newspaper 'Daily Times' in Nigeria
+<br><br><small>Tags: Webapp, Smartphone, Tablet, HTML5, CSS5, offline caching, Sencha </small>
+</blockquote>
+</div>
+<div class="row">
+<h3>AUGMENTED REALITY IN NIJKERK app</h3>
+<blockquote>
+<div class="curved-s"><img align="left" src="/public/img/portfolio/layar-nijkerk_.jpg"></div> Augmented reality app using layar technologie. Used in the dutch area 'Nijkerk': all historical places can be viewed by using an smart/iphone and GPS. Point your cam to a place, and you will see a photograph of how it looked in the past.
+<br><br><small>Tags: JSON, Layar, iphone app, augmented reality</small>
+</blockquote>
+</div>
+<div class="row">
 <h3>Bookingmanager.com</h3><hr>
 <blockquote>
 <div class="curved-s"><img align="left" src="/public/img/portfolio/billy_.jpg"></div> Online Distributed Databaseservice SaaS which aggregates with booking.com, expedia, easytobook and so on. See <a target="_blank" href="http://bookingmanager.com/">bookingmanager.com</a>. 
@@ -270,34 +298,6 @@ Its design includes : a simple template engine, page editing, modular extendable
 <blockquote>
 <div class="curved-s"><img align="left" src="/public/img/portfolio/ezloopaz_.gif"></div> microblog for artiest incl. email-to-social-paginas connection
 <br><br><small>Tags: Sutra framework, PHP5, Javascript, Blog, Backend</small>
-</blockquote>
-</div>
-<div class="row">
-<h3>BOOMPJE APP webapp</h3>
-<blockquote>
-<div class="curved-s"><img align="left" src="/public/img/portfolio/webapp_boompje_.gif"></div> app for design studio
-<br><br><small>Tags: Webapp, Smartphone, Tablet, HTML5, CSS5, offline caching, Sencha</small>
-</blockquote>
-</div>
-<div class="row">
-<h3>HELLOROOM APP webapp</h3>
-<blockquote>
-<div class="curved-s"><img align="left" src="/public/img/portfolio/webapp_helloroom_.gif"></div> app for apartment rental company in Budapest/Hungary
-<br><br><small>Tags: Webapp, Smartphone, Tablet, HTML5, CSS5, offline caching, Sencha</small>
-</blockquote>
-</div>
-<div class="row">
-<h3>DAILYTIMES NG APP webapp</h3>
-<blockquote>
-<div class="curved-s"><img align="left" src="/public/img/portfolio/webapp_dailytimes_.gif"></div> newsreader app for international newspaper 'Daily Times' in Nigeria
-<br><br><small>Tags: Webapp, Smartphone, Tablet, HTML5, CSS5, offline caching, Sencha </small>
-</blockquote>
-</div>
-<div class="row">
-<h3>AUGMENTED REALITY IN NIJKERK app</h3>
-<blockquote>
-<div class="curved-s"><img align="left" src="/public/img/portfolio/layar-nijkerk_.jpg"></div> Augmented reality app using layar technologie. Used in the dutch area 'Nijkerk': all historical places can be viewed by using an smart/iphone and GPS. Point your cam to a place, and you will see a photograph of how it looked in the past.
-<br><br><small>Tags: JSON, Layar, iphone app, augmented reality</small>
 </blockquote>
 </div>
 <div class="row">
