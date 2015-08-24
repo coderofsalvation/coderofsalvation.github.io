@@ -354,6 +354,10 @@ yourapp.plugin['rotatedirection'] = function(yourapp){
   yourapp.event.addListener( "FRAMES_LOADED", reverseRotate );
 }
 </pre></code>
+<h3>Benefits </h3>
+<p>At a later point, you can always decide to integrate things in the engine, or to totally abandon a plugin. Its a good strategy to have a placeholder for 'wild features', without introducing <em>codesmell</em> in your <em>core code</em>. It makes programming new features fun, readable and maintainable.</p>
+<h3>Personal note </h3>
+<p>I found out, that simple by refactoring the code everytime, this is not fun. Its not fun to refactor the code everytime certain features are introduced. So with 'never repeat yourself' in mind, I decided that postponing refactoring would be wise by using plugins. Then at a later time I always can refactor the code at a moment I want, without having the burden of codesmell.</p>
   <br><br>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
