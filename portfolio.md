@@ -8,7 +8,6 @@ title: Portfolio
 </style>
 
 <p class="help-block"><a href="http://leon.vankammen.eu/portfolio#" class="icon-exclamation-sign"></a>&nbsp;The following projects are a glimpse of what I've worked on in the past (as lead dev, devops, architect or consultant, with a lot, a lot of passion). </p><hr>
-<br><br>
 <div class="row">
 <h3>Bookingmanager.com</h3><hr>
 <blockquote>
