@@ -1,0 +1,629 @@
+Imapmunch php cli-cmd
+=====================
+
+### Problem ###
+
+  * Many people use email(inboxes) to administer/remind themselves/eachothers.
+  * Sending emails to yourself is easy, sorting it out later is a tedious task 
+  * using ifttt.com is great but not ideal in all situations when dealing with many emailadresses
+
+Example: _If you and other employees send you bills, you have to go thru labourous sessions 
+of putting everything in excel to generate overviews_.
+
+### Solution ###
+
+  * specifying metadata (hashtags,prices) in the email, to easily postprocess things later 
+  * if metadata not missing, forward the email to yourself with the appropriate metadata
+  * imapmunch, a commandline utility which can check your email by using filters.
+
+### Requirements ###
+
+  * PHP (with imap extension)
+
+### Example ###
+
+Here you can see a small bashscript which summarizes all the bills that were send to me.
+Each time I take a picture of a bill with my smartphone, I just put 'bill #budgetfoo xxxxft' in the subject, so the following bashscript can interpret it using imapmunch:
+
+    #!/bin/bash 
+    
+    summarize(){
+      json=$(cat - )
+      q="'"
+      phpcode='
+        $json = '$q''$json''$q';
+        $bills = json_decode( $json );
+        $debt = 0;
+        foreach( $bills->emails as $bill ){
+          printf("%14s %10s %20s\n", $bill->forint, $bill->id, $bill->subject );
+          $debt += (int)$bill->forint;
+        }
+        $budget_euro   = 1000;
+        $currency_ft   = 282;
+        $budget_forint = $budget_euro*$currency_ft;
+        $budget_remain_forint = $budget_forint + $debt;
+        $budget_remain_euro = $budget_remain_forint / 282;
+        print("\n\ndebt  = {$debt} ft (=".($debt/$currency_ft)." Euro)\n");
+        print("\n\nremain= {$budget_remain_forint} ft (={$budget_remain_euro} Euro)\n");
+      '
+      php -r "$phpcode"
+    }
+    
+    ./imapmunch -SUBJECT='bill ' --prices --exclude="cashmachine" --downloadpath="/var/www/dropbox/bills/" --output=json | summarize
+  
+
+### Output ###
+
+    [x] checking email #2609
+    [email #2609] writing '/var/www/dropbox/bills/2609_photo.JPG'
+    [x] checking email #2606
+    [x] checking email #2601
+    [x] checking email #2600
+    [x] checking email #2597
+    [x] checking email #2596
+    [x] checking email #2576
+    [x] checking email #2566
+    [x] checking email #2548
+    [x] checking email #2547
+    [x] checking email #2546
+    [x] checking email #2513
+    [x] checking email #2509
+    [x] checking email #2499
+    [x] checking email #2486
+    [x] checking email #2485
+    [x] checking email #2476
+    [x] checking email #1127
+           -219800       2609 bill #foobudget 219800ft #someitem 2x
+              -290       2606 bill #foobudget 290ft #teaspoon #ketchup
+             -2380       2601 bill #foobudget powerbox 2380ft (2476_photo.JPG)
+             -5000       2600 bill #teaspoon 5000ft #tipped (2499_photo.JPG) (fwd)
+             -5600       2597 bill #foobudget #teaspoon 5600ft #tipped (fwd)
+             -3899       2576 bill #foobudget 3899ft #skull 
+             -6000       2566 bill #foobudget -6000ft #teaspoon
+             -1090       2548 bill #foobudget #teaspoon -1090ft
+             -4370       2547 bill #foobudget #teaspoon -4370ft
+             -1840       2546 bill #foobudget -1840ft #mitchell -1000ft #henry -1000ft
+           -138998       2509 bill -138998ft laptop
+
+
+    debt  = -389267 ft (=-1380.3794326241 Euro)
+    remain= -107160 ft (= -380 Euro)
+
+Oops, out of budget :)
+
+### Installation ###
+
+  * download source [here](https://gist.github.com/4604003)
+  * set the permissions to executable (chmod 755)
+  * edit the file and change the hostname,username,passwd to your likings
+
+<noscript><pre>
+File: imapmunch
+---------------
+
+#!/usr/bin/env php
+&lt;?php
+/** 
+ * File:        imapmunch
+ * Date:        Fri 18 Jan 2013 05:30:45 PM CET
+ *
+ * easily searches/selects emails from imapserver, using filters, scans hashtags, prices and so on
+ *
+ * Usage: imapmunch [filteroptions] [--output=json|xml|csv]
+ *
+ * available outputfields:
+ *
+ *  --numbers           = show all scanned numbers
+ *  --hashtags          = show all scanned hashtags
+ *  --prices            = show all scanned prices
+ * other options:
+ *
+ *  --exclude=&#39;string&#39;  = ignore all subjects which contain stringvalue(s) (commaseperated)
+ *  --markseen          = (not implemented yet ) fetch unread emails, and mark as &#39;read&#39; (process each mail once)
+ * available filteroptions:
+ *
+ *  -ALL                = return all messages matching the rest of the criteria
+ *  -ANSWERED           = match messages with the \ANSWERED flag set
+ *  -BCC=&#39;string&#39;       = match messages with &#39;string&#39; in the Bcc: field
+ *  -BEFORE=&#39;date&#39;      = match messages with Date: before &#39;date&#39;
+ *  -BODY=&#39;string&#39;      = match messages with &#39;string&#39; in the body of the message
+ *  -CC=&#39;string&#39;        = match messages with &#39;string&#39; in the Cc: field
+ *  -DELETED            = match deleted messages
+ *  -FLAGGED            = match messages with the \FLAGGED (sometimes referred to as Important or Urgent) flag set
+ *  -FROM=&#39;string&#39;      = match messages with &#39;string&#39; in the From: field
+ *  -KEYWORD=&#39;string&#39;   = match messages with &#39;string&#39; as a keyword
+ *  -NEW                = match new messages
+ *  -OLD                = match old messages
+ *  -ON=&#39;date&#39;          = match messages with Date: matching &#39;date&#39;
+ *  -RECENT             = match messages with the \RECENT flag set
+ *  -SEEN               = match messages that have been read (the \SEEN flag is set)
+ *  -SINCE=&#39;date&#39;       = match messages with Date: after &#39;date&#39;
+ *  -SUBJECT=&#39;string&#39;   = match messages with &#39;string&#39; in the Subject:
+ *  -TEXT=&#39;string&#39;      = match messages with text &#39;string&#39;
+ *  -TO=&#39;string&#39;        = match messages with &#39;string&#39; in the To:
+ *  -UNANSWERED         = match messages that have not been answered
+ *  -UNDELETED          = match messages that are not deleted
+ *  -UNFLAGGED          = match messages that are not flagged
+ *  -UNKEYWORD=&#39;string&#39; = match messages that do not have the keyword &#39;string&#39;
+ *  -UNSEEN             = match messages which have not been read yet
+ *
+ * Example: !./imapmunch -FROM=&#39;Leon&#39; -SUBJECT=&#39;bill &#39; --prices | awk -F &#39;,&#39; &#39;{print $5 }&#39;
+ *  
+ * Changelog:
+ *  
+ *  [Fri 18 Jan 2013 05:30:45 PM CET] 
+ *    first sketch from scratch
+ *
+ * @todo description
+ *  
+ * Usage example: 
+ * &lt;code&gt;  
+ *   ./imapmunch
+ * &lt;/code&gt;
+ *  
+ * @version $id$
+ * @copyright 2013 Coder of Salvation
+ * @author Coder of Salvation, sqz &lt;info@leon.vankammen.eu&gt;
+ * @package %package%
+ *  
+ * @license BSD
+ * %license%
+ *
+ * Copyright 2013, Coder of Salvation. All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, are
+ * permitted provided that the following conditions are met:
+ * 
+ *    1. Redistributions of source code must retain the above copyright notice, this list of
+ *       conditions and the following disclaimer.
+ * 
+ *    2. Redistributions in binary form must reproduce the above copyright notice, this list
+ *       of conditions and the following disclaimer in the documentation and/or other materials
+ *       provided with the distribution.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY CODER OF SALVATION ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ * FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;COPYRIGHT HOLDER&gt; OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * 
+ * The views and conclusions contained in the software and documentation are those of the
+ * authors and should not be interpreted as representing official policies, either expressed
+ * or implied, of &lt;copyright holder&gt;.
+ * 
+ */
+
+/* config gmail etc */
+$hostname = &#39;{imap.gmail.com:993/imap/ssl}INBOX&#39;;
+$username = &#39;your@email.com&#39;;
+$password = &#39;yourpassword&#39;;
+
+$args    = array();
+
+function main($argv) {
+  global $args,$require;
+  if( count($argv) == 1 ) die(usage());
+  $args = $argv;
+  init($argv);
+  run($argv);
+}
+
+function run(){
+  global $args, $hostname, $username, $password;
+  $inbox = connect( $hostname, $username, $password );
+  $result = false;
+  foreach( $args as $arg ){ // perform searches and merge results
+    if( is_string($arg) &amp;&amp; $arg[0] == &quot;-&quot; &amp;&amp; $arg[1] != &quot;-&quot; ){
+      $searchTerm = str_replace( array(&quot;&#39;&quot;,&quot;=&quot;), array(&#39;&quot;&#39;,&quot; &quot;), substr( $arg, 1 ) );
+      $emails = search( $inbox, $searchTerm );
+      if( is_array($result)  ){
+        foreach(  $result as $k =&gt; $i )
+          if( !in_array($i,$emails)  ) unset( $result[$k] );
+      }else $result = $emails;
+    }
+  }
+  display($inbox,$result);
+  close($inbox);
+}
+
+function init(){
+  global $args;
+  $str  = false;
+  $opts = getopt(null, array(&#39;output:&#39;,&#39;hashtags::&#39;,&#39;prices::&#39;,&#39;numbers::&#39;,&#39;manual::&#39;,&#39;downloadpath::&#39;,&#39;downloadext::&#39;,&#39;exclude::&#39;));
+  if( isset($opts[&#39;manual&#39;])  ) manual();
+  foreach( $args as $arg ) $str = !strstr( $arg, &#39;--&#39; ) &amp;&amp; !strstr( $arg, basename(__FILE__) ) ? $arg : $str;
+  $args[&#39;parsed&#39;] = array();
+  $args[&#39;parsed&#39;][&#39;str&#39;]          = $str;
+  $args[&#39;parsed&#39;][&#39;output&#39;]       = isset($opts[&#39;output&#39;])       ? trim($opts[&#39;output&#39;]) : &#39;csv&#39;;
+  $args[&#39;parsed&#39;][&#39;hashtags&#39;]     = isset($opts[&#39;hashtags&#39;])     ? true : false;
+  $args[&#39;parsed&#39;][&#39;prices&#39;]       = isset($opts[&#39;prices&#39;])       ? true : false;
+  $args[&#39;parsed&#39;][&#39;numbers&#39;]      = isset($opts[&#39;numbers&#39;])      ? true : false;
+  $args[&#39;parsed&#39;][&#39;downloadpath&#39;] = isset($opts[&#39;downloadpath&#39;]) ? trim($opts[&#39;downloadpath&#39;]) : false;
+  $args[&#39;parsed&#39;][&#39;downloadext&#39;]  = isset($opts[&#39;downloadext&#39;])  ? trim($opts[&#39;downloadext&#39;]) : false;
+  $args[&#39;parsed&#39;][&#39;exclude&#39;]      = isset($opts[&#39;exclude&#39;])      ? explode(&quot;,&quot;,trim($opts[&#39;exclude&#39;])) : false;
+}
+
+
+function usage(){
+  $txt = &quot;Usage: imapmunch [filteroptions] [--output=json|xml|csv]\n\n&quot;;
+  $txt .= &quot;available outputfields:\n\n&quot;;
+  $txt .= &quot; --numbers           = show all scanned numbers\n&quot;;
+  $txt .= &quot; --hashtags          = show all scanned hashtags\n&quot;;
+  $txt .= &quot; --prices            = show all scanned prices\n&quot;;
+  $txt .= &quot;other options:\n\n&quot;;
+  $txt .= &quot; --exclude=&#39;string&#39;  = ignore all subjects which contain stringvalue(s) (commaseperated)\n&quot;;
+  $txt .= &quot; --markseen          = (not implemented yet ) fetch unread emails, and mark as &#39;read&#39; (process each mail once)\n&quot;;
+  $txt .= &quot;available filteroptions:\n\n&quot;;
+  $txt .= &quot; -ALL                = return all messages matching the rest of the criteria\n&quot;;
+  $txt .= &quot; -ANSWERED           = match messages with the \\ANSWERED flag set\n&quot;;
+  $txt .= &quot; -BCC=&#39;string&#39;       = match messages with &#39;string&#39; in the Bcc: field\n&quot;;
+  $txt .= &quot; -BEFORE=&#39;date&#39;      = match messages with Date: before &#39;date&#39;\n&quot;;
+  $txt .= &quot; -BODY=&#39;string&#39;      = match messages with &#39;string&#39; in the body of the message\n&quot;;
+  $txt .= &quot; -CC=&#39;string&#39;        = match messages with &#39;string&#39; in the Cc: field\n&quot;;
+  $txt .= &quot; -DELETED            = match deleted messages\n&quot;;
+  $txt .= &quot; -FLAGGED            = match messages with the \\FLAGGED (sometimes referred to as Important or Urgent) flag set\n&quot;;
+  $txt .= &quot; -FROM=&#39;string&#39;      = match messages with &#39;string&#39; in the From: field\n&quot;;
+  $txt .= &quot; -KEYWORD=&#39;string&#39;   = match messages with &#39;string&#39; as a keyword\n&quot;;
+  $txt .= &quot; -NEW                = match new messages\n&quot;;
+  $txt .= &quot; -OLD                = match old messages\n&quot;;
+  $txt .= &quot; -ON=&#39;date&#39;          = match messages with Date: matching &#39;date&#39;\n&quot;;
+  $txt .= &quot; -RECENT             = match messages with the \\RECENT flag set\n&quot;;
+  $txt .= &quot; -SEEN               = match messages that have been read (the \\SEEN flag is set)\n&quot;;
+  $txt .= &quot; -SINCE=&#39;date&#39;       = match messages with Date: after &#39;date&#39;\n&quot;;
+  $txt .= &quot; -SUBJECT=&#39;string&#39;   = match messages with &#39;string&#39; in the Subject:\n&quot;;
+  $txt .= &quot; -TEXT=&#39;string&#39;      = match messages with text &#39;string&#39;\n&quot;;
+  $txt .= &quot; -TO=&#39;string&#39;        = match messages with &#39;string&#39; in the To:\n&quot;;
+  $txt .= &quot; -UNANSWERED         = match messages that have not been answered\n&quot;;
+  $txt .= &quot; -UNDELETED          = match messages that are not deleted\n&quot;;
+  $txt .= &quot; -UNFLAGGED          = match messages that are not flagged\n&quot;;
+  $txt .= &quot; -UNKEYWORD=&#39;string&#39; = match messages that do not have the keyword &#39;string&#39;\n&quot;;
+  $txt .= &quot; -UNSEEN             = match messages which have not been read yet\n&quot;;
+  $txt .= &quot;\nExample: !./imapmunch -FROM=&#39;Leon&#39; -SUBJECT=&#39;bill &#39; --prices | awk -F &#39;,&#39; &#39;{print $5 }&#39;\n\n&quot;;
+  return $txt;
+}
+
+if (&#39;cli&#39; === php_sapi_name() &amp;&amp; basename(__FILE__) === basename($argv[0])) {
+  main($argv);
+}
+
+function connect( $hostname, $username, $password ){
+  /* try to connect */
+  $inbox = imap_open($hostname,$username,$password) or die(&#39;Cannot connect to Gmail: &#39; . imap_last_error());
+  return $inbox;
+}
+
+function search( $inbox, $searchTerm ){
+  /* grab emails */
+  return imap_search($inbox, $searchTerm );
+}
+
+function getEmail($inbox, $emailno ){
+  /* for every email... */
+  $overview = imap_fetch_overview($inbox,$email_number,0);
+  /* get information specific to this email */
+  $message  = imap_fetchbody($inbox,$email_number,2);
+  return $message;
+}
+
+function convertEmailsToArray( $inbox, $emails){
+  global $args;
+  $table = array();
+  rsort($emails);
+  $fields = array(&#39;id&#39;,&#39;date&#39;,&#39;subject&#39;,&#39;senderaddress&#39;,&#39;files&#39;);
+  foreach( $emails as $msgno ){
+  print_stderr(&quot;[x] checking email #{$msgno}\n&quot;);
+    $header = imap_headerinfo($inbox, $msgno );
+    $skip = false;
+    if( is_array($args[&#39;parsed&#39;][&#39;exclude&#39;]) ) 
+      foreach( $args[&#39;parsed&#39;][&#39;exclude&#39;] as $exclude )
+        if( strstr( $header-&gt;subject, $exclude ) ) $skip = true;
+    if( $skip) continue;
+    $email = array();
+    $header-&gt;id = $msgno;
+    if( $args[&#39;parsed&#39;][&#39;downloadpath&#39;] ){
+      $files = downloadAttachements( $inbox, $msgno, $args[&#39;parsed&#39;][&#39;downloadpath&#39;], $args[&#39;parsed&#39;][&#39;downloadext&#39;] );
+      $header-&gt;files = $files ? $files : &#39;&#39;;
+    }
+    foreach( $fields as $field ) $email[ $field ] = $header-&gt;$field;
+    preg_match( &quot;/&lt;.*&gt;/&quot;, $email[&#39;senderaddress&#39;], $matches );
+    $email[&#39;senderaddress&#39;] = str_replace( array(&quot;&lt;&quot;,&quot;&gt;&quot;), &quot;&quot;, $matches[0]);
+    $table[] = $email;
+  }
+  if( $args[&#39;parsed&#39;][&#39;hashtags&#39;] || $args[&#39;parsed&#39;][&#39;numbers&#39;] || $args[&#39;parsed&#39;][&#39;prices&#39;] )
+    $table = interpretEmailArray($table, $fields);
+  return $table;
+}
+
+function interpretEmailArray( $emails, $fields ){
+  global $args;
+  if( $args[&#39;parsed&#39;][&#39;hashtags&#39;] ) $fields[] = &quot;hashtags&quot;;
+  if( $args[&#39;parsed&#39;][&#39;numbers&#39;] )  $fields[] = &quot;numbers&quot;;
+  $t = new tagParser();
+  if( $args[&#39;parsed&#39;][&#39;prices&#39;] )
+    foreach( $t-&gt;currencies as $currency =&gt; $v ) $fields[] = $currency;
+  foreach( $emails as $k =&gt; $email ){
+    $t-&gt;parse( $email[&#39;subject&#39;] );
+    $parsed = $t-&gt;getParsed();
+    if( $args[&#39;parsed&#39;][&#39;hashtags&#39;] ) $emails[$k][&#39;hashtags&#39;] = implode(&quot;,&quot;, $parsed[&#39;tags&#39;]);
+    if( $args[&#39;parsed&#39;][&#39;numbers&#39;] ) $emails[$k][&#39;numbers&#39;] = implode(&quot;,&quot;, $parsed[&#39;numbers&#39;]);
+    if( $args[&#39;parsed&#39;][&#39;prices&#39;] )
+      foreach( $t-&gt;currencies as $currency =&gt; $v ) 
+        $emails[$k][$currency] = count($parsed[&#39;prices&#39;][$currency]) ? $parsed[&#39;prices&#39;][$currency][0] : 0;
+        //$emails[$k][$currency] = implode(&quot;,&quot;,$parsed[&#39;prices&#39;][$currency]);
+  }
+  if( $args[&#39;parsed&#39;][&#39;output&#39;] == &quot;csv&quot; ){
+    array_unshift($emails, $fields);
+  }
+  return $emails;
+}
+
+function display( $inbox, $emails ){
+  global $args;
+  if(  is_array($emails)  ){
+    $table = convertEmailsToArray( $inbox, $emails );
+  }else return;
+  switch( $args[&#39;parsed&#39;][&#39;output&#39;]  ){
+    case &quot;json&quot; : print( json_encode( (object)array( &quot;emails&quot; =&gt; $table) ) ); break;
+    case &quot;csv&quot;  : $file = &#39;/tmp/imapmunch.csv&#39;;
+                  $fp = fopen( $file, &#39;w&#39;);
+                  foreach ($table as $fields) fputcsv($fp, $fields);
+                  fclose($fp);
+                  print(file_get_contents($file));
+                  unlink($file);
+                  break;
+    case &quot;xml&quot;  : 
+                  $xml = new SimpleXMLElement(&#39;&lt;imap/&gt;&#39;);
+                  foreach( $table as $k =&gt; $v ) $table[$k] = array_flip($v);
+                  array_walk_recursive( $table, array ($xml, &#39;addChild&#39;));
+                  print( $xml-&gt;asXML() );
+                  break;
+    default: print_r($table); break;
+  }
+}
+
+function downloadAttachements( $inbox, $emailno, $downloadpath, $filetypes = false ){
+  if( !is_dir($downloadpath) || !is_writable($downloadpath) ) return;
+  $structure = imap_fetchstructure($inbox,$emailno);
+
+  $attachments = array();
+  if(isset($structure-&gt;parts) &amp;&amp; count($structure-&gt;parts)) {
+    for($i = 0; $i &lt; count($structure-&gt;parts); $i++) {
+      $attachments[$i] = array(
+         &#39;is_attachment&#39; =&gt; false,
+         &#39;filename&#39; =&gt; &#39;&#39;,
+         &#39;name&#39; =&gt; &#39;&#39;,
+         &#39;attachment&#39; =&gt; &#39;&#39;);
+
+      if($structure-&gt;parts[$i]-&gt;ifdparameters) {
+        foreach($structure-&gt;parts[$i]-&gt;dparameters as $object) {
+          if(strtolower($object-&gt;attribute) == &#39;filename&#39;) {
+            $attachments[$i][&#39;is_attachment&#39;] = true;
+            $attachments[$i][&#39;filename&#39;] = $object-&gt;value;
+          }
+        }
+      }
+
+      if($structure-&gt;parts[$i]-&gt;ifparameters) {
+        foreach($structure-&gt;parts[$i]-&gt;parameters as $object) {
+          if(strtolower($object-&gt;attribute) == &#39;name&#39;) {
+            $attachments[$i][&#39;is_attachment&#39;] = true;
+            $attachments[$i][&#39;name&#39;] = $object-&gt;value;
+          }
+        }
+      }
+
+      if($attachments[$i][&#39;is_attachment&#39;]) {
+        $file = $downloadpath.$emailno.&quot;_{$attachments[$i][&#39;filename&#39;]}&quot;;
+        if( !is_file($file) ){
+          $attachments[$i][&#39;attachment&#39;] = imap_fetchbody($inbox, $emailno, $i+1);
+          if($structure-&gt;parts[$i]-&gt;encoding == 3) { // 3 = BASE64
+            $attachments[$i][&#39;attachment&#39;] = base64_decode($attachments[$i][&#39;attachment&#39;]);
+          }
+          elseif($structure-&gt;parts[$i]-&gt;encoding == 4) { // 4 = QUOTED-PRINTABLE
+            $attachments[$i][&#39;attachment&#39;] = quoted_printable_decode($attachments[$i][&#39;attachment&#39;]);
+          }
+        }  
+      }             
+    } // for($i = 0; $i &lt; count($structure-&gt;parts); $i++)
+  } // if(isset($structure-&gt;parts) &amp;&amp; count($structure-&gt;parts))
+
+  $files = array();
+  if(count($attachments)!=0){
+    foreach($attachments as $at){
+      if($at[&#39;is_attachment&#39;]==1){
+        $i = 1; 
+        $file = $downloadpath.$emailno.&quot;_{$at[&#39;filename&#39;]}&quot;;
+        $write = ( $filetypes == false );
+        if( is_array($filetypes) ){
+          foreach( $filetypes as $filetype )
+            if( strstr( $at[&#39;filename&#39;], $filetype ) &amp;&amp; $files[] = $file )
+              $write = true;
+        }
+        if( $write &amp;&amp; !is_file($file) ){
+          $files[] = $file;
+          print_stderr(&quot;[email #{$emailno}] writing &#39;{$file}&#39;\n&quot;);          
+          file_put_contents($file, $at[&#39;attachment&#39;]);
+        }
+      }
+    }
+  }
+  return implode(&quot;,&quot;, $files );
+}
+
+// write to stderr (so bash textmanipulation will not break)
+function print_stderr($msg){
+  fwrite(STDERR,$msg);
+}
+
+function close($inbox){
+  /* close the connection */
+  imap_close($inbox);
+}
+
+/** 
+ * File:        class.tagparser.php
+ * Date:        Fri 18 Jan 2013 05:30:45 PM CET
+ *
+ * easily parses tokens, hashtags,prices from strings
+ *  
+ * Changelog:
+ *  
+ *  [Fri 18 Jan 2013 05:30:45 PM CET] 
+ *    first sketch from scratch
+ *
+ * @todo whatever your want
+ *  
+ * Usage example: 
+ * &lt;code&gt;  
+ *   $t = new tagParser();
+ *   if( $t-&gt;parse( &quot;hey #hoo #foo 123Euro&quot; ) ){
+ *     $arr = $t-&gt;getParsed();
+ *     print_r($arr);
+ *   }else die(&quot;oops&quot;);
+ * &lt;/code&gt;
+ *  
+ * @version $id$
+ * @copyright 2013 Coder of Salvation
+ * @author Coder of Salvation, sqz &lt;info@leon.vankammen.eu&gt;
+ * @package %package%
+ *  
+ * @license BSD
+ * %license%
+ *
+ * Copyright 2013, Coder of Salvation. All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, are
+ * permitted provided that the following conditions are met:
+ * 
+ *    1. Redistributions of source code must retain the above copyright notice, this list of
+ *       conditions and the following disclaimer.
+ * 
+ *    2. Redistributions in binary form must reproduce the above copyright notice, this list
+ *       of conditions and the following disclaimer in the documentation and/or other materials
+ *       provided with the distribution.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY CODER OF SALVATION ``AS IS&#39;&#39; AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ * FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL &lt;COPYRIGHT HOLDER&gt; OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * 
+ * The views and conclusions contained in the software and documentation are those of the
+ * authors and should not be interpreted as representing official policies, either expressed
+ * or implied, of Coder of Salvation.
+ * 
+ */
+class tagParser {
+
+  private $tokens = array();
+  private $currencyDefault = &quot;forint&quot;;
+  private $priceOperator = -1; // numbers without + or - will be negative prices.
+
+  // note: use lowercase for optimal recognition
+  public $currencies = array( &quot;forint&quot; =&gt; array(&quot;ft&quot;,&quot;forint&quot;,&quot;huf&quot;),
+                              &quot;euro&quot;   =&gt; array(&quot;e&quot;,&quot;eu&quot;,&quot;euro&quot;)
+                             );
+
+  public function __construct(){
+    $this-&gt;reset();
+  }
+
+  /**
+   * Checks to see if a string ends with substring
+   */
+  private function stringEndsWith($whole, $end) {
+      return @(strpos($whole, $end, strlen($whole) - strlen($end)) !== false);
+  }
+
+  /**
+   * Checks to see if a string starts with substring
+   */
+  private function stringStartsWith($whole, $end) {
+    if(substr($whole, 0, strlen($end)) == $end) {
+      return true;
+    }
+    return false;
+  }
+
+
+  private function tokenise($text) {
+    $text = (string)$text;
+    $text = trim($text);
+    $text = preg_replace(&quot;/[^a-zA-Z0-9\ ]/&quot;, &quot; $0 &quot;, $text);
+    $text = preg_replace(&quot;/\ \ +/&quot;, &quot; &quot;, $text);
+    $words = explode(&quot; &quot;, $text);
+    return $words;
+  }
+
+  private function preProcess($text){
+    foreach( $this-&gt;currencies as $currency =&gt; $variations )
+      foreach( $variations as $variation )
+        $text = str_replace( &quot; {$variation}&quot;, $variation, $text );
+    return $text;
+  }
+
+  private function getCurrency($token){
+    foreach( $this-&gt;currencies as $currency =&gt; $variations )
+      foreach( $variations as $variation )
+        if( $this-&gt;stringEndsWith( $variation, strtolower($token) ) )
+          return $currency;
+    return $this-&gt;currencyDefault;
+  }
+
+  private function stripCurrency($token){
+    foreach( $this-&gt;currencies as $currency =&gt; $variations )
+      foreach( $variations as $variation )
+        if( $this-&gt;stringEndsWith( strtolower($token), $variation ) )
+          return str_replace( $variation, &quot;&quot;, strtolower($token) );
+    return $this-&gt;currencyDefault;
+  }
+
+  private function reset($text=false){
+    $this-&gt;tokens = array(
+      &#39;tokens_all&#39;        =&gt; $this-&gt;tokenise($text),
+      &#39;tokens_whitespace&#39; =&gt; explode(&quot; &quot;,$text),
+      &#39;tags&#39;              =&gt; array(),
+      &#39;numbers&#39;           =&gt; array(),
+      &#39;prices&#39;            =&gt; array(),
+    );
+    foreach( $this-&gt;currencies as $currency =&gt; $variations )
+      $this-&gt;tokens[&#39;prices&#39;][$currency] = array();
+  }
+
+  public function parse( $text ){
+    $text = $this-&gt;preProcess($text);
+    $this-&gt;reset($text);
+    foreach( $this-&gt;tokens[&#39;tokens_whitespace&#39;] as $token ){
+      // scan tags
+      if( $token[0] == &quot;#&quot; ) $this-&gt;tokens[&#39;tags&#39;][] = strtolower($token);
+      // scan numbers and prices
+      $tokenStripped = $this-&gt;stripCurrency($token);
+      if( is_numeric($tokenStripped) ){
+        $currency = $this-&gt;getCurrency( $token );
+        $this-&gt;tokens[&#39;prices&#39;][ $currency ][] = ($token[0] != &quot;-&quot; &amp;&amp; $token[0] != &quot;+&quot;) ?
+                                                 $this-&gt;priceOperator * (int)$token :
+                                                 (int)$token;
+        $this-&gt;tokens[&#39;numbers&#39;][] = (int)$this-&gt;stripCurrency($token);
+      }
+
+    }
+  }
+
+  public function getParsed(){
+    return $this-&gt;tokens;
+  }
+
+}
+
+
+?&gt;
+
+</pre></noscript>  

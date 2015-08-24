@@ -1,0 +1,117 @@
+#!/bin/bash 
+
+SELF_PATH="$(dirname "$(readlink -f "$0")" )"
+cd $SELF_PATH
+
+footer='
+  <br><br>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = "coderofsalvation"; // required: replace example with your forum shortname
+
+      /* * * DONT EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement("script"); dsq.type = "text/javascript"; dsq.async = true;
+          dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+          (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  <br><Br>
+  <img src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"/><br>
+  <small>All rights reserved by Leon van Kammen under this <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank">license</a></small>
+    <!-- Analytics
+    ================================================== -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-10900009-2"]);
+    _gaq.push(["_trackPageview"]);
+    (function() {
+      var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+      ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+      var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+'
+
+banner_audio='
+  <div style="padding: 0em 0em 1.0em 0em; margin: 0em 0em 1.0em 0em; float:left; width:32.0em">
+    <a href="index.html" style="text-decoration:none">
+      <span style="font-size:0.7em; color:#079;">
+        Sounddesign by Leon van Kammen&#8482; &nbsp; &#8212; music / soundfx / soundtech / dsp / plugins
+      </span>
+    </a>
+  </div>
+'
+
+banner_yoga='
+  <div style="padding: 0em 0em 1.0em 0em; margin: 0em 0em 1.0em 0em; float:left; width:32.0em">
+    <a href="index.html" target="_blank">
+      <img src="res/yoga_logo.jpg" style="text-align:left"/>
+    </a>
+    <span style="font-size:0.7em; color:#079;">
+      Leon van Kammen&#8482; &nbsp; &#8212; yoga / yogatech / meditation
+    </span>
+  </div>
+'
+
+banner_tech='
+  <div style="padding: 0em 0em 1.0em 0em; margin: 0em 0em 1.0em 0em; float:left; width:32.0em">
+    <a href="../" target="_blank">
+      <img src="res/logo_small.png" style="text-align:left"/>
+    </a>
+    <span style="font-size:0.7em; color:#079;">
+      Coder of Salvation&#8482; &nbsp; &#8212; programming / opensource / console / minimal
+    </span>
+  </div>
+'
+
+printindex(){
+  dirname="$1"
+  printf "<ul>"
+  ls $dirname/*.html | grep -v "index.html" | while read line; do 
+    title=$(basename "$line" | sed 's/-/ /g;s/\.html//g' | awk 'BEGIN { RS="\n"; FS=""; ORS=" "; OFS=""; } { $1=toupper($1); print $0 }')
+    printf "<li><a href='$(basename "$line")'>$title</a></li>"
+  done
+  printf "</ul>"
+}
+
+export HTML_FOOTER="$footer"
+if [[ -n "$1" ]]; then 
+  if echo "$1" | grep -q "audio"; then export HTML_BANNER="$banner_audio"; fi
+  if echo "$1" | grep -q "tech"; then export HTML_BANNER="$banner_tech"; fi
+  $SELF_PATH/md2x htmlcssindex "$1"
+else
+
+  if [[ -n $YOGA ]]; then 
+	  export HTML_BANNER="$banner_yoga"
+	  dir="custom/pages/blog/yoga"
+	  HTMLTITLE="- Patanjali Yoga Sutras (chitta vritti nirodhah pramana viparyaya vikalpa nidra smritayah)" cli/md2x htmlcssindex "$dir"
+	  sed -ie 's|%links%|'"$(printindex $dir)"'|g' "$dir/index.html"
+  fi
+
+  if [[ -n $TECH ]]; then 
+	  export HTML_BANNER="$banner_tech"
+	  dir="custom/pages/blog/tech"
+	  cli/md2x htmlcssindex "$dir"
+	  sed -ie 's|%links%|'"$(printindex $dir)"'|g' "$dir/index.html"
+  fi
+
+  if [[ -n $ENTREPENEUR ]]; then
+	  ls custom/pages/blog/entrepeneur/*.md | while read file; do 
+	    echo "[x] '$file' (processing)"
+	    cli/md2x html "$file";
+	  done
+  fi
+
+  if [[ -n $AUDIO ]]; then
+	  export HTML_BANNER="$banner_audio"
+	  dir="custom/pages/blog/audio"
+	  $SELF_PATH/cli/md2x htmlcssindex custom/pages/blog/audio
+	  sed -ie 's|%links%|'"$(printindex $dir)"'|g' "$dir/index.html"
+  fi
+
+fi
