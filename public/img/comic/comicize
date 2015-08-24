@@ -1,0 +1,22 @@
+#!/bin/bash 
+
+[[ ! -n "$1" ]] && echo "usage: $0 <image> <outimage> <title> <thickness=200> <whiteoffset=20> <tracetreshold=15> <curvetreshold=4> <zoom=2>" && exit 1
+file="$1"
+outfile="$2"
+title="$3"
+thickness="$4"
+whiteoffset="$5"
+tracetreshold="$6"
+curvetreshold="$7"
+zoom="$8"
+bitmap="$file.bmp"
+convert -resize "$thickness" -normalize -level $whiteoffset%,99% "$file" "$bitmap"
+cat "$bitmap" | mkbitmap -f "$curvetreshold" -s "$zoom" -t 0.49 | potrace -t "$tracetreshold" -a 1.33 -O 50 -b pgm > "$file.pgm"
+#convert -set option:my:left_edge '0,%[fx:h/2]' \
+# \( -undercolor '#00000080' label:'Copyright leon.vankammen.eu' \
+#    +distort SRT '%[fx:w/2],%h 1 90 %[my:left_edge]' \
+# \) -flatten -bordercolor '#555555' -border 2x2 "$file.pgm" "$outfile"
+convert -fill black -pointsize 14 -gravity South -annotate +0+8 "$title" \
+ -fill blue -pointsize 9 -gravity northeast -annotate +0+5 "copyright leon.vankammen.eu" \
+ -bordercolor '#555555' -border 2x2 "$file.pgm" "$outfile"
+#rm *.bmp *.pbm
