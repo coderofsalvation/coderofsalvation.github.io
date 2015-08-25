@@ -181,7 +181,7 @@ Viewers can look up where the leaf is going on a specially created google maps p
 <h3>Gogbot Feeling: OpenGL C++ Screensaver</h3>
 <blockquote>
 
-<div class="curved-s"><img src="/public/img/portfolio/gogbot_.gif"></div>Next to fractals, a screensaver is one of those things every developer needs to create once in his life.
+<div class="curved-s"><img src="/public/img/portfolio/gogbot_.gif"></div>Next to fractals, a screensaver is one of those things every developer needs to create at least once in his lifetime.
 <br><br><small>Tags: C++, OpenGL</small>
 </blockquote>
 </div>
