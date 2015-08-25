@@ -84,7 +84,7 @@ Viewers can look up where the leaf is going on a specially created google maps p
 <div class="row">
 <h3>NEZART PHP Procedural Art Generator </h3>
 <blockquote>
-<div class="curved-s"><img align="left" src="/public/img/portfolio/nezart_.gif"></div>The NEZART generator is a coop between Artists Roy Gerritsen (www.boompje.com), Tim Gerritsen (www.mannetje.org) and me. The idea was to try to generate art according to some subset of design rules. Of course, this ended up in some nice unpredictable art. Its still beta, but we are able to generate lots of varying art which have the same vibe.
+<div class="curved-s"><img align="left" src="/public/img/portfolio/nezart_.gif"></div>The NEZART generator is a coop between Artists Roy Gerritsen (www.boompje.com), Tim Gerritsen (www.mannetje.org) and me. The idea was to try to generate art according to some subset of design rules. Of course, this ended up in some nice unpredictable art. Its still beta, but we are able to generate lots of cool art. 
 <br><br><small>Tags: PHP5, GDLib, creative, wild </small>
 </blockquote>
 </div>
