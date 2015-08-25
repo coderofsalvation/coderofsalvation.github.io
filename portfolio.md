@@ -216,7 +216,7 @@ Viewers can look up where the leaf is going on a specially created google maps p
 <div class="row">
 <h3>T-rings Satellite site</h3>
 <blockquote>
-<div class="curved-s"><img align="left" src="/public/img/portfolio/t-rings_.gif"></div>Satelliet site of ringtonesociety where you can download the ringtones for your mobile device.<br> Techniques: PHP/MySQL/Flash/Javascript.
+<div class="curved-s"><img align="left" src="/public/img/portfolio/t-rings_.gif"></div>Subwebsites of ringtone society (see below) where users can download the ringtones for your mobile device.<br> Techniques: PHP/MySQL/Flash/Javascript.
 <br><br><small>Tags: IZI Services</small>
 </blockquote>
 </div>
