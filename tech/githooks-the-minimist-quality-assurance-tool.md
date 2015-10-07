@@ -1,7 +1,7 @@
 Githooks the minimist quality assurance tool
 ============================================
 
-### Problem
+## Problem
 
 * You want to prevent broken commits
 * You want to prevent pushing unwanted debug-code
@@ -17,7 +17,7 @@ But sometimes a teaspoon a bash and one slice of githook will do as well.
 
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/2000px-Git-logo.svg.png" width="50%"/></center>
 
-### Example
+## Example
 
 This simple approach worked well for me so far:
 
@@ -34,7 +34,7 @@ This simple approach worked well for me so far:
 
 It basically automates all the steps 
 
-### Instructions
+## Instructions
 
     $ mv .git/hooks .hooks 
     $ cd .git && ln -s ../.hooks hooks && cd - 

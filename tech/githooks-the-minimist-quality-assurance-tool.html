@@ -320,7 +320,7 @@
     }
   </style>
 <h1>Githooks the minimist quality assurance tool</h1>
-<h3>Problem</h3>
+<h2>Problem</h2>
 <ul>
 <li>
 You want to prevent broken commits
@@ -336,7 +336,7 @@ You want to proofread your code before pushing
 <h3>Solution: githook</h3>
 <p>Sure, there are zillions of quality assurance tools out there, and they're great. But sometimes a teaspoon a bash and one slice of githook will do as well.</p>
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/2000px-Git-logo.svg.png" width="50%"/></center>
-<h3>Example</h3>
+<h2>Example</h2>
 <p>This simple approach worked well for me so far:</p>
 <code><pre>
 $ git commit -m "foo"
@@ -351,7 +351,7 @@ commit finally? (y/n) y
 $ git push origin master
 </pre></code>
 <p>It basically automates all the steps </p>
-<h3>Instructions</h3>
+<h2>Instructions</h2>
 <code><pre>
 $ mv .git/hooks .hooks 
 $ cd .git &amp;&amp; ln -s ../.hooks hooks &amp;&amp; cd - 
