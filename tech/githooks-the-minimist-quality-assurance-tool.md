@@ -60,6 +60,17 @@ It basically automates all the steps
 
 Voila! Now you have repo-specific hooks which are easily extenable.
 
-## Tips
+## Server specific actions on pull
+
+Similar things can be done on a (live)server with the `hooks/post-update` hook, for example:
+
+    [[ $(</etc/hostname) == "liveserver" && $branch != "master" ]] && { echo "only master branch on liveserver, aborting.."; exit 1; }
+    [[ -x patches/$commit.php ]] && patches/$commit.php
+
+> I am aware of phrases like "git is not a deployment tool", "never use root", "bash is dangerous" and other totalitarian expressions parrotted around the web.
+> However I'm more a proponent of "many things can be done in many ways", and "learn your tools/languages"
+> Actually I would recommend distrusting anybody who promotes one way of doing things.
+
+## More Githook Tips
 
 For more inspiration see [here](http://codeinthehole.com/writing/tips-for-using-a-git-pre-commit-hook/)

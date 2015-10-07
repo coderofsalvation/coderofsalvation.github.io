@@ -376,7 +376,16 @@ $ vi .hooks/pre-commit
 $ git add .hooks &amp;&amp; git commit -m "added hooks"$
 </pre></code>
 <p>Voila! Now you have repo-specific hooks which are easily extenable.</p>
-<h2>Tips</h2>
+<h2>Server specific actions on pull</h2>
+<p>Similar things can be done on a (live)server with the <code>hooks/post-update</code> hook, for example:</p>
+<code><pre>
+[[ $(&lt;/etc/hostname) == "liveserver" &amp;&amp; $branch != "master" ]] &amp;&amp; { echo "only master branch on liveserver, aborting.."; exit 1; }
+[[ -x patches/$commit.php ]] &amp;&amp; patches/$commit.php
+</pre></code>
+<blockquote>
+<p>I am aware of phrases like "git is not a deployment tool", "never use root", "bash is dangerous" and other totalitarian expressions parrotted around the web. However I'm more a proponent of "many things can be done in many ways", and "learn your tools/languages" Actually I would recommend distrusting anybody who promotes one way of doing things.</p>
+</blockquote>
+<h2>More Githook Tips</h2>
 <p>For more inspiration see <a href="http://codeinthehole.com/writing/tips-for-using-a-git-pre-commit-hook/">here</a></p>
   <br><br>
   <div id="disqus_thread"></div>
