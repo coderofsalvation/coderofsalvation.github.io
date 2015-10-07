@@ -3,7 +3,7 @@
   <head>
   <meta charset=utf-8 />
   <meta name="viewport" content="width=620" />
-  <title>Javascript simple plugin system </title>
+  <title>Githooks the minimist quality assurance tool </title>
   </head>
   <body>
   
@@ -27,11 +27,11 @@
 	<option   value="conditional-cron-is-our-friend.html">&nbsp;Conditional cron is our friend </option>
 	<option   value="emailing-poormans-ascii-graphs-using-unix-tree.html">&nbsp;Emailing poormans ascii graphs using unix tree </option>
 	<option   value="flexible-sql-columns-for-production-servers.html">&nbsp;Flexible sql columns for production servers </option>
-	<option   value="githooks-the-minimist-quality-assurance-tool.html">&nbsp;Githooks the minimist quality assurance tool </option>
+	<option selected='selected'  value="githooks-the-minimist-quality-assurance-tool.html">&nbsp;Githooks the minimist quality assurance tool </option>
 	<option   value="imapmunch-easy-way-to-select-and-parse-imap-email-on-the-commandline.html">&nbsp;Imapmunch easy way to select and parse imap email on the commandline </option>
 	<option   value="javascript-errors-on-productionservers.html">&nbsp;Javascript errors on productionservers </option>
 	<option   value="javascript-memory-leaks.html">&nbsp;Javascript memory leaks </option>
-	<option selected='selected'  value="javascript-simple-plugin-system.html">&nbsp;Javascript simple plugin system </option>
+	<option   value="javascript-simple-plugin-system.html">&nbsp;Javascript simple plugin system </option>
 	<option   value="looping-over-array-in-node-red-nodejs-iteration.html">&nbsp;Looping over array in node red nodejs iteration </option>
 	<option   value="md2x-a-minimalistic-markdown-bashscript.html">&nbsp;Md2x a minimalistic markdown bashscript </option>
 	<option   value="mobile-webapps-are-great.html">&nbsp;Mobile webapps are great </option>
@@ -319,45 +319,65 @@
       border: 0;
     }
   </style>
-<h1>Javascript simple plugins</h1>
-<h3>Statement </h3>
-<p><em>In an ideal world clients always know what they want, and programmers know how to design it.</em></p>
-<h3>Reality </h3>
-<p>Unfortunately, this isnt the case, especially if you're building something original from scratch. Putting code into plugins is a great way of seperating feature-code from engine-code.</p>
-<blockquote>
-<p>NOTE: the code below probably will not compile out of the box since        its a snippet of productioncode       ..but you'll get the idea      </p>
-</blockquote>
-<h3>youapp.js </h3>
+<h1>Githooks the minimist quality assurance tool</h1>
+<h3>Problem</h3>
+<ul>
+<li>
+You want to prevent broken commits
+</li><li>
+You want to prevent pushing unwanted debug-code
+</li><li>
+You want to prevent pushing outdated documentation 
+</li><li>
+You want to proofread your code before pushing
+</li>
+</ul>
+<p>How to automate your workflow with these concerns?</p>
+<h3>Solution: githook</h3>
+<p>Sure, there are zillions of quality assurance tools out there, and they're great. But sometimes a teaspoon a bash and one slice of githook will do as well.</p>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/2000px-Git-logo.svg.png" width="50%"/></center>
+<h3>Example</h3>
+<p>This simple approach worked well for me so far:</p>
 <code><pre>
-(function(){
-  var yourapp = {
-
-     init: function(){
-       for( i in this.plugin ){
-         this.plugin[i](this);
-         _trace("plugin '"+i+"' registered succesfully");
-       }
-     }
-  };
-})();
+$ git commit -m "foo"
+update + add version in README.md
+generate docs (y/n) ? n
+checking debug calls..
+client.js:345+ trace "fooo"
+continue (y/n)? y
+scanning for forbidden calls ( process.exit() / die() etc) ....none found
+running tests?...no because branch != master
+commit finally? (y/n) y
+$ git push origin master
 </pre></code>
-<h3>plugin.rotate.js </h3>
+<p>It basically automates all the steps </p>
+<h3>Instructions</h3>
 <code><pre>
-function reverseRotate(yourapp){
-  var reverse = (yourapp.frames['@rotate'] != "right");
-  _trace( yourapp.frames );
-  if( reverse ) yourapp.frames = array_reverse(yourapp.frames);
-  if( reverse ) _trace("reversing array");
-  _trace( yourapp.frames );
-};
-yourapp.plugin['rotatedirection'] = function(yourapp){
-  yourapp.event.addListener( "FRAMES_LOADED", reverseRotate );
-}
+$ mv .git/hooks .hooks 
+$ cd .git &amp;&amp; ln -s ../.hooks hooks &amp;&amp; cd - 
+$ ls -la .git/
+drwxr-xr-x  5 sqz sqz 4.0K Oct  7 10:31 ..
+drwxr-xr-x  7 sqz sqz 4.0K Oct  7 10:31 .
+drwxr-xr-x 25 sqz sqz 4.0K Oct  7 10:31 objects
+drwxr-xr-x  3 sqz sqz 4.0K Oct  5 13:52 logs
+drwxr-xr-x  5 sqz sqz 4.0K Oct  5 13:52 refs
+drwxr-xr-x  2 sqz sqz 4.0K Oct  5 13:52 branches
+drwxr-xr-x  2 sqz sqz 4.0K Oct  5 13:52 info
+-rw-r--r--  1 sqz sqz 1.2K Oct  7 10:31 index
+lrwxrwxrwx  1 sqz sqz    9 Oct  7 10:31 hooks -> ../.hooks    &lt;-----------------------
+-rw-r--r--  1 sqz sqz   16 Oct  5 13:59 COMMIT_EDITMSG
+-rwxr--r--  1 sqz sqz  239 Oct  5 13:54 config
+-rw-r--r--  1 sqz sqz  117 Oct  5 13:52 FETCH_HEAD
+-rw-r--r--  1 sqz sqz   73 Oct  5 13:52 description
+-rw-r--r--  1 sqz sqz   23 Oct  5 13:52 HEAD
+$ mv .hooks/pre-commit{.sample,}
+$ vi .hooks/pre-commit
+( edit the hook and call other scripts e.g. but remember the script needs to exit with exitcode 0 to do the actual commit )
+$ git add .hooks &amp;&amp; git commit -m "added hooks"$
 </pre></code>
-<h3>Benefits </h3>
-<p>At a later point, you can always decide to integrate things in the engine, or to totally abandon a plugin. Its a good strategy to have a placeholder for 'wild features', without introducing <em>codesmell</em> in your <em>core code</em>. It makes programming new features fun, readable and maintainable.</p>
-<h3>Personal note </h3>
-<p>I found out, that simple by refactoring the code everytime, this is not fun. Its not fun to refactor the code everytime certain features are introduced. So with 'never repeat yourself' in mind, I decided that postponing refactoring would be wise by using plugins. Then at a later time I always can refactor the code at a moment I want, without having the burden of codesmell.</p>
+<p>Voila! Now you have repo-specific hooks which are easily extenable.</p>
+<h2>Tips</h2>
+<p>For more inspiration see <a href="http://codeinthehole.com/writing/tips-for-using-a-git-pre-commit-hook/">here</a></p>
   <br><br>
   <div id="disqus_thread"></div>
   <script type="text/javascript">

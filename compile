@@ -89,28 +89,28 @@ else
   if [[ -n $YOGA ]]; then 
 	  export HTML_BANNER="$banner_yoga"
 	  dir="custom/pages/blog/yoga"
-	  HTMLTITLE="- Patanjali Yoga Sutras (chitta vritti nirodhah pramana viparyaya vikalpa nidra smritayah)" cli/md2x htmlcssindex "$dir"
+	  HTMLTITLE="- Patanjali Yoga Sutras (chitta vritti nirodhah pramana viparyaya vikalpa nidra smritayah)" md2x htmlcssindex "$dir"
 	  sed -ie 's|%links%|'"$(printindex $dir)"'|g' "$dir/index.html"
   fi
 
   if [[ -n $TECH ]]; then 
 	  export HTML_BANNER="$banner_tech"
-	  dir="custom/pages/blog/tech"
-	  cli/md2x htmlcssindex "$dir"
+	  dir="tech"
+	  md2x htmlcssindex "$dir"
 	  sed -ie 's|%links%|'"$(printindex $dir)"'|g' "$dir/index.html"
   fi
 
   if [[ -n $ENTREPENEUR ]]; then
 	  ls custom/pages/blog/entrepeneur/*.md | while read file; do 
 	    echo "[x] '$file' (processing)"
-	    cli/md2x html "$file";
+	    md2x html "$file";
 	  done
   fi
 
   if [[ -n $AUDIO ]]; then
 	  export HTML_BANNER="$banner_audio"
 	  dir="custom/pages/blog/audio"
-	  $SELF_PATH/cli/md2x htmlcssindex custom/pages/blog/audio
+	  md2x htmlcssindex custom/pages/blog/audio
 	  sed -ie 's|%links%|'"$(printindex $dir)"'|g' "$dir/index.html"
   fi
 
