@@ -10,6 +10,8 @@ title: ohmygraph! Nodejs and backbone with less backbone
   
 </div>
 
+> UPDATE: It seems nowadays Backbone *does* support exotic api layouts by _overriding the REST sync_-function
+
 # Why?
 
 Backbone / Restangular easily generate a restclient, but only if it matches a certain api layout.
