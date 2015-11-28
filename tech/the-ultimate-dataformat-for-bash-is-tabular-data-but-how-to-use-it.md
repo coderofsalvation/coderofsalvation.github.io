@@ -1,4 +1,4 @@
-The ultimate dataformat for Bash: tab,space, and comma seperated? But how?
+The ultimate dataformat for Bash: tab,space, and comma separated? But how?
 ==========================================================================
 
 ### Problem ###
