@@ -20,6 +20,7 @@
   <div style="width:20.0em;float:right">
     <select style="width:100%" onchange="document.location.href = this.options[ this.selectedIndex ].value">
       	<option   value="index.html">/&nbsp;Home</option> 	<option   value="actionscript-trace-cpu-hogs.html">&nbsp;Actionscript trace cpu hogs </option>
+	<option   value="advanced-git-aliases-for-ninjas.html">&nbsp;Advanced git aliases for ninjas </option>
 	<option   value="automatic-tracing-handdrawn-scans-into-vector-images-in-linux.html">&nbsp;Automatic tracing handdrawn scans into vector images in linux </option>
 	<option   value="avs-vjgen-an-triggercode-generator.html">&nbsp;Avs vjgen an triggercode generator </option>
 	<option   value="bash-and-dataformats.html">&nbsp;Bash and dataformats </option>
@@ -356,7 +357,7 @@ Enter file in which to save the key (/var/lib/openshift/54228f2a5973ca43cc000b8e
 <p>Now lets create an ssh wrapper:</p>
 <code><pre>
 $ cd $OPENSHIFT_DATA_DIR
-$ echo 'ssh -t -o "StrictHostKeyChecking no" -i $OPENSHIFT_DATA_DIR/id_rsa "$1" "$2"' > sshwrapper
+$ echo -e '#!/bin/bash\nssh -t -o "StrictHostKeyChecking no" -i $OPENSHIFT_DATA_DIR/id_rsa "$@"' > sshwrapper
 $ chmod 755 sshwrapper
 </pre></code>
 <p>Then run this (just to test, or in your deployscript):</p>
@@ -366,7 +367,7 @@ GIT_SSH=$OPENSHIFT_DATA_DIR/sshwrapper npm update  git+ssh://git@bitbucket.org:y
 </pre></code>
 <p>or simply:</p>
 <code><pre>
-$OPENSHIFT_DATA_DIR/sshwrapper clone ssh://git@bitbucket.org:yourname/yourrepo.git
+$OPENSHIFT_DATA_DIR/sshwrapper git clone ssh://git@bitbucket.org:yourname/yourrepo.git
 </pre></code>
 <p>Voila! This should work. If not, please revise the steps above, or comment below.</p>
 <h2>In retrospect</h2>

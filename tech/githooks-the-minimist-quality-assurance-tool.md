@@ -12,6 +12,8 @@ How to automate your workflow with these concerns?
 
 ### Solution: githook
 
+> UPDATE: this script has everything below incorporated: [click here](this http://leon.vankammen.eu/tech/advanced-git-aliases-for-ninjas.html)
+
 Sure, there are zillions of quality assurance tools out there, and they're great.
 But sometimes a teaspoon a bash and one slice of githook will do as well.
 

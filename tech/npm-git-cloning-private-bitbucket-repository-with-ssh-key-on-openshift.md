@@ -35,7 +35,7 @@ go to the data dir and create an ssh-key like so:
 Now lets create an ssh wrapper:
 
     $ cd $OPENSHIFT_DATA_DIR
-    $ echo 'ssh -t -o "StrictHostKeyChecking no" -i $OPENSHIFT_DATA_DIR/id_rsa "$1" "$2"' > sshwrapper
+    $ echo -e '#!/bin/bash\nssh -t -o "StrictHostKeyChecking no" -i $OPENSHIFT_DATA_DIR/id_rsa "$@"' > sshwrapper
     $ chmod 755 sshwrapper
 
 Then run this (just to test, or in your deployscript):
@@ -45,7 +45,7 @@ Then run this (just to test, or in your deployscript):
 
 or simply:
 
-    $OPENSHIFT_DATA_DIR/sshwrapper clone ssh://git@bitbucket.org:yourname/yourrepo.git
+    $OPENSHIFT_DATA_DIR/sshwrapper git clone ssh://git@bitbucket.org:yourname/yourrepo.git
 
 Voila! This should work.
 If not, please revise the steps above, or comment below.
