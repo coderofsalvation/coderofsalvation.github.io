@@ -4,17 +4,18 @@ title: About me
 ---
 
 My name is Leon van Kammen, I was originally born in the beautiful [Stadskanaal](https://www.google.hu/maps/place/Stadskanaal,+Netherlands/@50.5653345,6.6503423,6z/data=!4m2!3m1!1s0x47c83bb57e3000c9:0xb8497bdac29f4022?hl=en) in Groningen/NL.<br>
-After graduating I started out as a softwareengineer, and nowadays I love work with people on api/opensource/SaaS/BaaS/PaaS-technology.
-I'm a european DEVTREPENEUR: developer by heart, entrepeneur in mind, running independent projects.
+> I'm a european DEVTREPENEUR: developer by heart, entrepeneur in mind 
+After graduating as a softwareengineer, I worked in IT, went freelance / entrepeneurial but never left my love for hacking.
+Nowadays I love to work with people who are passionate about api/opensource/SaaS/BaaS/PaaS-tech.
 
 ## Achievements
 
-* realized custom websolutions for clients
 * designed and implemented API's and webintegrations
 * founding of a tech office in a foreign country for a startup
 * managing of developerteam
 * founded a couple of supercool projects
 * experience with travel industry & B2B integrations (booking.com, agoda, expedia, airbnb)
+* Bachelor in software engineering 
 
 ## Other achievements 
 
