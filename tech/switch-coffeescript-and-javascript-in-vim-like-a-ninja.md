@@ -1,15 +1,15 @@
 Switch between coffee- and javascript in vim like a ninja
 =========================================================
 
-### Problem
+## Problem
 
 Coffeescript is for me, but not for everybody.
 
-### Solution 
+## Solution 
 
 Code coffeescript, speak/commit javascript 
 
-### How
+## How
 
 I love to cheat with coffeescript while coding native javascript on linux.
 Here's how I swap between pretty easily:
@@ -28,7 +28,7 @@ Here's how I swap between pretty easily:
 * convert any javascript buffer to coffeescript by typing: `c` `>`
 * convert any coffeescript buffer to javascript by typing: `c` `<`
 
-### My thoughts 
+## My thoughts 
 
 This is awesome.
 Also check out the vim plugin for coffeescript](https://github.com/kchmck/vim-coffee-script).
