@@ -78,10 +78,21 @@ put this in your <code>vimrc</code>:
 </ul>
 <p>.</p>
 <code><pre>
+vmap cs :!coffee --no-header -b -p -s&lt;CR>
 nmap cc :! [[ \! -f %:r.coffee ]] &amp;&amp; js2coffee % > %:r.coffee&lt;CR>:sp %:r.coffee&lt;CR>                                                                          
 nmap c> ggVG:!js2coffee&lt;CR>
 nmap c&lt; ggVG:!coffee --no-header -b -p -s&lt;CR> 
 </pre></code>
+<ul>
+<li>
+open a <strong>.js</strong>-file, code some lines of coffeescript 
+</li><li>
+now select those lines using <code>ctrl+shift+v</code> and <code>j</code> (arrow-down)
+</li><li>
+press <code>cs</code> to convert the selection to javascript
+</li>
+</ul>
+<h2>Brutal conversion</h2>
 <ul>
 <li>
 open a <strong>.js</strong>-file, and create/switch-to the <code>.coffee</code>-file by typing: <code>cc</code>

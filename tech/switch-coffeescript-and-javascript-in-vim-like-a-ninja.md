@@ -19,10 +19,16 @@ Here's how I swap between pretty easily:
 
 .
 
+    vmap cs :!coffee --no-header -b -p -s<CR>
     nmap cc :! [[ \! -f %:r.coffee ]] && js2coffee % > %:r.coffee<CR>:sp %:r.coffee<CR>                                                                          
     nmap c> ggVG:!js2coffee<CR>
     nmap c< ggVG:!coffee --no-header -b -p -s<CR> 
 
+* open a __.js__-file, code some lines of coffeescript 
+* now select those lines using `ctrl+shift+v` and `j` (arrow-down)
+* press `cs` to convert the selection to javascript
+
+## Brutal conversion
 
 * open a __.js__-file, and create/switch-to the `.coffee`-file by typing: `cc`
 * convert any javascript buffer to coffeescript by typing: `c` `>`
