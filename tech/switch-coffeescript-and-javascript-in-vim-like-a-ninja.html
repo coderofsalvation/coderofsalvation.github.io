@@ -81,16 +81,23 @@ select the coffeescript
 convert it 
 </li>
 </ul>
-<p>Here's how to code both languages at the same time:</p>
+<h2>How to code both languages at the same time:</h2>
 <ul>
 <li>
 run this once <code>npm install -g js2coffee coffee-script</code> 
 </li><li>
-<p>put this in your <code>vimrc</code>:</p>
-
-<p>" easy expansion to js (>) and compressing to coffeescript (&lt;) vmap c&lt; :!js2coffee<CR> vmap c> :!coffee &#8212;no-header -b -p -s<CR> nmap c&lt; ggVG:!js2coffee<CR> nmap c> ggVG:!coffee &#8212;no-header -b -p -s<CR>:%s/};/};^M/g<CR>  nmap cc :! <a href="" />[ ! -f %:r.coffee ]</a></p>
+put this in your <code>vimrc</code>:
 </li>
 </ul>
+<p>.</p>
+<code><pre>
+" easy expansion to js (>) and compressing to coffeescript (&lt;)
+vmap c&lt; :!js2coffee&lt;CR>
+vmap c> :!coffee --no-header -b -p -s&lt;CR>
+nmap c&lt; ggVG:!js2coffee&lt;CR>
+nmap c> ggVG:!coffee --no-header -b -p -s&lt;CR>:%s/};/};^M/g&lt;CR> 
+nmap cc :! [[ \! -f %:r.coffee ]] &amp;&amp; js2coffee % > %:r.coffee&lt;CR>:sp %:r.coffee&lt;CR>                                                                                                               
+</pre></code>
 <h2>Selections </h2>
 <ul>
 <li>

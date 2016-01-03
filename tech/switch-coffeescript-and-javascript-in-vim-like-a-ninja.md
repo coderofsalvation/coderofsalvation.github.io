@@ -15,10 +15,12 @@ Coffeescript is not for everybody.
 * select the coffeescript
 * convert it 
 
-Here's how to code both languages at the same time:
+## How to code both languages at the same time:
 
 * run this once `npm install -g js2coffee coffee-script` 
 * put this in your `vimrc`:
+
+.
 
     " easy expansion to js (>) and compressing to coffeescript (<)
     vmap c< :!js2coffee<CR>
