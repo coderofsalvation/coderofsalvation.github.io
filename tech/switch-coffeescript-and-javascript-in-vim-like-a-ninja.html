@@ -64,38 +64,49 @@
   </style>
 <h1>Switch between coffee- and javascript in vim like a ninja</h1>
 <h2>Problem</h2>
-<p>Coffeescript is for me, but not for everybody.</p>
+<p>Coffeescript is not for everybody.</p>
 <h2>Solution </h2>
-<p>Code coffeescript, speak/commit javascript </p>
+<ul>
+<li>
+<em>Code</em> in coffeescript, <em>commit</em> javascript 
+</li>
+</ul>
 <h2>How</h2>
-<p>I love to cheat with coffeescript while coding native javascript on linux. Here's how I swap between pretty easily:</p>
+<ul>
+<li>
+Just write coffeescript in .js-files
+</li><li>
+select the coffeescript
+</li><li>
+convert it 
+</li>
+</ul>
+<p>Here's how to code both languages at the same time:</p>
 <ul>
 <li>
 run this once <code>npm install -g js2coffee coffee-script</code> 
 </li><li>
-put this in your <code>vimrc</code>:
+<p>put this in your <code>vimrc</code>:</p>
+
+<p>" easy expansion to js (>) and compressing to coffeescript (&lt;) vmap c&lt; :!js2coffee<CR> vmap c> :!coffee &#8212;no-header -b -p -s<CR> nmap c&lt; ggVG:!js2coffee<CR> nmap c> ggVG:!coffee &#8212;no-header -b -p -s<CR>:%s/};/};^M/g<CR>  nmap cc :! <a href="" />[ ! -f %:r.coffee ]</a></p>
 </li>
 </ul>
-<p>.</p>
-<code><pre>
-vmap cs :!coffee --no-header -b -p -s&lt;CR>
-nmap cc :! [[ \! -f %:r.coffee ]] &amp;&amp; js2coffee % > %:r.coffee&lt;CR>:sp %:r.coffee&lt;CR>                                                                          
-nmap c> ggVG:!js2coffee&lt;CR>
-nmap c&lt; ggVG:!coffee --no-header -b -p -s&lt;CR> 
-</pre></code>
+<h2>Selections </h2>
 <ul>
 <li>
 open a <strong>.js</strong>-file, code some lines of coffeescript 
 </li><li>
 now select those lines using <code>ctrl+shift+v</code> and <code>j</code> (arrow-down)
 </li><li>
-press <code>cs</code> to convert the selection to javascript
+press <code>c></code> to convert the selection to javascript
+</li><li>
+press <code>c&lt;</code> to convert the selection to coffeescript 
 </li>
 </ul>
-<h2>Brutal conversion</h2>
+<h2>File conversion / switching</h2>
 <ul>
 <li>
-open a <strong>.js</strong>-file, and create/switch-to the <code>.coffee</code>-file by typing: <code>cc</code>
+recommended: open a <strong>.js</strong>-file, and create/jump-to the <code>.coffee</code>-file by typing: <code>cc</code>
 </li><li>
 convert any javascript buffer to coffeescript by typing: <code>c</code> <code>></code>
 </li><li>
@@ -103,7 +114,11 @@ convert any coffeescript buffer to javascript by typing: <code>c</code> <code>&l
 </li>
 </ul>
 <h2>My thoughts </h2>
-<p>This is awesome. Also check out the vim plugin for coffeescript](https://github.com/kchmck/vim-coffee-script). The <code>:CoffeeWatch</code> command is pretty handy.</p>
+<p>This is awesome:</p>
+<blockquote>
+<p>think in coffeescript when editing a javascriptfile.</p>
+</blockquote>
+<p>Also check out the vim plugin for coffeescript](https://github.com/kchmck/vim-coffee-script). The <code>:CoffeeWatch</code> command is pretty handy.</p>
   <br><br>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
