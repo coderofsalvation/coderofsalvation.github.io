@@ -21,7 +21,6 @@ Coffeescript is not for everybody.
 * put this in your `vimrc`:
 
 .
-
     " easy expansion to js (>) and compressing to coffeescript (<)
     vmap c< :!js2coffee<CR>
     vmap c> :!coffee --no-header -b -p -s<CR>
@@ -31,10 +30,14 @@ Coffeescript is not for everybody.
 
 ## Selections 
 
+> Selections are handy when you don't want `.coffee` files in your repo (*)
+
 * open a __.js__-file, code some lines of coffeescript 
 * now select those lines using `ctrl+shift+v` and `j` (arrow-down)
 * press `c>` to convert the selection to javascript
 * press `c<` to convert the selection to coffeescript 
+
+* = eventhough [this](http://stackoverflow.com/questions/13645824/can-i-write-npm-package-in-coffeescript) is the adviced approach for modules, there are reasons to not want `.coffee`-files in your repo (clean commits).
 
 ## File conversion / switching
 
