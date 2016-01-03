@@ -7,13 +7,14 @@ Coffeescript is not for everybody.
 
 ## Solution 
 
-* _Code_ in coffeescript, _commit_ javascript 
+> _Code_ in coffeescript, _commit_ javascript 
 
 ## How
 
 * Just write coffeescript in .js-files
 * select the coffeescript
-* convert it 
+* convert it
+* or easily toggle between `.coffee` and `.js`-file
 
 ## How to code both..at the same time?
 
