@@ -81,17 +81,20 @@ select the coffeescript
 convert it 
 </li>
 </ul>
-<h2>How to code both languages at the same time:</h2>
-<ul>
-<li>
-run this once <code>npm install -g js2coffee coffee-script</code> 
-</li><li>
-put this in your <code>vimrc</code>:
-</li>
-</ul>
-
-<p>.     " easy expansion to js (>) and compressing to coffeescript (&lt;)     vmap c&lt; :!js2coffee<CR>     vmap c> :!coffee &#8212;no-header -b -p -s<CR>     nmap c&lt; ggVG:!js2coffee<CR>     nmap c> ggVG:!coffee &#8212;no-header -b -p -s<CR>:%s/};/};^M/g<CR>      nmap cc :! <a href="" />[ ! -f %:r.coffee ]</a></p>
-<h2>Selections </h2>
+<h2>How to code both..at the same time?</h2>
+<p>Install the tools using <code>npm install -g js2coffee coffee-script</code> </p>
+<blockquote>
+<p>put this in your <code>vimrc</code>:</p>
+</blockquote>
+<code><pre>
+" easy expansion to js (>) and compressing to coffeescript (&lt;)
+vmap c&lt; :!js2coffee&lt;CR>
+vmap c> :!coffee --no-header -b -p -s&lt;CR>
+nmap c&lt; ggVG:!js2coffee&lt;CR>
+nmap c> ggVG:!coffee --no-header -b -p -s&lt;CR>:%s/};/};^M/g&lt;CR> 
+nmap cc :! [[ \! -f %:r.coffee ]] &amp;&amp; js2coffee % > %:r.coffee&lt;CR>:sp %:r.coffee&lt;CR>                                                                                                               
+</pre></code>
+<h2>Example: Selections </h2>
 <blockquote>
 <p>Selections are handy when you don't want <code>.coffee</code> files in your repo (<em>)</p>
 </blockquote>
@@ -108,7 +111,7 @@ put this in your <code>vimrc</code>:
 <p>= eventhough <a href="http://stackoverflow.com/questions/13645824/can-i-write-npm-package-in-coffeescript">this</a> is the adviced approach for modules, there are reasons to not want <code>.coffee</code>-files in your repo (clean commits).</p>
 </li>
 </ul>
-<h2>File conversion / switching</h2>
+<h2>Example: switching / converting files</h2>
 <ul>
 <li>
 recommended: open a <strong>.js</strong>-file, and create/jump-to the <code>.coffee</code>-file by typing: <code>cc</code>
