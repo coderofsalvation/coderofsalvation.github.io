@@ -29,14 +29,14 @@ Install the tools using `npm install -g js2coffee coffee-script`
     nmap cc :! [[ \! -f %:r.coffee ]] && js2coffee % > %:r.coffee<CR>:sp %:r.coffee<CR>                                                                                                               
 ## Example: Selections 
 
-> Selections are handy when you don't want `.coffee` files in your repo (*)
+> Selections are handy when you don't want `.coffee` files in your repo (\*)
 
 * open a __.js__-file, code some lines of coffeescript 
 * now select those lines using `ctrl+shift+v` and `j` (arrow-down)
 * press `c>` to convert the selection to javascript
 * press `c<` to convert the selection to coffeescript 
 
-* = eventhough [this](http://stackoverflow.com/questions/13645824/can-i-write-npm-package-in-coffeescript) is the adviced approach for modules, there are reasons to not want `.coffee`-files in your repo (clean commits).
+\* = eventhough [this](http://stackoverflow.com/questions/13645824/can-i-write-npm-package-in-coffeescript) is the adviced approach for modules, there are reasons to not want `.coffee`-files in your repo (clean commits).
 
 ## Example: switching / converting files
 
