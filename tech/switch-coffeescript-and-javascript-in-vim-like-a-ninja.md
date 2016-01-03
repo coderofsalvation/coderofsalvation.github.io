@@ -42,8 +42,8 @@ Install the tools using `npm install -g js2coffee coffee-script`
 ## Example: switching / converting files
 
 * recommended: open a __.js__-file, and create/jump-to the `.coffee`-file by typing: `cc`
-* convert any javascript buffer to coffeescript by typing: `c` `>`
-* convert any coffeescript buffer to javascript by typing: `c` `<`
+* convert any javascript buffer to coffeescript by typing: `c<`
+* convert any coffeescript buffer to javascript by typing: `c>`
 
 ## My thoughts 
 
