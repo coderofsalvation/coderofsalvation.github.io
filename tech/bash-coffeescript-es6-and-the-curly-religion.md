@@ -30,7 +30,7 @@ And where are the braces? My ego feels pain, I don't feel a clever developer any
       move( $ball, array(3,8) );               <- js: definately cool, so precise!
     }                                             ..typescript even more precise!
 
-Heck, we might even define 'not cool' as 'programming for children'.
+Heck, we might even define 'not cool' as 'programming in basic'.
 And lets not forget how cool/uncool it gets when doing _functional_ programming:
 
     update = compose when(ismoving), move      <- not cool
