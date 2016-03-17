@@ -17,7 +17,7 @@ And lo, the curly religion has been born.
 ### Therefore, thou shalt only like curly braces 
 
 Coffeescript was a huge blow in the faces of (unconscious) curly followers.
-It is common trap for curly disciples, to start to dislike "_simplistic_" human language.
+It is a common trap for curly disciples, to start to dislike "_simplistic_" human language.
 
 > _The brain of a curly follower is confused..what is this..ruby? or bash? or other programminglanguages I've been ignoring?
 And where are the braces? My ego feels pain, I don't feel a clever developer anymore._
