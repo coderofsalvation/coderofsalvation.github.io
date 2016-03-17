@@ -63,12 +63,12 @@
     pre{ font-size: 0.7em; }
     code { color:#268Bd2; }
   </style>
-<h1>Bash vs Coffeescript vs ES6: the polytheists and the monotheist </h1>
+<p>===============================================================</p>
 <blockquote>
 <p>Looking back at the rise of ES6 transpilers, I can't help myself seeing the rise of an 'curly religion' vs 'other religion'. Time for a rant.</p>
 </blockquote>
 <h3>The curly religion </h3>
-<p>I was there too.  A developer grows up with the notion that C/C++ is the real deal. The influence of this cute curlybrace syntax is obviously present in many other scripting languages (php/javascript and so on). Wow, nodejs is like all that (C/C++/Javascript), wow! And lo, the curly religion has been born.</p>
+<p>I was there too.  A developer grows up with the notion that C/C++ is the real deal. The influence of this cute curlybrace syntax is obviously present in many other scripting languages (php/java(script) and so on). Wow, nodejs is like all that (C/C++/Javascript), wow! And lo, the curly religion has been born.</p>
 <h3>Human language is so not cool</h3>
 <p>Coffeescript was a huge blow in the faces of (unconscious) curly followers. It is common trap for curly disciples, to start to dislike "<em>simplistic</em>" human language.</p>
 <blockquote>
@@ -87,17 +87,16 @@ if( ismoving( $ball ) ){
 <code><pre>
 update = compose when(ismoving), move      &lt;- not cool
 update ball, [3,8]                                    
-if( ismoving( $ball ) ){
-  move( $ball, array(3,8) );               &lt;- functional programming 
-}                                             is cryptical and for losers!
-                                              lets just write real javascript
+
+if( ismoving( $ball ) ){                   &lt;- #$%@ functional programming!
+  move( $ball, array(3,8) );
+}                                          
 </pre></code>
-<p>Do you agree? I hope not..</p>
 <h3>Curly vs Human language (HL) wars </h3>
 <p>Let's take a step back:</p>
 <ul>
 <li>
-Javascript is a curly spec
+Java(script) is a curly spec
 </li><li>
 ES6 is a curly spec
 </li><li>
@@ -123,7 +122,8 @@ the gnu compiler is a tool
 </li>
 </ul>
 <p>See the pattern?</p>
-<h3>Stop using javascript, use javascript!</h3>
+<h3>Stop using X! use X instead!</h3>
+<p><img alt="" src="http://midlifexpress.com/wp-content/uploads/2013/03/rhetoric1.jpg"/ width="30%"></p>
 <p>2015 was a year where forums flourished with what I call the unconscious <em>curly</em> vs <em>human</em> wars:</p>
 <ul>
 <li>
@@ -142,7 +142,8 @@ Developer Y: (Linus torvalds) C++ sucks! <em>switch back to</em> C!
 </ul>
 <p>The obvious pattern here is that developer Y is using <a href="https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt">FUD</a> to manipulate developer X.  Developer Y is trying to stop people to use newer tool/spec XYZ, because of an personal taste/history.</p>
 <h3>The reality: the polyglot vs the disciple </h3>
-<p>A typical disciple is afraid of change, and hates out of selfprotection. This is because the disciple <em>identifies</em> him/herself with a curly- or human language. The polyglot developer however, care's about solving problems in a lazy constructive way. In short:</p>
+<p><img alt="" src="http://imgs.xkcd.com/comics/atheists.png"/></p>
+<p>A typical disciple is afraid of change, and hates out of selfprotection. This is because the disciple <em>identifies</em> him/herself strictly with a curly- or human language. The polyglot developer however, care's about solving problems in a lazy constructive way. In short:</p>
 <ul>
 <li>
 the disciple would rather refuse to learn new things, out of fear of syntax-dislike and history
@@ -151,10 +152,38 @@ the polyglot would rather learn new things, out of fear of unnecessary tasks/res
 </li>
 </ul>
 <h2>The polyglot </h2>
-<p>. polyglot: (re)implement apache/memcache/database functionality in javascript (express) . polyglot: learn make-syntax or bash or commandline linux tools. . polyglot: write coffeescript to reduce syntaxnoise . polyglot: write (or compile to) javascript because of curly disciples (with transpiler) . polyglot: learn/use json specs (like jsonschema) . polyglot: likes bash or coffeescript not because it's a <em>shorter</em> syntax: its more <em>human</em></p>
+<ul>
+<li>
+polyglot: learn existing make-syntax or bash or commandline linux tools.
+</li><li>
+polyglot: write coffeescript to reduce syntaxnoise
+</li><li>
+polyglot: write (or compile to) java(script) because of curly disciples (with transpiler)
+</li><li>
+polyglot: learn/use json specs (like jsonschema)
+</li><li>
+polyglot: likes bash or coffeescript not because it's a <em>shorter</em> syntax: its more <em>human</em>
+</li><li>
+polyglot: likes ES5, ES6 because it looks like coffeescript and java(script)
+</li>
+</ul>
 <h2>The disciple </h2>
-<p>. a curly disciple: use typescript without knowing about jsonschema . a curly disciple: refuse to learn/use HL tools (coffeescript or bash) . a curly disciple: implement a build tool which performs certain <em>bash/sh</em> commands in a particular order  . a human disciple: implement that same tool but in coffeescript </p>
-<p>Popular things get hated on, like coffeescript. Interestingly enough, the haters almost always are driven by curly disciple aspirations.</p>
+<ul>
+<li>
+a curly disciple: likes ES6 because its the <em>next big thing</em> 
+</li><li>
+a curly disciple: hates ES5 because ES6 is <em>superior</em>
+</li><li>
+a curly disciple: uses typescript without knowing about jsonschema spec
+</li><li>
+a curly disciple: refuse to learn/use HL tools (coffeescript or bash)
+</li><li>
+a curly disciple: dislike shellscript/ruby/python etc
+</li><li>
+a curly disciple: fearful of functional programming
+</li>
+</ul>
+<p>Needless to say, the (fallicious) <em>coffeescript/typescript/ES6</em> debate is clearly ran by curly disciples. The polyglots just don't care.</p>
 <h2>Conclusions </h2>
 <ul>
 <li>
@@ -162,9 +191,7 @@ keep learning markup specs, formats and conventions (json/jsonschema/xml/wsdl)
 </li><li>
 keep using tools to solve problems
 </li><li>
-refrain from HL- or curly language bias
-</li><li>
-never blame a tool of spec, blame yourself for being ignorant.
+stop blaming 
 </li>
 </ul>
   <br><br>

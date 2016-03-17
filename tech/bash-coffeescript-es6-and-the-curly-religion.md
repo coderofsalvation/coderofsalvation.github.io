@@ -1,4 +1,3 @@
-Bash vs Coffeescript vs ES6: the polytheists and the monotheist 
 ===============================================================
 
 > Looking back at the rise of ES6 transpilers, I can't help myself seeing the rise of an 'curly religion' vs 'other religion'.
@@ -8,7 +7,7 @@ Bash vs Coffeescript vs ES6: the polytheists and the monotheist
 
 I was there too. 
 A developer grows up with the notion that C/C++ is the real deal.
-The influence of this cute curlybrace syntax is obviously present in many other scripting languages (php/javascript and so on).
+The influence of this cute curlybrace syntax is obviously present in many other scripting languages (php/java(script) and so on).
 Wow, nodejs is like all that (C/C++/Javascript), wow!
 And lo, the curly religion has been born.
 
@@ -33,19 +32,16 @@ And lets not forget how cool/uncool it gets when doing _functional_ programming:
 
     update = compose when(ismoving), move      <- not cool
     update ball, [3,8]                                    
-
-    if( ismoving( $ball ) ){
-      move( $ball, array(3,8) );               <- functional programming 
-    }                                             is cryptical and for losers!
-                                                  lets just write real javascript
-
-Do you agree? I hope not..
+    
+    if( ismoving( $ball ) ){                   <- #$%@ functional programming!
+      move( $ball, array(3,8) );
+    }                                          
 
 ### Curly vs Human language (HL) wars 
 
 Let's take a step back:
 
-* Javascript is a curly spec
+* Java(script) is a curly spec
 * ES6 is a curly spec
 * Coffeescript is a tool and a HL spec 
 * nodejs is a runtime
@@ -61,7 +57,9 @@ Lets now compare this with the older days:
 
 See the pattern?
 
-### Stop using javascript, use javascript!
+### Stop using X! use X instead!
+
+<img alt="" src="http://midlifexpress.com/wp-content/uploads/2013/03/rhetoric1.jpg"/ width="30%">
 
 2015 was a year where forums flourished with what I call the unconscious _curly_ vs _human_ wars:
 
@@ -78,8 +76,10 @@ Developer Y is trying to stop people to use newer tool/spec XYZ, because of an p
 
 ### The reality: the polyglot vs the disciple 
 
+<img alt="" src="http://imgs.xkcd.com/comics/atheists.png"/>
+
 A typical disciple is afraid of change, and hates out of selfprotection.
-This is because the disciple _identifies_ him/herself with a curly- or human language.
+This is because the disciple _identifies_ him/herself strictly with a curly- or human language.
 The polyglot developer however, care's about solving problems in a lazy constructive way.
 In short:
 
@@ -88,26 +88,27 @@ In short:
 
 ## The polyglot 
 
-. polyglot: (re)implement apache/memcache/database functionality in javascript (express)
-. polyglot: learn make-syntax or bash or commandline linux tools.
-. polyglot: write coffeescript to reduce syntaxnoise
-. polyglot: write (or compile to) javascript because of curly disciples (with transpiler)
-. polyglot: learn/use json specs (like jsonschema)
-. polyglot: likes bash or coffeescript not because it's a _shorter_ syntax: its more _human_
+* polyglot: learn existing make-syntax or bash or commandline linux tools.
+* polyglot: write coffeescript to reduce syntaxnoise
+* polyglot: write (or compile to) java(script) because of curly disciples (with transpiler)
+* polyglot: learn/use json specs (like jsonschema)
+* polyglot: likes bash or coffeescript not because it's a _shorter_ syntax: its more _human_
+* polyglot: likes ES5, ES6 because it looks like coffeescript and java(script)
 
 ## The disciple 
 
-. a curly disciple: use typescript without knowing about jsonschema
-. a curly disciple: refuse to learn/use HL tools (coffeescript or bash)
-. a curly disciple: implement a build tool which performs certain _bash/sh_ commands in a particular order 
-. a human disciple: implement that same tool but in coffeescript 
+* a curly disciple: likes ES6 because its the _next big thing_ 
+* a curly disciple: hates ES5 because ES6 is _superior_
+* a curly disciple: uses typescript without knowing about jsonschema spec
+* a curly disciple: refuse to learn/use HL tools (coffeescript or bash)
+* a curly disciple: dislike shellscript/ruby/python etc
+* a curly disciple: fearful of functional programming
 
-Popular things get hated on, like coffeescript.
-Interestingly enough, the haters almost always are driven by curly disciple aspirations.
+Needless to say, the (fallicious) _coffeescript/typescript/ES6_ debate is clearly ran by curly disciples.
+The polyglots just don't care.
 
 ## Conclusions 
 
 * keep learning markup specs, formats and conventions (json/jsonschema/xml/wsdl)
 * keep using tools to solve problems
-* refrain from HL- or curly language bias
-* never blame a tool of spec, blame yourself for being ignorant.
+* stop blaming 
