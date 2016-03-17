@@ -16,10 +16,10 @@ And lo, the curly religion was born.
 ### Therefore, thou shalt only like curly braces 
 
 Shellscript, Python, Ruby, Coffeescript were a huge blow in the faces of (unconscious) curly followers.
-It is a common trap for curly disciples, to start to dislike "_simplistic_" human language.
+It is a common trap for curly disciples, to start to dislike indentbased, "_simplistic_" human language.
 As if they were going back to their roots: programming basic.
 
-> _The brain of a curly follower is confused..what is this..ruby? basic? shellscript? or other programminglanguages I've been ignoring? Where are the braces? Help..my ego feels pain, I don't feel a clever developer anymore._
+> _The brain of a curly follower is confused..what is this..ruby? basic? shellscript? or other programminglanguages I've been ignoring? Where are the braces? My Heritage? Help..my ego feels pain, I don't feel a clever developer anymore._
 
     if ismoving ball
       move ball 3,8                            <- coffeescript: not cool, confusing!
@@ -28,15 +28,6 @@ As if they were going back to their roots: programming basic.
     if( ismoving( $ball ) ){
       move( $ball, array(3,8) );               <- js: definately cool, so precise!
     }                                             ..typescript even more precise!
-
-Or what a about _functional_ programming:
-
-    update = compose when(ismoving), move      <- not cool
-    update ball, [3,8]                                    
-    
-    if( ismoving( $ball ) ){                   <- #$%@ functional programming!
-      move( $ball, array(3,8) );
-    }                                          
 
 ### Curly vs Human language (HL) wars 
 
@@ -98,7 +89,10 @@ In short:
 * a curly disciple: fearful of functional programming
 
 Needless to say, the (fallicious) _coffeescript/typescript/ES6_ debate is clearly ran by curly disciples.
-Polyglots just don't care.
+
+## A polyglot 
+
+They just use whatever could get the job done.
 
 ## Conclusions 
 
