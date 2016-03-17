@@ -9,10 +9,12 @@ Bash Coffeescript ES6 and the curly religion
 I was there too. 
 A developer grows up with the notion that C/C++ is the real deal.
 The influence of this cute curlybrace syntax is obviously present in many other scripting languages (php/java(script) and so on).
-Wow, nodejs is like all that (C/C++/Javascript), wow!
+Nodejs seems to bridge the whole stack from C/C++ to javascript.
 And lo, the curly religion has been born.
 
-### Human language is so not cool
+<img src="https://lh3.googleusercontent.com/-v8eSHHGgrkM/TXGawKwNsFI/AAAAAAAAASY/i7L1XoPY6Sg/s1600/enlightening.gif"/>
+
+### Therefore, thou shalt only like curly braces 
 
 Coffeescript was a huge blow in the faces of (unconscious) curly followers.
 It is common trap for curly disciples, to start to dislike "_simplistic_" human language.
@@ -56,7 +58,7 @@ Lets now compare this with the older days:
 * the kernel is a runtime
 * the gnu compiler is a tool
 
-See the pattern?
+Clearly this is not 1-on-1 applicable, but do you see a pattern?
 
 ### Stop using X! use X instead!
 
@@ -65,12 +67,12 @@ See the pattern?
 2015 was a year where forums flourished with what I call the unconscious _curly_ vs _human_ wars:
 
 * developer X: Coffeescript is great!
-* developer Y: Coffeescript sucks! _switch to_ ES6 instead of coffeescript!
+* developer Y: Coffeescript sucks! _switch to_ ES6 while you can!
 
 It would kindof be similar to:
 
 * Developer X: C++ is great!
-* Developer Y: (Linus torvalds) C++ sucks! _switch back to_ C!
+* Developer Y: (Linus torvalds) C++ sucks! _switch back to_ C while you can!
 
 The obvious pattern here is that developer Y is using [FUD](https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt) to manipulate developer X. 
 Developer Y is trying to stop people to use newer tool/spec XYZ, because of an personal taste/history.
@@ -87,26 +89,17 @@ In short:
 * the disciple would rather refuse to learn new things, out of fear of syntax-dislike and history
 * the polyglot would rather learn new things, out of fear of unnecessary tasks/responsibilities.
 
-## The polyglot 
-
-* polyglot: learn existing make-syntax or bash or commandline linux tools.
-* polyglot: write coffeescript to reduce syntaxnoise
-* polyglot: write (or compile to) java(script) because of curly disciples (with transpiler)
-* polyglot: learn/use json specs (like jsonschema)
-* polyglot: likes bash or coffeescript not because it's a _shorter_ syntax: its more _human_
-* polyglot: likes ES5, ES6 because it looks like coffeescript and java(script)
-
-## The disciple 
+## The disciple syndrome
 
 * a curly disciple: likes ES6 because its the _next big thing_ 
 * a curly disciple: hates ES5 because ES6 is _superior_
 * a curly disciple: uses typescript without knowing about jsonschema spec
 * a curly disciple: refuse to learn/use HL tools (coffeescript or bash)
-* a curly disciple: dislike shellscript/[powscript](https://github.com/coderofsalvation/powscript)/ruby/python etc
+* a curly disciple: will aggressively express dislike of shellscript/[powscript](https://github.com/coderofsalvation/powscript)/coffeescript/ruby/python etc
 * a curly disciple: fearful of functional programming
 
 Needless to say, the (fallicious) _coffeescript/typescript/ES6_ debate is clearly ran by curly disciples.
-The polyglots just don't care.
+Polyglots just don't care.
 
 ## Conclusions 
 
