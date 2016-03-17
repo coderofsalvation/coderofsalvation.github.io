@@ -1,4 +1,5 @@
-===============================================================
+Bash Coffeescript ES6 and the curly religion
+============================================
 
 > Looking back at the rise of ES6 transpilers, I can't help myself seeing the rise of an 'curly religion' vs 'other religion'.
 > Time for a rant.
@@ -101,7 +102,7 @@ In short:
 * a curly disciple: hates ES5 because ES6 is _superior_
 * a curly disciple: uses typescript without knowing about jsonschema spec
 * a curly disciple: refuse to learn/use HL tools (coffeescript or bash)
-* a curly disciple: dislike shellscript/ruby/python etc
+* a curly disciple: dislike shellscript/[powscript](https://github.com/coderofsalvation/powscript)/ruby/python etc
 * a curly disciple: fearful of functional programming
 
 Needless to say, the (fallicious) _coffeescript/typescript/ES6_ debate is clearly ran by curly disciples.
