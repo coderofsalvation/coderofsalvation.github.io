@@ -58,7 +58,8 @@ Lets now compare this with the older days:
 * the kernel is a runtime
 * the gnu compiler is a tool
 
-Clearly this is not 1-on-1 applicable, but do you see a pattern?
+Clearly this is not 1-on-1 applicable, but C/C++ Bash/sh/Lua have never disappeared, despite the love/hate.
+See a pattern?
 
 ### Stop using X! use X instead!
 
