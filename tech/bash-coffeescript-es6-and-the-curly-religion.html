@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+  <html id="home" lang="en">
+  <head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=620" />
+  <title>Bash coffeescript es6 and the curly religion </title>
+  </head>
+  <body>
+  
+  
+  <div style="padding: 0em 0em 1.0em 0em; margin: 0em 0em 1.0em 0em; float:left; width:28.0em">
+    <a href="../" target="_blank">
+      <img src="res/logo_small.png" style="text-align:left"/>
+    </a>
+    <span style="font-size:0.7em; color:#079;">
+      Coder of Salvation&#8482; &nbsp; &#8212; programming / opensource / console / minimal
+    </span>
+  </div>
+
+  <div style="width:20.0em;float:right">
+    <select style="width:100%" onchange="document.location.href = this.options[ this.selectedIndex ].value">
+      	<option   value="index.html">/&nbsp;Home</option> 	<option   value="actionscript-trace-cpu-hogs.html">&nbsp;Actionscript trace cpu hogs </option>
+	<option   value="advanced-git-aliases-for-ninjas.html">&nbsp;Advanced git aliases for ninjas </option>
+	<option   value="automatic-tracing-handdrawn-scans-into-vector-images-in-linux.html">&nbsp;Automatic tracing handdrawn scans into vector images in linux </option>
+	<option   value="avs-vjgen-an-triggercode-generator.html">&nbsp;Avs vjgen an triggercode generator </option>
+	<option selected='selected'  value="bash-coffeescript-es6-and-the-curly-religion.html">&nbsp;Bash coffeescript es6 and the curly religion </option>
+	<option   value="clever-code-toggling.html">&nbsp;Clever code toggling </option>
+	<option   value="conditional-cron-is-our-friend.html">&nbsp;Conditional cron is our friend </option>
+	<option   value="emailing-poormans-ascii-graphs-using-unix-tree.html">&nbsp;Emailing poormans ascii graphs using unix tree </option>
+	<option   value="flexible-sql-columns-for-production-servers.html">&nbsp;Flexible sql columns for production servers </option>
+	<option   value="githooks-the-minimist-quality-assurance-tool.html">&nbsp;Githooks the minimist quality assurance tool </option>
+	<option   value="imapmunch-easy-way-to-select-and-parse-imap-email-on-the-commandline.html">&nbsp;Imapmunch easy way to select and parse imap email on the commandline </option>
+	<option   value="javascript-errors-on-productionservers.html">&nbsp;Javascript errors on productionservers </option>
+	<option   value="javascript-memory-leaks.html">&nbsp;Javascript memory leaks </option>
+	<option   value="javascript-simple-plugin-system.html">&nbsp;Javascript simple plugin system </option>
+	<option   value="looping-over-array-in-node-red-nodejs-iteration.html">&nbsp;Looping over array in node red nodejs iteration </option>
+	<option   value="md2x-a-minimalistic-markdown-bashscript.html">&nbsp;Md2x a minimalistic markdown bashscript </option>
+	<option   value="mobile-webapps-are-great.html">&nbsp;Mobile webapps are great </option>
+	<option   value="mysql-pagers-get-more-overview.html">&nbsp;Mysql pagers get more overview </option>
+	<option   value="npm-git-cloning-private-bitbucket-repository-with-ssh-key-on-openshift.html">&nbsp;Npm git cloning private bitbucket repository with ssh key on openshift </option>
+	<option   value="shellscript-framework-make-quick-bash-scripts.html">&nbsp;Shellscript framework make quick bash scripts </option>
+	<option   value="simple-bash-script-to-document-REST-api.html">&nbsp;Simple bash script to document REST api </option>
+	<option   value="snippy-autocompletion-for-console-and-browser-window-manager-using-bash.html">&nbsp;Snippy autocompletion for console and browser window manager using bash </option>
+	<option   value="storing-retrieving-hierarchical-trees-between-php-and-mysql.html">&nbsp;Storing retrieving hierarchical trees between php and mysql </option>
+	<option   value="switch-coffeescript-and-javascript-in-vim-like-a-ninja.html">&nbsp;Switch coffeescript and javascript in vim like a ninja </option>
+	<option   value="the-ultimate-dataformat-for-bash-is-tabular-data-but-how-to-use-it.html">&nbsp;The ultimate dataformat for bash is tabular data but how to use it </option>
+	<option   value="typesafe-functions-and-nested-variables-in-php-javascript-and-coffeescript-using-typesafe.html">&nbsp;Typesafe functions and nested variables in php javascript and coffeescript using typesafe </option>
+	<option   value="utilities-for-xi-and-sf2-looped-instruments-to-aiff-wav.html">&nbsp;Utilities for xi and sf2 looped instruments to aiff wav </option>
+	<option   value="vim-mappingmanager-organize-your-mappings.html">&nbsp;Vim mappingmanager organize your mappings </option>
+	<option   value="xdebug-bashscript-to-profile-and-debug-php.html">&nbsp;Xdebug bashscript to profile and debug php </option>
+	<option   value="you-better-use-snippets-son.html">&nbsp;You better use snippets son </option>
+    </select>
+  </div>
+  <div style="clear:both;border-bottom:1px solid #CCC; "></div>
+
+  <link rel="stylesheet" href="http://leon.vankammen.eu/public/css/poole.css">
+  <link rel="stylesheet" href="http://leon.vankammen.eu/public/css/syntax.css">
+  <link rel="stylesheet" href="http://leon.vankammen.eu/public/css/style.css">
+  <link href="http://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet" type="text/css" id="link-webfont">
+  <style type="text/css">
+    select { padding:0.5em; font-size: 0.7em; }
+    body { padding: 10%; padding-top: 2.0em; }
+    pre{ font-size: 0.7em; }
+    code { color:#268Bd2; }
+  </style>
+<h1>Bash vs Coffeescript vs ES6: the polytheists and the monotheist </h1>
+<blockquote>
+<p>Looking back at the rise of ES6 transpilers, I can't help myself seeing the rise of an 'curly religion' vs 'other religion'. Time for a rant.</p>
+</blockquote>
+<h3>The curly religion </h3>
+<p>I was there too.  A developer grows up with the notion that C/C++ is the real deal. The influence of this cute curlybrace syntax is obviously present in many other scripting languages (php/javascript and so on). Wow, nodejs is like all that (C/C++/Javascript), wow! And lo, the curly religion has been born.</p>
+<h3>Human language is so not cool</h3>
+<p>Coffeescript was a huge blow in the faces of (unconscious) curly followers. It is common trap for curly disciples, to start to dislike "<em>simplistic</em>" human language.</p>
+<blockquote>
+<p><em>The brain of a curly follower is confused..what is this..ruby? or bash? or other programminglanguages I've been ignoring? And where are the braces? My ego feels pain, I don't feel a clever developer anymore.</em></p>
+</blockquote>
+<code><pre>
+if ismoving ball
+  move ball 3,8                            &lt;- coffeescript: not cool, confusing!
+                                              ..jsonschema even more confusing!
+
+if( ismoving( $ball ) ){
+  move( $ball, array(3,8) );               &lt;- js: definately cool, so precise!
+}                                             ..typescript even more confusing!
+</pre></code>
+<p>Heck, we might even define 'not cool' as 'programming for children'. And lets not forget how cool/uncool it gets when doing <em>functional</em> programming:</p>
+<code><pre>
+update = compose when(ismoving), move      &lt;- not cool
+update ball, [3,8]                                    
+if( ismoving( $ball ) ){
+  move( $ball, array(3,8) );               &lt;- functional programming 
+}                                             is cryptical and for losers!
+                                              lets just write real javascript
+</pre></code>
+<p>Do you agree? I hope not..</p>
+<h3>Curly vs Human language (HL) wars </h3>
+<p>Let's take a step back:</p>
+<ul>
+<li>
+Javascript is a curly spec
+</li><li>
+ES6 is a curly spec
+</li><li>
+Coffeescript is a tool and a HL spec 
+</li><li>
+nodejs is a runtime
+</li><li>
+Babel is a tool
+</li>
+</ul>
+<p>Lets now compare this with the older days:</p>
+<ul>
+<li>
+C is a curly spec
+</li><li>
+C++ is a curly spec
+</li><li>
+Bash/Sh and Lua are both tools and HL specs 
+</li><li>
+the kernel is a runtime
+</li><li>
+the gnu compiler is a tool
+</li>
+</ul>
+<p>See the pattern?</p>
+<h3>Stop using javascript, use javascript!</h3>
+<p>2015 was a year where forums flourished with what I call the unconscious <em>curly</em> vs <em>human</em> wars:</p>
+<ul>
+<li>
+developer X: Coffeescript is great!
+</li><li>
+developer Y: Coffeescript sucks! <em>switch to</em> ES6 instead of coffeescript!
+</li>
+</ul>
+<p>It would kindof be similar to:</p>
+<ul>
+<li>
+Developer X: C++ is great!
+</li><li>
+Developer Y: (Linus torvalds) C++ sucks! <em>switch back to</em> C!
+</li>
+</ul>
+<p>The obvious pattern here is that developer Y is using <a href="https://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt">FUD</a> to manipulate developer X.  Developer Y is trying to stop people to use newer tool/spec XYZ, because of an personal taste/history.</p>
+<h3>The reality: the polyglot vs the disciple </h3>
+<p>A typical disciple is afraid of change, and hates out of selfprotection. This is because the disciple <em>identifies</em> him/herself with a curly- or human language. The polyglot developer however, care's about solving problems in a lazy constructive way. In short:</p>
+<ul>
+<li>
+the disciple would rather refuse to learn new things, out of fear of syntax-dislike and history
+</li><li>
+the polyglot would rather learn new things, out of fear of unnecessary tasks/responsibilities.
+</li>
+</ul>
+<h2>The polyglot </h2>
+<p>. polyglot: (re)implement apache/memcache/database functionality in javascript (express) . polyglot: learn make-syntax or bash or commandline linux tools. . polyglot: write coffeescript to reduce syntaxnoise . polyglot: write (or compile to) javascript because of curly disciples (with transpiler) . polyglot: learn/use json specs (like jsonschema) . polyglot: likes bash or coffeescript not because it's a <em>shorter</em> syntax: its more <em>human</em></p>
+<h2>The disciple </h2>
+<p>. a curly disciple: use typescript without knowing about jsonschema . a curly disciple: refuse to learn/use HL tools (coffeescript or bash) . a curly disciple: implement a build tool which performs certain <em>bash/sh</em> commands in a particular order  . a human disciple: implement that same tool but in coffeescript </p>
+<p>Popular things get hated on, like coffeescript. Interestingly enough, the haters almost always are driven by curly disciple aspirations.</p>
+<h2>Conclusions </h2>
+<ul>
+<li>
+keep learning markup specs, formats and conventions (json/jsonschema/xml/wsdl)
+</li><li>
+keep using tools to solve problems
+</li><li>
+refrain from HL- or curly language bias
+</li><li>
+never blame a tool of spec, blame yourself for being ignorant.
+</li>
+</ul>
+  <br><br>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = "coderofsalvation"; // required: replace example with your forum shortname
+
+      /* * * DONT EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement("script"); dsq.type = "text/javascript"; dsq.async = true;
+          dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+          (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  <br><Br>
+  <img src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png"/><br>
+  <small>All rights reserved by Leon van Kammen under this <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank">license</a></small>
+    <!-- Analytics
+    ================================================== -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-10900009-2"]);
+    _gaq.push(["_trackPageview"]);
+    (function() {
+      var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+      ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+      var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body></html>
