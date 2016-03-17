@@ -9,18 +9,17 @@ Bash Coffeescript ES6 and the curly religion
 I was there too. 
 A developer grows up with the notion that C/C++ is the real deal.
 The influence of this cute curlybrace syntax is obviously present in many other scripting languages (php/java(script) and so on).
-Nodejs seems to bridge the whole stack from C/C++ to javascript.
-And lo, the curly religion has been born.
+And lo, the curly religion was born.
 
 <img src="https://lh3.googleusercontent.com/-v8eSHHGgrkM/TXGawKwNsFI/AAAAAAAAASY/i7L1XoPY6Sg/s1600/enlightening.gif"/>
 
 ### Therefore, thou shalt only like curly braces 
 
-Coffeescript was a huge blow in the faces of (unconscious) curly followers.
+Shellscript, Python, Ruby, Coffeescript were a huge blow in the faces of (unconscious) curly followers.
 It is a common trap for curly disciples, to start to dislike "_simplistic_" human language.
+As if they were going back to their roots: programming basic.
 
-> _The brain of a curly follower is confused..what is this..ruby? or bash? or other programminglanguages I've been ignoring?
-And where are the braces? My ego feels pain, I don't feel a clever developer anymore._
+> _The brain of a curly follower is confused..what is this..ruby? basic? shellscript? or other programminglanguages I've been ignoring? Where are the braces? Help..my ego feels pain, I don't feel a clever developer anymore._
 
     if ismoving ball
       move ball 3,8                            <- coffeescript: not cool, confusing!
@@ -30,8 +29,7 @@ And where are the braces? My ego feels pain, I don't feel a clever developer any
       move( $ball, array(3,8) );               <- js: definately cool, so precise!
     }                                             ..typescript even more precise!
 
-Heck, we might even define 'not cool' as 'programming in basic'.
-And lets not forget how cool/uncool it gets when doing _functional_ programming:
+Or what a about _functional_ programming:
 
     update = compose when(ismoving), move      <- not cool
     update ball, [3,8]                                    
@@ -54,12 +52,12 @@ Lets now compare this with the older days:
 
 * C is a curly spec
 * C++ is a curly spec
-* Bash/Sh and Lua are both tools and HL specs 
+* sh/bash/Lua are both tools and HL specs 
 * the kernel is a runtime
 * the gnu compiler is a tool
 
-Clearly this is not 1-on-1 applicable, but C/C++ Bash/sh/Lua have never disappeared, despite the love/hate.
-See a pattern?
+Clearly this is not 1-on-1 applicable, but the use of sh/bash/lua still is huge, despite the love/hate back then.
+See a pattern here?
 
 ### Stop using X! use X instead!
 
