@@ -1,5 +1,7 @@
-Bash Coffeescript ES6 and the curly religion
-============================================
+---
+layout: post
+title: Bash Coffeescript ES6 and the curly religion
+---
 
 > Looking back at the rise of ES6 transpilers, I can't help myself seeing the rise of an 'curly religion' vs 'other religion'.
 > Time for a rant.

@@ -1,5 +1,7 @@
-The child, the innovator, and the perfectionist in tech industry
-================================================================
+---
+layout: post
+title: The child, the innovator, and the perfectionist in tech industry
+---
 
 > Children and beginners have a naturally ability to be fearless.
 
