@@ -10,7 +10,7 @@ title: The child, the innovator, and the perfectionist in tech industry
 Beginners have one big advantage: no internal commentary.
 They have empathy, and look up to perfectionists and innovators.
 
-<img src="img/child.png"/>
+<img src="/public/img/child.png"/>
 
 ## What makes perfectionist powerful 
 
@@ -18,7 +18,7 @@ Perfectionist have lots of internal dialogue while doing something.
 Sometimes it even overclouds getting things done.
 They tend to improve/nitpick things made by innovators and beginners.
 
-<img src="img/perfectionist.png"/>
+<img src="/public/img/perfectionist.png"/>
 
 A perfectionist will quarrel about style of coding, softwareprocess, 
 and lacks empathy and interest in marketing.
@@ -26,7 +26,7 @@ In general they lack leadership.
 
 ## The sweet spot: the innovator
 
-<img src="img/innovator.png"/>
+<img src="/public/img/innovator.png"/>
 
 The innovator is:
 
