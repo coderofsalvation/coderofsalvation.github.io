@@ -26,10 +26,12 @@ A common trap for curly disciples is, to identify themselves with their curly br
 Anything indentbased, or human language-like seems too "_simplistic_".
     
     if ismoving ball
-      move ball 3,8                   <- "BAD": no braces or linter needed, apostate!
+      move ball 3,8                   <- "BAD": no braces or linter 
+                                                needed, apostate!
     
     if( ismoving( $ball ) ){
-      move( $ball, array(3,8) );      <- "GOOD": so precise, so readable, so curly!
+      move( $ball, array(3,8) );      <- "GOOD": so precise, so 
+                                                 readable, so curly!
     }
 
 > thru the eyes of a curly disciple
@@ -45,13 +47,13 @@ The curly follower will start using ES8, and build ES8-to-ES5-tools to build ES5
 
 Let's take a step back, and compare:
 
-     * C is a curly spec                             * Java(script) is a curly spec
-     * C++ is a curly spec                           * ES6/7 is a curly spec
-     * sh/bash/Lua are both tools and HL specs       * Coffeescript/Livescript/Purescript 
-                                                       is a tool and a HL spec 
-     * the kernel is a runtime                       * nodejs is a runtime
-     * the gnu compiler converts to LCD (asm)        * Babel, Coffeescript etc converts 
-                                                       to LCD (es3/es5 etc)
+     * C is a curly spec             * Java(script) is a curly spec
+     * C++ is a curly spec           * ES6/7 is a curly spec
+     * sh/bash/Lua are both tools    * Coffeescript/Livescript/Purescript 
+       and HL specs                    is a tool and a HL spec 
+     * the kernel is a runtime       * nodejs is a runtime
+     * the gnu compiler converts     * Babel, Coffeescript etc converts 
+       to LCD (asm)                    to LCD (es3/es5 etc)
 
 > LCD = Lowest common denominator
 
