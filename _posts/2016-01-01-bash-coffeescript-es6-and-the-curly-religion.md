@@ -3,7 +3,7 @@ layout: post
 title: Bash Coffeescript ES6 and the curly religion
 ---
 
-> Looking back at the rise of ES6 transpilers, I can't help myself seeing the rise of an 'curly religion' vs 'other religion'.
+> Looking back at the rise of ES6 transpilers, I can't help myself seeing the rise of an 'curly religion' vs 'other'.
 > Time for a rant.
 
 ### The curly religion 
@@ -22,8 +22,18 @@ Languages like Shellscript, VB, Python, Ruby, Coffeescript confuse the average c
 
 > It's not curly, how can it be good.
 
-A common trap for curly disciples, to identify themselves with their curly braces.
+A common trap for curly disciples is, to identify themselves with their curly braces.
 Anything indentbased, or human language-like seems too "_simplistic_".
+    
+    if ismoving ball
+      move ball 3,8                   <- "BAD": no braces or linter needed, apostate!
+    
+    if( ismoving( $ball ) ){
+      move( $ball, array(3,8) );      <- "GOOD": so precise, so readable, so curly!
+    }
+
+> thru the eyes of a curly disciple
+
 
 ### ES3 / ES4 / ES5 / ES6 / ES7
 
@@ -31,24 +41,17 @@ The brain of a curly follower is fixed on language versioning, since the tool it
 Instead of focusing on the lowest common denominator, the highest common denominator becomes highprio.
 The curly follower will start using ES8, and build ES8-to-ES5-tools to build ES5 applications.
 
-    if ismoving ball
-      move ball 3,8                            <- "BAD": no braces or linter needed
-    
-    if( ismoving( $ball ) ){
-      move( $ball, array(3,8) );               <- "GOOD": so precise, so readable, so curly. 
-    }
-
-> thru the eyes of a curly disciple
-
 ### Curly vs Human language (HL) wars 
 
 Let's take a step back, and compare:
 
- * C is a curly spec                             * Java(script) is a curly spec
- * C++ is a curly spec                           * ES6/7 is a curly spec
- * sh/bash/Lua are both tools and HL specs       * Coffeescript/Livescript/Purescript is a tool and a HL spec 
- * the kernel is a runtime                       * nodejs is a runtime
- * the gnu compiler converts to LCD (asm)        * Babel, Coffeescript etc converts to LCD (es3/es5 etc)
+     * C is a curly spec                             * Java(script) is a curly spec
+     * C++ is a curly spec                           * ES6/7 is a curly spec
+     * sh/bash/Lua are both tools and HL specs       * Coffeescript/Livescript/Purescript 
+                                                       is a tool and a HL spec 
+     * the kernel is a runtime                       * nodejs is a runtime
+     * the gnu compiler converts to LCD (asm)        * Babel, Coffeescript etc converts 
+                                                       to LCD (es3/es5 etc)
 
 > LCD = Lowest common denominator
 
