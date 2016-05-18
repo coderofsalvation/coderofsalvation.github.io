@@ -12,17 +12,17 @@ They have empathy, and look up to perfectionists and innovators.
 
 <img src="/public/img/child.png"/>
 
-## What makes perfectionist powerful 
+## What makes perfectionists powerful 
 
-Perfectionist have lots of internal dialogue while doing something.
-Sometimes it even overclouds getting things done.
+Perfectionists have lots of internal dialogue while doing something.
 They tend to improve/nitpick things made by innovators and beginners.
 
 <img src="/public/img/perfectionist.png"/>
 
-A perfectionist will quarrel about style of coding, softwareprocess, 
-and lacks empathy and interest in marketing.
-In general they lack leadership.
+A perfectionist has nobody to look up to, only down.
+He/she will quarrel about style of coding, softwareprocess, 
+lack of leadership, empathy and interest in marketing.
+They shine in pointing out (security) issues upfront.
 
 ## The sweet spot: the innovator
 
@@ -41,6 +41,6 @@ The innovator trusts other people to take the right decisions, and that failure 
 ## Conclusion
 
 Be aware of what kind of people you're dealing with, and keep their limits in mind.
-Perfectionists create the illusions about being senior, but they can turn out to be less productive.
+Perfectionists can turn out to be less productive in the beginning, but they can also prevent you lots of headaches in the long run.
 Beginners and innovators are very openminded to work with.
 A tech lead ideally should be an innovator, in order to put brakes on beginners/perfectionists at proper times.
