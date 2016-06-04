@@ -72,7 +72,7 @@ Another one:
 
 ## how to keep SI accelerators healthy 
 
-[Click here to view vol #4](2016/06/01/the-social-innovation-accelerator-accelerator-vol-4)
+[Click here to view vol #4](/2016/06/01/the-social-innovation-accelerator-accelerator-vol-4)
 
 ## Inspired by 
 
