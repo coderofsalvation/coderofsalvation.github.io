@@ -8,7 +8,7 @@ title: Healthy & Recyclable Social Innovation (the social innovation accelerator
   It tries to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*
 </div>
 
-<img src="img/fractals.jpg"/>
+<img src="/img/fractals.jpg"/>
 
 > Terminology
 > * OPENSOURCE: tools and products which both business- and non-businessworld can use & modify
@@ -16,7 +16,7 @@ title: Healthy & Recyclable Social Innovation (the social innovation accelerator
 > * RESTAPI: popular way to distribute and share online data
 > * BOTTOM-UP: Team members are invited to participate in every step of the management process 
 
-<img src="img/selfaccelerating-SI-accelerator.png"/>
+<img src="/img/selfaccelerating-SI-accelerator.png"/>
 
 The above illustrated cyclic flow (or parts of it) could happen thru human interaction, or software.
 Therefore, a house with people could also simply represent a database.
@@ -25,7 +25,7 @@ Therefore, a house with people could also simply represent a database.
 
 Ideally a healthy SIC would need at least 2 participants to prevent dictatorship or hierarchy.
 
-<img src="img/dictator.png"/>
+<img src="/img/dictator.png"/>
 <br>
 <Br>
 
@@ -60,7 +60,7 @@ However, budgets mostly get distributed top-down over groups of people, and for 
 * projects are seperated by time/budgets
 * but SIC's can cluster and/or recycle eachother regardless of time (see picture)
 
-<img src="img/clustering.png"/>
+<img src="/img/clustering.png"/>
 
 As you can see, a topology of open SIC's will fully be able to re-use eachothers efforts.
 Projects however, can only re-use published data.
