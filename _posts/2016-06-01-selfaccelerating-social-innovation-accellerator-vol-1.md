@@ -53,7 +53,7 @@ The YASIC syndrome happens because of the following reasons:
 
 ## how to keep SI accelerators healthy 
 
-[Click here to view vol #2](/2016/06/01/selfaccellerating-social-innovation-accelerator-vol-2)
+[Click here to view vol #2](/2016/06/01/selfaccelerating-social-innovation-accelerator-vol-2)
 
 ## Inspired by 
 
