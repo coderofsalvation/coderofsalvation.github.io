@@ -58,9 +58,10 @@ One can't turn license 1 into 2 and vice versa. Therefore every good idea will h
 Example:
 
 * SIC A starts with VP license 
+* SIC B & C want to work with SIC A (or build upon)
 * therefore SIC B & C will automatically be VP 
 * Business X will not monetize on SIC A, because Business Y can do the same (since SIC A is in the public domain)
-* Business Y __could__ monetize on SIC A+B+C, because the combination could result in a unique service/product 
+* Business Y __could__ try monetizing on SIC A+B+C, because the combination could result in a unique service/product with SI-value
 
 Whatever business is going to monetize on a SIVP-licensed SIC, it has to keep its data/modifications available to the public domain.
 
