@@ -18,7 +18,7 @@ Terminology:
 * __RESTAPI__: popular way to distribute and share online data
 * __BOTTOM-UP__: Team members are invited to participate in every step of the management process 
 
-<img src="/public/img/selfaccelerating-SI-accelerator.png"/>
+<img src="/public/img/selfaccelerating-Si-accelerator.png"/>
 
 The above illustrated cyclic flow (or parts of it) could happen thru human interaction, or software.
 
