@@ -87,7 +87,7 @@ This article has been greatly inspired by talks with the wonderful people of:
 
 <a target="_blank" href="http://www.siac.network"><img src="/public/img/siac-logo1.png" width="200"/></a>
 <a target="_blank" href="http://jpi-urbaneurope.eu"><img src="/public/img/logo-urban-europe-color.png" width="200"/></a>
-<a target="_blank" href="http://utu.fi"><img src="/public/img/utu-logo.jpg" width="200"/></a>
+<a target="_blank" href="http://utu.fi"><img src="/public/img/utu_logo.jpg" width="200"/></a>
 <a target="_blank" href="http://www.ulb.ac.be"><img src="/public/img/logoulb1.gif" width="200"></a>
 <a target="_blank" href="http://urbact.eu"><img src="/public/img/urbact.png" width="200"></a>
 
