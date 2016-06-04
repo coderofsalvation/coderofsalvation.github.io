@@ -13,10 +13,10 @@ title: Selfaccelerating social innovation like a fractal (the social innovation 
 
 Terminology:
 
-* OPENSOURCE: tools and products which both business- and non-businessworld can use & modify
-* SIC: social innovative concept
-* RESTAPI: popular way to distribute and share online data
-* BOTTOM-UP: Team members are invited to participate in every step of the management process 
+* __OPENSOURCE__: tools and products which both business- and non-businessworld can use & modify
+* __SIC__: social innovative concept
+* __RESTAPI__: popular way to distribute and share online data
+* __BOTTOM-UP__: Team members are invited to participate in every step of the management process 
 
 <img src="/public/img/selfaccelerating-Si-accelerator.png"/>
 
