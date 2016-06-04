@@ -90,7 +90,7 @@ careful when to use projects or SIC's. If you only got one hammer, everything be
 
 This article has been greatly inspired by talks with the wonderful people of:
 
-<a target="_blank" href="http://www.seismicproject.eu"><img src="/public/img/logo-seismic-project.png" width="200"></a>
+<a target="_blank" href="http://www.seismicproject.eu"><img src="/public/img/logo-seismic-project.png?1" width="200"></a>
 <a target="_blank" href="http://www.siac.network"><img src="/public/img/siac-logo1.png" width="200"/></a>
 <a target="_blank" href="http://jpi-urbaneurope.eu"><img src="/public/img/logo-urban-europe-color.png" width="200"/></a>
 <a target="_blank" href="http://utu.fi"><img src="/public/img/utu_logo.jpg" width="200"/></a>
