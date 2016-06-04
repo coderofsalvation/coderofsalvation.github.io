@@ -20,7 +20,7 @@ Terminology:
 
 <img src="/public/img/selfaccelerating-Si-accelerator.png"/>
 
-The above illustrated cyclic flow (or parts of it) could happen thru human interaction, or software.
+The above illustrated cyclic flow (or parts of it) could happen thru human interaction and/or software.
 Therefore, a house with people could also simply represent a database.
 
 ## Example: the software world

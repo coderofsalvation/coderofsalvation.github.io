@@ -20,7 +20,7 @@ Terminology:
 
 <img src="/public/img/selfaccelerating-Si-accelerator.png"/>
 
-The above illustrated cyclic flow (or parts of it) could happen thru human interaction, or software.
+The above illustrated cyclic flow (or parts of it) could happen thru human interaction and/or software.
 
 ## Business vs non-business
 
