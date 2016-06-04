@@ -79,7 +79,7 @@ careful when to use projects or SIC's. If you only got one hammer, everything be
 
 ## how SIC licences can keep SI accelerators healthy, and accelerate trust
 
-[Click here to view vol #3](2016-06-01-the-social-innovation-accelerator-accelerator-vol-3)
+[Click here to view vol #3](/2016/06/01/the-social-innovation-accelerator-accelerator-vol-3)
 
 ## Inspired by 
 
