@@ -10,11 +10,12 @@ title: Social Innovation licenses to accelerate trust (the social innovation acc
 
 <img src="/public/img/fractals.jpg"/>
 
-> Terminology
-> * OPENSOURCE: tools and products which both business- and non-businessworld can use & modify
-> * SIC: social innovative concept
-> * RESTAPI: popular way to distribute and share online data
-> * BOTTOM-UP: Team members are invited to participate in every step of the management process 
+Terminology:
+
+* OPENSOURCE: tools and products which both business- and non-businessworld can use & modify
+* SIC: social innovative concept
+* RESTAPI: popular way to distribute and share online data
+* BOTTOM-UP: Team members are invited to participate in every step of the management process 
 
 <img src="/public/img/selfaccelerating-SI-accelerator.png"/>
 
