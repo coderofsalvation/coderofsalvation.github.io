@@ -4,9 +4,9 @@ title: Social Innovation licenses to accelerate trust (the social innovation acc
 ---
 
 <div class="message">
-  Hi! In this post I will share my thoughts on how the corporate- and social innovation-world can learn from the softwareworld.
+  Hi! In this ramble I will share my thoughts on how the corporate- and social innovation-world can learn from the softwareworld.
   I tried to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*, without having 
-  any knowledge about SI at all :)
+  in-depth knowledge about SI at all :)
 </div>
 
 <img src="/public/img/fractals.jpg"/>
