@@ -8,7 +8,7 @@ title: Social Innovation licenses to accelerate trust (the social innovation acc
   It tries to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*
 </div>
 
-<img src="/img/fractals.jpg"/>
+<img src="/public/img/fractals.jpg"/>
 
 > Terminology
 > * OPENSOURCE: tools and products which both business- and non-businessworld can use & modify
@@ -16,7 +16,7 @@ title: Social Innovation licenses to accelerate trust (the social innovation acc
 > * RESTAPI: popular way to distribute and share online data
 > * BOTTOM-UP: Team members are invited to participate in every step of the management process 
 
-<img src="/img/selfaccelerating-SI-accelerator.png"/>
+<img src="/public/img/selfaccelerating-SI-accelerator.png"/>
 
 The above illustrated cyclic flow (or parts of it) could happen thru human interaction, or software.
 

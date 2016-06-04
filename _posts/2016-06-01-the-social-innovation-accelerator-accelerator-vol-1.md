@@ -8,7 +8,7 @@ title: Selfaccelerating social innovation like a fractal (the social innovation 
   It tries to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*
 </div>
 
-<img src="/img/fractals.jpg"/>
+<img src="/public/img/fractals.jpg"/>
 
 > Terminology
 > * OPENSOURCE: tools and products which both business- and non-businessworld can use & modify
@@ -16,7 +16,7 @@ title: Selfaccelerating social innovation like a fractal (the social innovation 
 > * RESTAPI: popular way to distribute and share online data
 > * BOTTOM-UP: Team members are invited to participate in every step of the management process 
 
-<img src="/img/selfaccelerating-Si-accelerator.png"/>
+<img src="/public/img/selfaccelerating-Si-accelerator.png"/>
 
 The above illustrated cyclic flow (or parts of it) could happen thru human interaction, or software.
 Therefore, a house with people could also simply represent a database.
