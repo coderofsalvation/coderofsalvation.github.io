@@ -79,8 +79,7 @@ Focusing on milestones instead of measuring elapsed time:
 * projects measure progress in time
 * but SIC's could just focus on 'its done when its done'
 
-> NOTE: It's not a bad idea to use projects at all. Governments & people can still benefit a lot from projects. However, governments should be 
-careful when to use projects or SIC's. If you only got one hammer, everything becomes a nail.
+> NOTE: It's not a bad idea to use projects at all. Governments & people can still benefit a lot from projects. However, governments should distinct between projects and SIC's: because if you only got one hammer, everything becomes a nail.
 
 ## how SIC licences can keep SI accelerators healthy, and accelerate trust
 
