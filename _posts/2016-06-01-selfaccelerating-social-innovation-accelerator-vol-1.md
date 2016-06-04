@@ -42,12 +42,12 @@ And if you do, you want the data to be online, and accessible by other accelerat
 
 An SI accelerator ideally should accelerate itself.
 Therefore, its output should flow back into its input.
-This would prevent the yet-another-social-innovative-concept (YASIC) syndrome.
+This would prevent the yet-another-social-innovative-concept (__YASIC__) syndrome.
 The YASIC syndrome is a great way to waste money, time and resources.
 The YASIC syndrome happens because of the following reasons:
 
-* lack of sharing between IC's
-* budgets being linked to IC's instead of participants
+* lack of sharing between IC's (and their accelerators)
+* budgets being linked to SIC's or accelerators, instead of the actual participants
 * accelerator treating SIC as a temporary project
 * accelerator does not feed-back into other accelerators (becomes a leave of a tree)
 
