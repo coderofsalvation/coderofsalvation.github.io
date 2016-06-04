@@ -96,6 +96,7 @@ This article has been greatly inspired by talks with the wonderful people of:
 <a target="_blank" href="http://utu.fi"><img src="/public/img/utu_logo.jpg" width="200"/></a>
 <a target="_blank" href="http://www.ulb.ac.be"><img src="/public/img/logoulb1.gif" width="200"></a>
 <a target="_blank" href="http://urbact.eu"><img src="/public/img/urbact.png" width="200"></a>
+<a target="_blank" href="http://diebaeckerei.at"><img src="/public/img/backerei.png" width="200"></a>
 <a target="_blank" href="http://collaborativeeconomy.com"><img src="/public/img/ce.png" width="200"></a>
 <a target="_blank" href="http://www.transitsocialinnovation.eu"><img src="/public/img/transit.png" width="200"></a>
 
