@@ -34,13 +34,18 @@ The more we think of SIC's in terms of failure/success, the more so-called 'expe
 
 In softwareworld, dictatorship is allowed but in practice only works for very small projects/components.
 As the participants (Developers) grow, the dictator will get flooded with communication & todos.
-Eventually the dictator becomes unresponsive and/or abandons the project and/or will team up with another participants or projects.
+Eventually the dictator will: 
+
+* become unresponsive 
+* and/or abandons the projects
+* and/or will share upstream SIC activities with other participants
+
 The dictator-experience is an experience every opensource software developer needs to experience.
 One would almost think that, in order to prevent dictatorship, everybody should be allowed to try to be a dictator.
 
 ## Participants as a currency/metric
 
-When __participants__ of SIC's get an equal personal budget (time or money), SI is accelerated democratically. Each participant can decide on his/her own to either reinvent the wheel, or join similar minded SIC's.
+When __participants__ of SIC's get an equal personal budget (time/money/etc), SI is accelerated democratically. Each participant can decide on his/her own to either reinvent the wheel, be a dictator, or join similar minded SIC's.
 Lets not dream away on how this would beautifully fit into a [European base income-concept](http://basicincome-europe.org/ubie).
 
 ## End of projects
