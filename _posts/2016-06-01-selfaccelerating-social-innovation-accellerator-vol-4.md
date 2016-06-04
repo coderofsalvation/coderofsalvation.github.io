@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keeping Social Innovation Real (the social innovation accelerator accelerator vol4) 
+title: Keeping Social Innovation Real (selfaccelerating social innovation accelerator vol4) 
 ---
 
 <div class="message">

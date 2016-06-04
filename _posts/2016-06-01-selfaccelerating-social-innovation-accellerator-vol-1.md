@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selfaccelerating social innovation like a fractal (the social innovation accelerator accelerator vol1)
+title: Selfaccelerating social innovation like a fractal (selfaccelerating social innovation accelerator vol1)
 ---
 
 <div class="message">

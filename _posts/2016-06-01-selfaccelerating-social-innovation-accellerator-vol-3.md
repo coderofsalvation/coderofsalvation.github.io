@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Social Innovation licenses to accelerate trust (the social innovation accelerator accelerator vol3) 
+title: Social Innovation licenses to accelerate trust (selfaccelerating social innovation accelerator vol3) 
 ---
 
 <div class="message">

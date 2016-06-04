@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Healthy & Recyclable Social Innovation (the social innovation accelerator accelerator vol2) 
+title: Healthy & Recyclable Social Innovation (selfaccelerating social innovation accelerator vol2) 
 ---
 
 <div class="message">
