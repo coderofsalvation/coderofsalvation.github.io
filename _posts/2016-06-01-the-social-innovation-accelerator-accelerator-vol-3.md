@@ -4,18 +4,19 @@ title: Social Innovation licenses to accelerate trust (the social innovation acc
 ---
 
 <div class="message">
-  Hi! In this post I will share my thoughts on how the corporate- and social innovation-world can learn from opensource.
-  It tries to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*
+  Hi! In this post I will share my thoughts on how the corporate- and social innovation-world can learn from the softwareworld.
+  I tried to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*, without having 
+  any knowledge about SI at all :)
 </div>
 
 <img src="/public/img/fractals.jpg"/>
 
 Terminology:
 
-* OPENSOURCE: tools and products which both business- and non-businessworld can use & modify
-* SIC: social innovative concept
-* RESTAPI: popular way to distribute and share online data
-* BOTTOM-UP: Team members are invited to participate in every step of the management process 
+* __OPENSOURCE__: tools and products which both business- and non-businessworld can use & modify
+* __SIC__: social innovative concept
+* __RESTAPI__: popular way to distribute and share online data
+* __BOTTOM-UP__: Team members are invited to participate in every step of the management process 
 
 <img src="/public/img/selfaccelerating-SI-accelerator.png"/>
 
@@ -68,3 +69,19 @@ Another one:
 * SIC T starts with SISP license 
 * Business X can immediately modify, build & monetize upon on SIC T 
 * Business X is not required to share its modifications/improvements of SIC T 
+
+## how to keep SI accelerators healthy 
+
+[Click here to view vol #4](2016-06-01-the-social-innovation-accelerator-accelerator-vol-4)
+
+## Inspired by 
+
+This article has been greatly inspired by talks with the wonderful people of:
+
+<a target="_blank" href="http://www.siac.network"><img src="/public/img/siac-logo1.png" width="200"/></a>
+<a target="_blank" href="http://jpi-urbaneurope.eu"><img src="/public/img/logo-urban-europe-color.png" width="200"/></a>
+<a target="_blank" href="http://utu.fi"><img src="/public/img/utu-logo.jpg" width="200"/></a>
+<a target="_blank" href="http://www.ulb.ac.be"><img src="/public/img/logoulb1.gif" width="200"></a>
+<a target="_blank" href="http://urbact.eu"><img src="/public/img/urbact.png" width="200"></a>
+
+Credits: Arjan Biemans, Erna Bosschart, Bonno Pel, Kaat Peters, Liisa Joutsenjarvi, Christoph Grud, Ivan Kepecs, Oscar Racke, Anne Paavolainen, Peter Wolkowinski, Jonas Bylund, Peter van de Glind, and probably a lot of people I forgot.

@@ -4,8 +4,9 @@ title: Selfaccelerating social innovation like a fractal (the social innovation 
 ---
 
 <div class="message">
-  Hi! In this post I will share my thoughts on how the corporate- and social innovation-world can learn from opensource.
-  It tries to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*
+  Hi! In this post I will share my thoughts on how the corporate- and social innovation-world can learn from the softwareworld.
+  I tried to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*, without having 
+  any knowledge about SI at all :)
 </div>
 
 <img src="/public/img/fractals.jpg"/>
@@ -53,3 +54,15 @@ The YASIC syndrome happens because of the following reasons:
 ## how to keep SI accelerators healthy 
 
 [Click here to view vol #2](2016-06-01-the-social-innovation-accelerator-accelerator-vol-1)
+
+## Inspired by 
+
+This article has been greatly inspired by talks with the wonderful people of:
+
+<a target="_blank" href="http://www.siac.network"><img src="/public/img/siac-logo1.png" width="200"/></a>
+<a target="_blank" href="http://jpi-urbaneurope.eu"><img src="/public/img/logo-urban-europe-color.png" width="200"/></a>
+<a target="_blank" href="http://utu.fi"><img src="/public/img/utu-logo.jpg" width="200"/></a>
+<a target="_blank" href="http://www.ulb.ac.be"><img src="/public/img/logoulb1.gif" width="200"></a>
+<a target="_blank" href="http://urbact.eu"><img src="/public/img/urbact.png" width="200"></a>
+
+Credits: Arjan Biemans, Erna Bosschart, Bonno Pel, Kaat Peters, Liisa Joutsenjarvi, Christoph Grud, Ivan Kepecs, Oscar Racke, Anne Paavolainen, Peter Wolkowinski, Jonas Bylund, Peter van de Glind, and probably a lot of people I forgot.
