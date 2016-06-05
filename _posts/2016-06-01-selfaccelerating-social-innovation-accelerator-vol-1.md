@@ -5,7 +5,7 @@ title: Selfaccelerating social innovation like a fractal (selfaccelerating socia
 
 <div class="message">
   Hi! In this ramble I will share my thoughts on, how the corporate- and social innovation-world could be shaped, using softwareworld-practices.
-  I tried to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*, without having 
+  I tried to answer the question: "How to design an selfaccelerating SI co-creation accelerator, like a fractal", without having 
   in-depth knowledge about SI at all :)
 </div>
 

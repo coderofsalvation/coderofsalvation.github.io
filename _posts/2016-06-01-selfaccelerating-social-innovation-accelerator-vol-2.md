@@ -5,7 +5,7 @@ title: Healthy & Recyclable Social Innovation (selfaccelerating social innovatio
 
 <div class="message">
   Hi! In this ramble I will share my thoughts on, how the corporate- and social innovation-world could be shaped, using softwareworld-practices.
-  I tried to answer the question: *"How to design an bottom-up selfaccelerating SI accelerator, like a fractal"*, without having 
+  I tried to answer the question: "How to design an selfaccelerating SI co-creation accelerator, like a fractal", without having 
   in-depth knowledge about SI at all :)
 </div>
 
@@ -50,13 +50,13 @@ Lets not dream away on how this would beautifully fit into a [European base inco
 
 ## End of projects
 
-> Stop top-down projects, start bottom-up SIC's.
+> Stop top-down projects, start co-creational SIC's.
 
 As much as we love to believe governments can support SI, a government has traditionally been a top-down apparatus.
 One could argue true top-down does not really exists, since in the end it always boils down to a network of people.
 However, budgets mostly get distributed top-down over groups of people, and for SIC's this works counterproductive.
 
-> SI budgets should be spreaded over participants for a bottom-up workflow, and acceleration of trust.
+> SI budgets should be spreaded over participants for a co-creational workflow, and acceleration of trust.
 
 ## From Temporary to Durable innovation
 
