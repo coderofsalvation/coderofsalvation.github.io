@@ -1,9 +1,14 @@
 # Dependencies
 markdown:         kramdown
-pygments:         true
+kramdown:
+  input: GFM
+  hard_wrap: false
+  
+highlighter: rouge
+#pygments:         true
 
 # Permalinks
-permalink:        pretty
+#permalink:        pretty
 
 # Setup
 encoding: UTF-8
