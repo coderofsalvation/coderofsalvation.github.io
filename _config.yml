@@ -1,22 +1,22 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
-
-# Permalinks
-permalink:        pretty
-
-# Setup
-encoding: UTF-8
-title:            Leon van Kammen
-tagline:          micro devtrepeneur / tech integration ninja from Europe
-url:              http://coderofsalvation.github.io
-paginate:         4
-author:
-  name:           Leon van Kammen
-  url:            https://twitter.com/coderofsalvatio
-  email:          info@leon.vankammen.eu
-
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/coderofsalvation/coderofsalvation.github.io
+## Dependencies
+#markdown:         redcarpet
+#pygments:         true
+#
+## Permalinks
+#permalink:        pretty
+#
+## Setup
+#encoding: UTF-8
+#title:            Leon van Kammen
+#tagline:          micro devtrepeneur / tech integration ninja from Europe
+#url:              http://coderofsalvation.github.io
+#paginate:         4
+#author:
+#  name:           Leon van Kammen
+#  url:            https://twitter.com/coderofsalvatio
+#  email:          info@leon.vankammen.eu
+#
+## Custom vars
+#version:          1.0.0
+#github:
+#  repo:           https://github.com/coderofsalvation/coderofsalvation.github.io
