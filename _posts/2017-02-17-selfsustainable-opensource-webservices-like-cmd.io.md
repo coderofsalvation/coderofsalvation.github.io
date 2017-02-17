@@ -1,19 +1,19 @@
 ---
 layout: post
-title: OpenSource SelfSustainable (OSSS) webservices 
+title: OpenSource SelfSustainable webservices (SSW) like cmd.io
 ---
 
 <iframe src="https://player.vimeo.com/video/204520271" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <div class="message">
-  Hi! In this post I'm discussing the emergence of opensource selfsustainable webservices, like [cmd.io](http://cmd.io). Hope you like it!
+  Hi! In this post I'm discussing the emergence of opensource selfsustainable webservices (SSW), like [cmd.io](http://cmd.io). Hope you like it!
 </div>
 
-## OSSS-compatible commandline provider
+## SSW example (cmd.io, a commandline provider)
 
 * [cmd.io](http://cmd.io)
 
-## OSSS-compatible PaaS provider 
+## SSW-compatible PaaS provider to host SSW
 
 * [zeit.co](zeit.co/now#pricing)
 * [nanobox.io](nanobox.io)
