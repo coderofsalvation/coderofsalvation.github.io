@@ -1,8 +1,0 @@
-digraph myGraph {
-  size="6,6";
-  "Personal attempt to visualize wheel of fantasy\n\nhttp://leon.vankammen.eu/yoga" [ shape = plaintext ];
-  node [color=gray83, style=filled];
-  "Vikalpa vritti" -> "words (like 'time')" [ label="uses words which have no place in physical reality,\nthey're not an object" ]
-  "Fantasy/Fancy/Imagination" -> "Vikalpa vritti" [label="create vikalpa-tic "]
-  "words (like 'time')" -> "Fantasy/Fancy/Imagination" [label="recall from memory previous seen objects,\nthough not present now"] 
-}

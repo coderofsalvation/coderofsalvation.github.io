@@ -1,1 +1,0 @@
-../tech/mobile-webapps-are-great.md

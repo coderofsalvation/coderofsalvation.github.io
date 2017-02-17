@@ -1,8 +1,0 @@
-digraph myGraph {
-  size="7,7";
-  "Knowlegde described in Patanjali Yoga Sutras.\nAll vrittis including pramana should be let go of.\n\nhttp://leon.vankammen.eu/yoga" [ shape = plaintext ];
-  node [color=gray83, style=filled];
-  "Viparyaya" -> "Vikalpa " [label=" superimposed by"]
-  "Vikalpa " -> "Pramana" [label=" superimposed by"]
-  "Pramana" -> "Samadhi (supreme knowledge)" [label=" superimposed by"]
-}

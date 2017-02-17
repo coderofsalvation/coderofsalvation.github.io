@@ -1,9 +1,0 @@
-#/bin/bash
-
-for file in *.dot; do 
-  echo "$file"
-  dot -Tpng "$file" > "$file.png" 
-  dot -Tjpg "$file" > "$file.jpg" 
-#  dot -Tcmapx -o$file.map -Tjpg -o$file.jpg "$file"
-#  dot -Tplain "$file" > "$file.txt"
-done
