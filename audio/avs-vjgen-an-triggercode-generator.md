@@ -1,0 +1,1 @@
+../tech/avs-vjgen-an-triggercode-generator.md
