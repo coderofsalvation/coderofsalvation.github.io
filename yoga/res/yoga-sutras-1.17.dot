@@ -1,0 +1,32 @@
+digraph G {
+  graph[size=11.5,11.5]
+  you [label="you", URL="http://en.wikipedia.org/wiki/Purusha",style=filled,fillcolor="grey"];
+  world [label="object",style=filled,fillcolor="grey"];
+
+
+  mods [label="( deep absorption concentrated mind )\n", dir="none",style=filled,fillcolor="gray"];
+  vikalpa [label="(vikalpa)\nmental speculation\nverbal misconception\nnot visualizable as object",color="red",];
+  pramana [label="(pramana)\ncorrect knowledge",color="azure4",URL="http://en.wikipedia.org/wiki/Pram%C4%81%E1%B10%87a"];
+  viparyaya [label="(viparyaya)\nincorrect knowledge",color="azure4",URL="http://fr.wikipedia.org/wiki/Viparyaya"];
+  nidra [label="(nidra)\ndeep sleep",color="azure4",URL="http://en.wikipedia.org/wiki/Yoga-nidra"];
+  smriti [label="(smriti)\npast memories",color="red",URL="http://en.wikipedia.org/wiki/Smriti"];
+  nonattachement [label="non-attachement"];
+  vikalpa -> mods [dir="none",color="azure4",style=dashed];
+  smriti -> mods [dir="none",color="azure4"];
+  nidra -> mods [dir="none",color="azure4",style=dashed];
+  viparyaya -> mods [dir="none",color="azure4",style=dashed];
+  pramana -> mods [dir="none",color="azure4",style=dashed];
+  
+
+  you -> practice;
+  you -> nonattachement;
+  nonattachement -> mods [label="yoga / control",URL="http://en.wikipedia.org/wiki/Yoga",color=red];
+  practice -> mods [label="",URL="http://en.wikipedia.org/wiki/Yoga",color=red];
+  mods -> world [label=" 'I' feeling\n(asmita)"];
+  mods -> world [label="gross attention\n(vitarka)"];
+  mods -> world [label="subtle attention\n(vichara)"];
+  mods -> world [label=" feelings of joy \n(ananda)"];
+
+  overlap=false;
+  label="1.17 First stage concentration: Samprajnata samadhi, is the deep absorption of attention on an object is of four kinds\n(1.11 Recollection or memory (smriti) is mental modification caused by the inner reproducing of\na previous impression of an object, but without adding any other characteristics from other sources.)\n\nhttp://leon.vankammen.eu/yoga"
+}
