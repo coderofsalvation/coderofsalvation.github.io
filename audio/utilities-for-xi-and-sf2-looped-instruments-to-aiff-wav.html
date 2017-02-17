@@ -3,49 +3,27 @@
   <head>
   <meta charset=utf-8 />
   <meta name="viewport" content="width=620" />
-  <title>Bash and dataformats </title>
+  <title>Utilities for xi and sf2 looped instruments to aiff wav </title>
   </head>
   <body>
   
   
   <div style="padding: 0em 0em 1.0em 0em; margin: 0em 0em 1.0em 0em; float:left; width:32.0em">
-    <a href="../" target="_blank">
-      <img src="res/logo_small.png" style="text-align:left"/>
+    <a href="index.html" style="text-decoration:none">
+      <span style="font-size:0.7em; color:#079;">
+        Sounddesign by Leon van Kammen&#8482; &nbsp; &#8212; music / soundfx / soundtech / dsp / plugins
+      </span>
     </a>
-    <span style="font-size:0.7em; color:#079;">
-      Coder of Salvation&#8482; &nbsp; &#8212; programming / opensource / console / minimal
-    </span>
   </div>
 
   <div style="width:20.0em;float:right">
     <select style="width:100%" onchange="document.location.href = this.options[ this.selectedIndex ].value">
-      	<option   value="index.html">/&nbsp;Home</option> 	<option   value="actionscript-trace-cpu-hogs.html">&nbsp;Actionscript trace cpu hogs </option>
-	<option   value="automatic-tracing-handdrawn-scans-into-vector-images-in-linux.html">&nbsp;Automatic tracing handdrawn scans into vector images in linux </option>
-	<option   value="avs-vjgen-an-triggercode-generator.html">&nbsp;Avs vjgen an triggercode generator </option>
-	<option selected='selected'  value="bash-and-dataformats.html">&nbsp;Bash and dataformats </option>
-	<option   value="clever-code-toggling.html">&nbsp;Clever code toggling </option>
-	<option   value="conditional-cron-is-our-friend.html">&nbsp;Conditional cron is our friend </option>
-	<option   value="emailing-poormans-ascii-graphs-using-unix-tree.html">&nbsp;Emailing poormans ascii graphs using unix tree </option>
-	<option   value="flexible-sql-columns-for-production-servers.html">&nbsp;Flexible sql columns for production servers </option>
-	<option   value="githooks-the-minimist-quality-assurance-tool.html">&nbsp;Githooks the minimist quality assurance tool </option>
-	<option   value="imapmunch-easy-way-to-select-and-parse-imap-email-on-the-commandline.html">&nbsp;Imapmunch easy way to select and parse imap email on the commandline </option>
-	<option   value="javascript-errors-on-productionservers.html">&nbsp;Javascript errors on productionservers </option>
-	<option   value="javascript-memory-leaks.html">&nbsp;Javascript memory leaks </option>
-	<option   value="javascript-simple-plugin-system.html">&nbsp;Javascript simple plugin system </option>
-	<option   value="looping-over-array-in-node-red-nodejs-iteration.html">&nbsp;Looping over array in node red nodejs iteration </option>
-	<option   value="md2x-a-minimalistic-markdown-bashscript.html">&nbsp;Md2x a minimalistic markdown bashscript </option>
-	<option   value="mobile-webapps-are-great.html">&nbsp;Mobile webapps are great </option>
-	<option   value="mysql-pagers-get-more-overview.html">&nbsp;Mysql pagers get more overview </option>
-	<option   value="npm-git-cloning-private-bitbucket-repository-with-ssh-key-on-openshift.html">&nbsp;Npm git cloning private bitbucket repository with ssh key on openshift </option>
-	<option   value="shellscript-framework-make-quick-bash-scripts.html">&nbsp;Shellscript framework make quick bash scripts </option>
-	<option   value="simple-bash-script-to-document-REST-api.html">&nbsp;Simple bash script to document REST api </option>
-	<option   value="snippy-autocompletion-for-console-and-browser-window-manager-using-bash.html">&nbsp;Snippy autocompletion for console and browser window manager using bash </option>
-	<option   value="storing-retrieving-hierarchical-trees-between-php-and-mysql.html">&nbsp;Storing retrieving hierarchical trees between php and mysql </option>
-	<option   value="typesafe-functions-and-nested-variables-in-php-javascript-and-coffeescript-using-typesafe.html">&nbsp;Typesafe functions and nested variables in php javascript and coffeescript using typesafe </option>
-	<option   value="utilities-for-xi-and-sf2-looped-instruments-to-aiff-wav.html">&nbsp;Utilities for xi and sf2 looped instruments to aiff wav </option>
-	<option   value="vim-mappingmanager-organize-your-mappings.html">&nbsp;Vim mappingmanager organize your mappings </option>
-	<option   value="xdebug-bashscript-to-profile-and-debug-php.html">&nbsp;Xdebug bashscript to profile and debug php </option>
-	<option   value="you-better-use-snippets-son.html">&nbsp;You better use snippets son </option>
+      	<option   value="index.html">/&nbsp;Home</option> 	<option   value="avs-vjgen-an-triggercode-generator.html">&nbsp;Avs vjgen an triggercode generator </option>
+	<option   value="ez-looper-dm2-software.html">&nbsp;Ez looper dm2 software </option>
+	<option   value="ez-peacefilter-crossfilter-vst-buzz-plugin.html">&nbsp;Ez peacefilter crossfilter vst buzz plugin </option>
+	<option   value="korg-electribe-sx-upgrade-memory-channels-esx.html">&nbsp;Korg electribe sx upgrade memory channels esx </option>
+	<option   value="sounddesign-portfolio.html">&nbsp;Sounddesign portfolio </option>
+	<option selected='selected'  value="utilities-for-xi-and-sf2-looped-instruments-to-aiff-wav.html">&nbsp;Utilities for xi and sf2 looped instruments to aiff wav </option>
     </select>
   </div>
   <div style="clear:both;border-bottom:1px solid #CCC; "></div>
@@ -116,7 +94,7 @@
         margin-left: 24px;
     }
     p, ul, ol {
-        font-size: 24px;
+        font-size: 16px;
         line-height: 24px;
         max-width: 540px;
     }
@@ -319,17 +297,80 @@
       border: 0;
     }
   </style>
-<h1>Bash and data- / text-formats</h1>
+<h1>Massaging .xi and .sf2 instruments to AIFF/WAV with looppoints</h1>
+<p><code>UPDATE: precompiled binaries (ARM32/x86/x86_64) coming soon</code></p>
+<p>I was working on these utilities for SF2/XI instrument inspection/conversion and what not more. The tools might be buggy, but serve as a good startingpoint, as I did not find any other  simple sourcecode which does this on the commandline.</p>
 <h3>Problem </h3>
-<p>I wish there was a textformat which enables me to share data between many programminglanguages <em>including</em> bash. Bash is a swiss army knife which can bridge many gaps between different worlds, so how to bridge dataformats?</p>
-<h3>Why </h3>
-<p>Because it would be nice if bash could also work with data generated by other programminglanguages. Usually these generate json,xml e.g. </p>
-<h3>Solution </h3>
-<p>The good old csv- xml- and json- format! Its easy to write, easy to read, easy to process (if you are lucky).  Sit down, take a breath, and look at this snippets (ordered from portable to less portable):</p>
-<p><style type="text/css">.gist { width: 523px; }</style> <script src="https://gist.github.com/coderofsalvation/6120678.js"></script> <br> <script src="https://gist.github.com/coderofsalvation/48bade85bc09dd9e7ffd.js"></script> <br> <script src="https://gist.github.com/coderofsalvation/6120853.js"></script></p>
-<p>Simple isnt it?</p>
-<h3>Conclusion </h3>
-<p>No excuse anymore to invent your own dataformat in bash every time, the snippets above might not  be perfect, but they can be modified to do the job easily.</p>
+<p>There are many looped instruments out there (.xi/.sf2), and there are many software DAW`s (cubase/ableton) and hardware tools (electribe esx/old samplers) which support .wav looppoints. However, there isnt many software out there which uses these features. Also, conversion tools usually cannot be used in batch, which can be a big pita.</p>
+<h3>Download </h3>
+<p><a href="https://github.com/coderofsalvation/instr2raw">https://github.com/coderofsalvation/instr2raw</a></p>
+<h3>The purpose of this package </h3>
+<ul>
+<li>
+breath new life into the free legacy of public domain .xi and .sf2 instruments to newer formats
+</li><li>
+purely noncommercial
+</li><li>
+educational
+</li><li>
+conversion of <code>royalty-</code>, <code>license-free</code> and/or owned instruments
+</li>
+</ul>
+<h3>How it works </h3>
+<p>The samples and loopingmetadata are extracted from the instrumentfiles, and converted to raw- and txt-files. The shellscript 'convert' easifies batchprocessing of directories.</p>
+<p><code>(IMPORT)NOTE: libsndfile generally always produces 16bit PCM (little endian) output</code></p>
+<h3>Dependancies</h3>
+<ul>
+<li>
+gnu compiler, make, unzip and wget
+</li><li>
+libsndfile library
+</li><li>
+sox library (optional, used for normalizing samples)
+</li>
+</ul>
+<h3>  Installation</h3>
+<code><pre>
+git clone http://
+cd instr2raw
+make all
+</pre></code>
+<h3>  Usage </h3>
+<p>conversion:</p>
+<code><pre>
+./sf2toraw in/bass.sf2 outdir
+./xitoraw in/chord1.xi outdir
+</pre></code>
+<p>inject loopppoints:</p>
+<code><pre>
+./raw2wav out/chord1.raw out/chord1.wav
+./loopinject out/chord1.wav 100 200 out/chord1-looped.wav
+</pre></code>
+<p>or to batch directories:</p>
+<code><pre>
+mkdir in out
+# copy all your instrument files to directory 'in' 
+./convert instr2raw foo.xi out
+./convert instr2raw foo.sf2 out
+./convert rawdir2wav outdir
+</pre></code>
+<p>or a whole collection at once:</p>
+<code><pre>
+mkdir outdir
+./convert dir myinstrumentdir outdir
+</pre></code>
+<h3>NOTES </h3>
+<p>For more verbose output run the <code>convert</code> command with '&#8212;verbose' as last argument. Also, if you feel up to it, turn on the DEBUG-flag in the Makefile for crazy verboseness =]. <code>sf2toraw</code> and <code>xi2raw</code> also generate loopfiles which the shellscript <code>convert</code> uses for batchpurposes. But with little effort you can inject loopdata into aiff/wav-files yourself. You can just call the <code>loopinject</code> command manually and insert the looppoints.</p>
+<h3>Limitations </h3>
+<ul>
+<li>
+handle stereo files (mono only since my hardware supports monolooped instruments only) 
+</li><li>
+aiff generation/injection possible but <code>convert</code> shellscript is not finished concerning aiff output
+</li>
+</ul>
+<h3>License </h3>
+<p>GNU AGPL</p>
   <br><br>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
