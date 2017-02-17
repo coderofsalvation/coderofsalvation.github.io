@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenSource SelfSustainable webservices (SSW) like cmd.io
+title: OpenSource SelfSustainable webservices like cmd.io
 ---
 
 <iframe src="https://player.vimeo.com/video/204520271" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
