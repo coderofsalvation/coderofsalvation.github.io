@@ -45,11 +45,10 @@ After some days:
 
 * I installed [this beautiful terminal font & colors-scheme](https://gist.github.com/coderofsalvation/72c0b0b7d3288ab3748cf96629d08e81)
 * I figured out how to [set terminal titles as tab titles](https://gist.github.com/coderofsalvation/8eef0f99a5a85e00f2c2da5b9e09292d)
-* I made mixcloud.com my musicplayer, and pinned it to the shelf to run in a window 
 
 ## What i love so far
 
-* the desktop environment is very smooth, apple-like
+* the desktop environment is very minimal, smooth and slick
 * alt-shift-m: the filemanager is pretty nice, and allows adding cloudstorage integration (i have a 1TB webdav STACK-account at transip)
 * ctrl-shift-F5/cascade: take screenshot region to paste into slack
 * shift-search-l: suspend laptop without closing the lid
