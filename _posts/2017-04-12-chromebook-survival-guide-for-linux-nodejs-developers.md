@@ -15,13 +15,15 @@ Well, basically to ensure productivity and:
 
 <img src="/public/img/simplicity.jpg">
 
-* Linux desktop/windowmanagers are fun, dangerously fun (to keep tinkering with)
 * I wanted to be more productive
 * I wanted an easypeasy stable linux environment with minimal gui
-* I use mostly use terminal/websites/webapps/android apps
 * I prefer letting the Chromium/Google-team take care of updates/security etc.
 * Simplify my workflow
-* spend less time configuring linux applications
+
+Basically i want to spend less time on configuring non-trivial linux-stuff. Linux desktops/windowmanagers are fun, dangerously fun (to keep tinkering with).
+But most importantly:
+
+* I mostly use terminal/websites/webapps/android apps anyways
 
 > I googled/youtubed people who were running dockers and ubuntu in a chroot, so i figured there's plenty room for tinkering if needed.
 
