@@ -39,7 +39,7 @@ Ok..it wasn't exactly 5 minutes ;)
 
 After some days:
 
-<img src="/public/img/chromebookshot.png"/>
+![](/public/img/chromebookshot.png)
 
 ## What did i tweak after receiving my acer chromebook 14?
 
