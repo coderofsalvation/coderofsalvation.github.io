@@ -28,7 +28,7 @@ Well, basically to ensure productivity and:
 ## This took me 5 mins after I got my chromebook:
 
 * put the chromebook in developer mode
-* i bought a tiny 64GB pendrive to put my crouton chroots on
+* i bought a tiny 64GB pendrive to put my crouton chroots onto
 * i installed my dotfiles,vim,nvm and nodejs in my ubuntu xenial chroot created by [crouton](https://github.com/dnschneid/crouton)
 
 Ok..it wasn't exactly 5 minutes ;)
@@ -55,7 +55,7 @@ After some days:
 * extension: [nimbus screencapture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj?utm_source=chrome-app-launcher-search) easy peasy screencasts to paste into slack
 * extension: the great suspender (never get out of tabs)
 
-## What I tried/used to use, but abandonded
+## What I tried/used to use, but abandoned
 
 | What | Why |
 |-|-|
