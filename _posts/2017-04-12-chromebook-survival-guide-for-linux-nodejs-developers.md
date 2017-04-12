@@ -11,7 +11,7 @@ title: Chromebook survival guide for linux nodejs developers
 
 ## Why did i move to chromebook?
 
-Well, basically to ensure productivity and:
+Well, basically curiosity, and a hunger for:
 
 <img src="/public/img/simplicity.jpg">
 
