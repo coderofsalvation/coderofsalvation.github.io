@@ -4,7 +4,7 @@ title: Chromebook survival guide for linux nodejs developers
 ---
 
 <div class="message">
-  Hi! In this post I'm discussing my experiences after leaving years of linux installations behind, and buying an acer chromebook 14.
+  Hi! In this post I'm discussing my experiences after leaving years of linux/windows distros behind, after buying an acer chromebook 14.
 </div>
 
 <img src="/public/img/chromebook.jpg"/>
@@ -15,7 +15,7 @@ Well, basically to ensure productivity and:
 
 <img src="/public/img/simplicity.jpg">
 
-* I love google chrome & working 12hr without power 
+* I love google chrome + working 12hr without power 
 * I wanted an easypeasy stable linux environment with minimal gui
 * I prefer letting the Chromium/Google-team take care of updates/security etc.
 * Simplify my workflow
