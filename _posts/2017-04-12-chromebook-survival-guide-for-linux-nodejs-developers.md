@@ -11,7 +11,7 @@ title: Chromebook survival guide for linux nodejs developers
 
 Well, basically out of necessity:
 
-<img src="/img/simplicity.jpg">
+<img src="/public/img/simplicity.jpg">
 
 * Linux is fun, dangerously fun (to keep tinkering with)
 * I wanted to be more productive
@@ -25,17 +25,17 @@ Well, basically out of necessity:
 
 ## This took me 30 mins after I got my chromebook:
 
-<img src="/img/chromebook.jpg"/>
+<img src="/public/img/chromebook.jpg"/>
 
 * put the chromebook in developer mode
 * i bought a tiny 64GB pendrive to put my crouton chroots on
 * i installed my dotfiles,vim,nvm and nodejs in my ubuntu xenial chroot created by [crouton](https://github.com/dnschneid/crouton)
 
-> Boom! I was amazed to see that I could continue working on my projects already!
+> Boom! I was amazed to see that I could continue working on my projects already! 
 
 After some days:
 
-<img src="/img/chromebookshot.png"/>
+<img src="/public/img/chromebookshot.png"/>
 
 ## What did i tweak after receiving my acer chromebook 14?
 
@@ -49,7 +49,8 @@ After some days:
 * ctrl-shift-F5/cascade: take screenshot region to paste into slack
 * shift-search-l: suspend laptop without closing the lid
 * most important keyboard shortcut: CTRL-ALT-? (shows all shortcuts)
-* [nimbus screencapture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj?utm_source=chrome-app-launcher-search) easy peasy screencasts to paste into slack
+* extension: [nimbus screencapture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj?utm_source=chrome-app-launcher-search) easy peasy screencasts to paste into slack
+* extension: the great suspender (never get out of tabs)
 
 ## What I tried/used to use, but abanonded:
 
