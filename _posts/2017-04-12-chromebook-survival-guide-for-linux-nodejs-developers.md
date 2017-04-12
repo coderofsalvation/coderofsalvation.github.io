@@ -15,7 +15,7 @@ Well, basically to ensure productivity and:
 
 <img src="/public/img/simplicity.jpg">
 
-* I wanted to be more productive
+* I love google chrome & working 12hr without power 
 * I wanted an easypeasy stable linux environment with minimal gui
 * I prefer letting the Chromium/Google-team take care of updates/security etc.
 * Simplify my workflow
