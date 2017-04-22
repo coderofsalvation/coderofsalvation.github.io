@@ -4,7 +4,7 @@ title: Chromebook survival guide for linux nodejs developers
 ---
 
 <div class="message">
-  Hi! In this post I'm discussing my experiences after leaving years of linux/windows distros behind, after buying an acer chromebook 14.
+  Hi! In this post I'm discussing my experiences with the acer chromebook 14 as a developer.
 </div>
 
 <img src="/public/img/chromebook.jpg"/>
@@ -13,7 +13,7 @@ title: Chromebook survival guide for linux nodejs developers
 
 Well, basically curiosity, and my quest for:
 
-<img src="/public/img/simplicity.jpg">
+<img src="/public/img/simplicity.png"/>
 
 * I work with google chrome 24/7 
 * I would love using it 12hr without power 
@@ -22,7 +22,7 @@ Well, basically curiosity, and my quest for:
 
 But most importantly:
 
-* In the last years i find myself I using terminal/websites/webapps/android apps, instead of desktop apps.
+* In the last years i found myself spending most of my time with terminal/websites/webapps/android apps
 
 > I googled/youtubed people who were running dockers and ubuntu in a chroot, so i figured there's plenty room for desktop apps if needed.
 
@@ -158,4 +158,4 @@ I was able to get android apps quickly up and running by putting this script in 
     fi
 
 I didn't make this a permanent change, as i would like the OS to keep receiving its updates.
-Also, most android apps i would typically, also have a web- or chrome app variant.
+Also, most applications i use on android, also have a web- or chrome app variant (skype etc).
