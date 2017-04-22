@@ -93,7 +93,7 @@ Therefore i made these changes to `~/vim/vimrc`, to make things comfortable:
 ## Tweak for transferring big files (prevents cpu hogs)
 
 Sometimes I download movies from streaming moviesites (for travelling/offline purposes etc).
-Somehow using `cp` caused cpu spikes, and i solved that with this script:
+Somehow using `cp` caused cpu spikes (MMC storage related?), but i solved that with this script:
 
     #!/bin/bash
     # makes transferring big files cpu-friendly on chromebook
@@ -104,19 +104,21 @@ Somehow using `cp` caused cpu spikes, and i solved that with this script:
     #
     #     alias cp='bash ~/Downloads/cp.sh'
     #
-    [[ ! -n $1 ]] && { cp; exit 0; } 
+    [[ ! -n $1 ]] && { /bin/cp; exit 0; } 
     FILESIZE=$(( $( stat -c '%s' "$1" ) / 1024 / 1024 ))
     if [[ $FILESIZE -lt 50 ]]; then 
-      cp "$@"
+      /bin/cp "$@"
     else
-      nice -n 20 ionice -c 3 cp "$@"
+      nice -n 20 ionice -c 3 /bin/cp "$@"
     fi
 
 > Voila, this will automatically apply `nice` and `ionice` to the `cp` command (when files are bigger than 50MB). You could apply the same technique to other cpu-heavy commands.
 
+HINT: also do this in your crouton chroots
+
 ## Tweak for xterm paste on chromebook
 
-I rewired 'shift-backspace' to paste in xterm, by putting this script into `middleclick.sh`
+I rewired 'shift-backspace' to paste in xterm, by putting this script into `middleclick.sh`:
 
     #!/bin/bash
     xdotool mousedown --clearmodifiers 2
@@ -144,3 +146,5 @@ I was able to get android apps quickly up and running by putting this script in 
       echo "must be root"
     fi
 
+I didn't make this a permanent change, as i would like the OS to keep receiving its updates.
+Also, most android apps i would typically, also have a web- or chrome app variant.
