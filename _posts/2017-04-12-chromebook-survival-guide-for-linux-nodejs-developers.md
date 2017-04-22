@@ -30,7 +30,7 @@ But most importantly:
 
 * put the chromebook in developer mode
 * i bought a tiny 64GB pendrive for crouton chroot-backups and large files 
-* i installed my dotfiles,vim,nvm and nodejs in my ubuntu xenial chroot created by [crouton](https://github.com/dnschneid/crouton)
+* i installed my dotfiles,vim, and nvm in my ubuntu xenial chroot created by [crouton](https://github.com/dnschneid/crouton)
 
 Ok..it wasn't exactly 5 minutes ;)
 
@@ -69,6 +69,16 @@ After some days:
 ## What I didn't try yet
 
 [running docker using RKT](http://blog.vantol.org/running-docker-containers-on-a-chromebook-with-rkt/)
+
+## Aliases 
+
+Im using these alias in my `~/.bashrc` for crosh:
+
+    alias ubuntu="sudo enter-chroot"
+    alias startx="sudo enter-chroot xinit"
+    alias enable_playstore="sudo bash ~/Downloads/enable_playstore"
+    # cpu-friendly cp for big files
+    alias cp="bash ~/Downloads/cp.sh"
 
 ## Vim tweaks 
 
