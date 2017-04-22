@@ -63,7 +63,7 @@ After some days:
 | What | Why |
 |-|-|
 | [chromebrew](https://github.com/skycocker/chromebrew) | Eventhough it worked pretty well, I prefer [crouton](https://github.com/dnschneid/crouton) since it runs in it's own directory, rather than trying to mix software into Google's local OS.|
-|tmux | I had some copy/paste issues, so I went for a lean-and-mean CTRL-ALT-T (opens terminaltab) + fullscreen-button approach. CTRL-1..9 allows me to switch terminals |
+|tmux | I had some copy/paste issues, so I went for a lean-and-mean crosh-approach: CTRL-ALT-T (opens terminaltab) + fullscreen-button = PERFECT. CTRL-1..9 allows me to switch terminals |
 |linux desktop applications | eventhough LXDE/XFCE/KDE etc was easy to install using crouton, i didn't find myself needing it. In some rare cases i still can run GIMP or blender, but the usual image-editing tasks (rotate/crop/resize) can be done using imageviewer of chromeos's filemanager. I found `jwm` (Joe's windowmanager) a far better choice compared to LXDE/XFCE/KDE etc, since i don't need a second full-fledged windowmanager next to the awesome Chromeos.
 
 ## What I didn't try yet
