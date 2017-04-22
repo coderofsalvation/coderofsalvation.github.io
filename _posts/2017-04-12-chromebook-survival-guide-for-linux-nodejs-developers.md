@@ -57,6 +57,7 @@ After some days:
 * ctrl-shift-f5: easy screenshots out of the box
 * the microphone: recording screencasts works very well out of the box, also in crouton/X11
 * the speaker: very clean, clear loud sound
+* switching linux/chrome desktop: ctrl-shift-f1 and ctrl-shift-f2 switches desktops backward/forward (f1=backward & f2=forward key)
 
 ## What I tried/used to use, but abandoned
 
