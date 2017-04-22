@@ -62,7 +62,7 @@ After some days:
 |-|-|
 | [chromebrew](https://github.com/skycocker/chromebrew) | Eventhough it worked pretty well, I prefer [crouton](https://github.com/dnschneid/crouton) since it runs in it's own directory, rather than trying to mix software into Google's local OS.|
 |tmux | I had some copy/paste issues, so I went for a lean-and-mean CTRL-ALT-T (opens terminaltab) + fullscreen-button approach. CTRL-1..9 allows me to switch terminals |
-|linux desktop applications | eventhough LXDE/XFCE/KDE etc was easy to install using crouton, i didn't find myself needing it. In some rare cases i still use it to launch GIMP or blender, but imagemagick or the screenshot-region kb shortcut usually does the job most of the time.
+|linux desktop applications | eventhough LXDE/XFCE/KDE etc was easy to install using crouton, i didn't find myself needing it. In some rare cases i still can run GIMP or blender, but the usual image-editing tasks (rotate/crop/resize) can be done using imageviewer of chromeos's filemanager.)
 
 ## What I didn't try yet
 
@@ -87,3 +87,26 @@ Therefore i made these changes to `~/vim/vimrc`, to make things comfortable:
 		vnoremap <silent> <C-S>         <C-C>:update<CR>
 		inoremap <silent> <C-S>         <C-O>:update<CR>
 
+## Tweak for transferring big files (prevents cpu hogs)
+
+Sometimes I download movies from streaming moviesites (for travelling/offline purposes etc).
+Somehow using `rsync` or `cp` caused cpu spikes, and i solved that with this script:
+
+    #!/bin/bash
+    # makes transferring big files cpu-friendly on chromebook
+    #
+    # usage:
+    #
+    #   put this script into ~/Downloads/cp.sh and put this in your ~/.bashrc :
+    #
+    #     alias cp='bash ~/Downloads/cp.sh'
+    #
+    [[ ! -n $1 ]] && { cp; exit 0; } 
+    FILESIZE=$(( $( stat -c '%s' "$1" ) / 1024 / 1024 ))
+    if [[ $FILESIZE -lt 50 ]]; then 
+      cp "$@"
+    else
+      nice -n 20 ionice -c 3 cp "$@"
+    fi
+
+> Voila, this will automatically apply `nice` and `ionice` to the `cp` command (when files are bigger than 50MB)
