@@ -11,21 +11,20 @@ title: Chromebook survival guide for linux nodejs developers
 
 ## Why did i move to chromebook?
 
-Well, basically curiosity, and a hunger for:
+Well, basically curiosity, and my quest for:
 
 <img src="/public/img/simplicity.jpg">
 
-* I love google chrome + working 12hr without power 
+* I work with google chrome 24/7 
+* I would love using it 12hr without power 
 * I wanted an easypeasy stable linux environment with minimal gui
 * I prefer letting the Chromium/Google-team take care of updates/security etc.
-* Simplify my workflow
 
-Basically i want to spend less time on configuring non-trivial linux-stuff. Linux desktops/windowmanagers are fun, dangerously fun (to keep tinkering with).
 But most importantly:
 
-* I mostly use terminal/websites/webapps/android apps anyways
+* In the last years i find myself I using terminal/websites/webapps/android apps, instead of desktop apps.
 
-> I googled/youtubed people who were running dockers and ubuntu in a chroot, so i figured there's plenty room for tinkering if needed.
+> I googled/youtubed people who were running dockers and ubuntu in a chroot, so i figured there's plenty room for desktop apps if needed.
 
 ## This took me 5 mins after I got my chromebook:
 
@@ -55,6 +54,9 @@ After some days:
 * most important keyboard shortcut: CTRL-ALT-? (shows all shortcuts)
 * extension: [nimbus screencapture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj?utm_source=chrome-app-launcher-search) easy peasy screencasts to paste into slack
 * extension: the great suspender (never get out of tabs)
+* ctrl-shift-f5: easy screenshots out of the box
+* the microphone: recording screencasts works very well out of the box, also in crouton/X11
+* the speaker: very clean, clear loud sound
 
 ## What I tried/used to use, but abandoned
 
@@ -62,7 +64,7 @@ After some days:
 |-|-|
 | [chromebrew](https://github.com/skycocker/chromebrew) | Eventhough it worked pretty well, I prefer [crouton](https://github.com/dnschneid/crouton) since it runs in it's own directory, rather than trying to mix software into Google's local OS.|
 |tmux | I had some copy/paste issues, so I went for a lean-and-mean CTRL-ALT-T (opens terminaltab) + fullscreen-button approach. CTRL-1..9 allows me to switch terminals |
-|linux desktop applications | eventhough LXDE/XFCE/KDE etc was easy to install using crouton, i didn't find myself needing it. In some rare cases i still can run GIMP or blender, but the usual image-editing tasks (rotate/crop/resize) can be done using imageviewer of chromeos's filemanager.)
+|linux desktop applications | eventhough LXDE/XFCE/KDE etc was easy to install using crouton, i didn't find myself needing it. In some rare cases i still can run GIMP or blender, but the usual image-editing tasks (rotate/crop/resize) can be done using imageviewer of chromeos's filemanager. I found to `jwm` (Joe's windowmanager) a far better choice, as i don't need a second full-fledged windowmanager next to the awesome Chromeos.)
 
 ## What I didn't try yet
 
@@ -90,7 +92,7 @@ Therefore i made these changes to `~/vim/vimrc`, to make things comfortable:
 ## Tweak for transferring big files (prevents cpu hogs)
 
 Sometimes I download movies from streaming moviesites (for travelling/offline purposes etc).
-Somehow using `rsync` or `cp` caused cpu spikes, and i solved that with this script:
+Somehow using `cp` caused cpu spikes, and i solved that with this script:
 
     #!/bin/bash
     # makes transferring big files cpu-friendly on chromebook
@@ -109,4 +111,35 @@ Somehow using `rsync` or `cp` caused cpu spikes, and i solved that with this scr
       nice -n 20 ionice -c 3 cp "$@"
     fi
 
-> Voila, this will automatically apply `nice` and `ionice` to the `cp` command (when files are bigger than 50MB)
+> Voila, this will automatically apply `nice` and `ionice` to the `cp` command (when files are bigger than 50MB). You could apply the same technique to other cpu-heavy commands.
+
+## Tweak for xterm paste on chromebook
+
+I rewired 'shift-backspace' to paste in xterm, by putting this script into `middleclick.sh`
+
+    #!/bin/bash
+    xdotool mousedown --clearmodifiers 2
+    xdotool mouseup 2
+    xdotool keyup alt
+    xdotool keyup ctrl
+    xdotool keyup shift
+
+And invoking it using this `.xbindkeysrc` file in my homedir:
+
+    "/home/sqz/bin/middleclick"
+        Shift + BackSpace 
+
+## Running android apps
+
+I was able to get android apps quickly up and running by putting this script in `Downloads/enable_playstore.sh`:
+
+    #!/bin/bash
+    if [[ $(whoami) == "root" ]]; then 
+      #echo '--enable-arc' > /usr/local/chrome_dev.conf
+      echo '--arc-availability=officially-supported' > /usr/local/chrome_dev.conf
+      mount -o bind /usr/local/chrome_dev.conf /etc/chrome_dev.conf
+      echo now press ctrl-shift-qq and the playstore should show up
+    else 
+      echo "must be root"
+    fi
+
