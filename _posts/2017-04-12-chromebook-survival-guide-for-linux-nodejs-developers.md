@@ -29,7 +29,7 @@ But most importantly:
 ## This took me 5 mins after I got my chromebook:
 
 * put the chromebook in developer mode
-* i bought a tiny 64GB pendrive to put my crouton chroots onto
+* i bought a tiny 64GB pendrive for crouton chroot-backups and large files 
 * i installed my dotfiles,vim,nvm and nodejs in my ubuntu xenial chroot created by [crouton](https://github.com/dnschneid/crouton)
 
 Ok..it wasn't exactly 5 minutes ;)
@@ -54,7 +54,6 @@ After some days:
 * most important keyboard shortcut: CTRL-ALT-? (shows all shortcuts)
 * extension: [nimbus screencapture](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj?utm_source=chrome-app-launcher-search) easy peasy screencasts to paste into slack
 * extension: the great suspender (never get out of tabs)
-* ctrl-shift-f5: easy screenshots out of the box
 * the microphone: recording screencasts works very well out of the box, also in crouton/X11
 * the speaker: very clean, clear loud sound
 * switching linux/chrome desktop: ctrl-shift-f1 and ctrl-shift-f2 switches desktops backward/forward (f1=backward & f2=forward key)
@@ -65,7 +64,7 @@ After some days:
 |-|-|
 | [chromebrew](https://github.com/skycocker/chromebrew) | Eventhough it worked pretty well, I prefer [crouton](https://github.com/dnschneid/crouton) since it runs in it's own directory, rather than trying to mix software into Google's local OS.|
 |tmux | I had some copy/paste issues, so I went for a lean-and-mean CTRL-ALT-T (opens terminaltab) + fullscreen-button approach. CTRL-1..9 allows me to switch terminals |
-|linux desktop applications | eventhough LXDE/XFCE/KDE etc was easy to install using crouton, i didn't find myself needing it. In some rare cases i still can run GIMP or blender, but the usual image-editing tasks (rotate/crop/resize) can be done using imageviewer of chromeos's filemanager. I found to `jwm` (Joe's windowmanager) a far better choice, as i don't need a second full-fledged windowmanager next to the awesome Chromeos.)
+|linux desktop applications | eventhough LXDE/XFCE/KDE etc was easy to install using crouton, i didn't find myself needing it. In some rare cases i still can run GIMP or blender, but the usual image-editing tasks (rotate/crop/resize) can be done using imageviewer of chromeos's filemanager. I found to `jwm` (Joe's windowmanager) a far better choice, as i don't need a second full-fledged windowmanager next to the awesome Chromeos.
 
 ## What I didn't try yet
 
@@ -89,6 +88,8 @@ Therefore i made these changes to `~/vim/vimrc`, to make things comfortable:
 		noremap <silent> <C-S>          :update<CR>
 		vnoremap <silent> <C-S>         <C-C>:update<CR>
 		inoremap <silent> <C-S>         <C-O>:update<CR>
+
+> ctrl-w (switch buffer) became a dangerous shortcut, it abruptly closes the chrome tab including terminal and vim :D
 
 ## Tweak for transferring big files (prevents cpu hogs)
 
@@ -116,7 +117,7 @@ Somehow using `cp` caused cpu spikes (MMC storage related?), but i solved that w
 
 HINT: also do this in your crouton chroots
 
-## Tweak for xterm paste on chromebook
+## Middleclick paste for xterm on chromebook crouton X11 chroot
 
 I rewired 'shift-backspace' to paste in xterm, by putting this script into `middleclick.sh`:
 
