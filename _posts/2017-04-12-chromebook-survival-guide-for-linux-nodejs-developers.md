@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chromebook survival guide for linux nodejs developers 
+title: Chromebook survival guide for linux nodejs developers
 ---
 
 <div class="message">
@@ -15,8 +15,8 @@ Well, basically curiosity, and my quest for:
 
 <img src="/public/img/simplicity.png"/>
 
-* I work with google chrome 24/7 
-* I would love using it 12hr without power 
+* I work with google chrome 24/7
+* I would love using it 12hr without power
 * I wanted an easypeasy stable linux environment with minimal gui
 * I prefer letting the Chromium/Google-team take care of updates/security etc.
 
@@ -29,12 +29,12 @@ But most importantly:
 ## This took me 5 mins after I got my chromebook:
 
 * put the chromebook in developer mode
-* i bought a tiny 64GB pendrive for crouton chroot-backups and large files 
+* i bought a tiny 64GB pendrive for crouton chroot-backups and large files
 * i installed my dotfiles,vim, and nvm in my ubuntu xenial chroot created by [crouton](https://github.com/dnschneid/crouton)
 
 Ok..it wasn't exactly 5 minutes ;)
 
-> Boom! I was amazed to see that I could continue working on my projects already! 
+> Boom! I was amazed to see that I could continue working on my projects already!
 
 After some days:
 
@@ -70,7 +70,7 @@ After some days:
 
 [running docker using RKT](http://blog.vantol.org/running-docker-containers-on-a-chromebook-with-rkt/)
 
-## Aliases 
+## Aliases
 
 Im using these alias in my `~/.bashrc` for crosh:
 
@@ -80,7 +80,13 @@ Im using these alias in my `~/.bashrc` for crosh:
     # cpu-friendly cp for big files
     alias cp="bash ~/Downloads/cp.sh"
 
-## Vim tweaks 
+## Awesome javascript editor: Caret-T
+
+Get this [chrome](https://chrome.google.com/webstore/detail/caret-t/agiednhnlghobdgpgfdnbdaflnngmoij?utm_source=chrome-app-launcher-search
+) app which has intelli-sense:
+> I realized the codecompletion works ultrafast in(side) chrome for obvious reasons :D
+
+## Vim tweaks
 
 Some chrome-shortcuts (Ctrl-w) conflicted with my VIM settings.
 Therefore i made these changes to `~/vim/vimrc`, to make things comfortable:
@@ -90,7 +96,7 @@ Therefore i made these changes to `~/vim/vimrc`, to make things comfortable:
 
 		" chromebook: switch windows with alt-arrowkeys instead of ctrl-w
 		nmap \ <C-w>w
-		nmap \| :tabnew:<CR> 
+		nmap \| :tabnew:<CR>
 		nmap [ :tabp<CR>
 		nmap ] :tabn<CR>
 
@@ -115,9 +121,9 @@ Somehow using `cp` caused cpu spikes (MMC storage related?), but i solved that w
     #
     #     alias cp='bash ~/Downloads/cp.sh'
     #
-    [[ ! -n $1 ]] && { /bin/cp; exit 0; } 
+    [[ ! -n $1 ]] && { /bin/cp; exit 0; }
     FILESIZE=$(( $( stat -c '%s' "$1" ) / 1024 / 1024 ))
-    if [[ $FILESIZE -lt 50 ]]; then 
+    if [[ $FILESIZE -lt 50 ]]; then
       /bin/cp "$@"
     else
       nice -n 20 ionice -c 3 /bin/cp "$@"
@@ -141,19 +147,19 @@ I rewired 'shift-backspace' to paste in xterm, by putting this script into `midd
 And invoking it using this `.xbindkeysrc` file in my homedir:
 
     "/home/sqz/bin/middleclick"
-        Shift + BackSpace 
+        Shift + BackSpace
 
 ## Running android apps
 
 I was able to get android apps quickly up and running by putting this script in `Downloads/enable_playstore.sh`:
 
     #!/bin/bash
-    if [[ $(whoami) == "root" ]]; then 
+    if [[ $(whoami) == "root" ]]; then
       #echo '--enable-arc' > /usr/local/chrome_dev.conf
       echo '--arc-availability=officially-supported' > /usr/local/chrome_dev.conf
       mount -o bind /usr/local/chrome_dev.conf /etc/chrome_dev.conf
       echo now press ctrl-shift-qq and the playstore should show up
-    else 
+    else
       echo "must be root"
     fi
 
