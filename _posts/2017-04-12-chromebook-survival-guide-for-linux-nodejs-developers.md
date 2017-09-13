@@ -43,7 +43,7 @@ After some days:
 ## What did i tweak after receiving my acer chromebook 14?
 
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0bI-PAU6PHY" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="600" src="https://www.youtube.com/embed/0bI-PAU6PHY" frameborder="0" allowfullscreen></iframe>
 </center>
 
 ## What i love so far
@@ -160,6 +160,7 @@ And invoking it using this `.xbindkeysrc` file in my homedir:
         Shift + BackSpace
 
 ## Running android apps
+
 
 > UPDATE: these days you don't need this, you can just enable the beta-channel and the playstore pops up
 
