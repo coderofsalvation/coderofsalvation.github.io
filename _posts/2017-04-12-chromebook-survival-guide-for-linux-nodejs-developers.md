@@ -42,8 +42,9 @@ After some days:
 
 ## What did i tweak after receiving my acer chromebook 14?
 
-* I installed [this beautiful terminal font & colors-scheme](https://gist.github.com/coderofsalvation/72c0b0b7d3288ab3748cf96629d08e81)
-* I figured out how to [set terminal titles as tab titles](https://gist.github.com/coderofsalvation/8eef0f99a5a85e00f2c2da5b9e09292d)
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0bI-PAU6PHY" frameborder="0" allowfullscreen></iframe>
+</center>
 
 ## What i love so far
 
@@ -82,9 +83,18 @@ Im using these alias in my `~/.bashrc` for crosh:
 
 ## Awesome javascript editor: Caret-T
 
-Get this [chrome](https://chrome.google.com/webstore/detail/caret-t/agiednhnlghobdgpgfdnbdaflnngmoij?utm_source=chrome-app-launcher-search
-) app which has intelli-sense:
+Get this [chrome app](https://chrome.google.com/webstore/detail/caret-t/agiednhnlghobdgpgfdnbdaflnngmoij?utm_source=chrome-app-launcher-search
+) which has intelli-sense
+
 > I realized the codecompletion works ultrafast in(side) chrome for obvious reasons :D
+
+Make sure you mount the chroot filesystem in your filemanager as shown in the video
+
+## Terminal tweaks?
+
+* I installed [this beautiful terminal font & colors-scheme](https://gist.github.com/coderofsalvation/72c0b0b7d3288ab3748cf96629d08e81)
+* I figured out how to [set terminal titles as tab titles](https://gist.github.com/coderofsalvation/8eef0f99a5a85e00f2c2da5b9e09292d)
+
 
 ## Vim tweaks
 
@@ -150,6 +160,8 @@ And invoking it using this `.xbindkeysrc` file in my homedir:
         Shift + BackSpace
 
 ## Running android apps
+
+> UPDATE: these days you don't need this, you can just enable the beta-channel and the playstore pops up
 
 I was able to get android apps quickly up and running by putting this script in `Downloads/enable_playstore.sh`:
 
