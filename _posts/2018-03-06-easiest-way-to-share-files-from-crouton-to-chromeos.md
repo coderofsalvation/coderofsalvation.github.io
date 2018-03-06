@@ -5,7 +5,7 @@ title: Easiest way to share files from Crouton to Chromeos
 
 
 <center>
-  <img src="img/sharing.svg" width="50%"/>
+  <img src="http://leon.vankammen.eu/public/img/sharing.svg" width="50%" style="max-height:400px"/>
 </center> 
 
 <div class="message">
