@@ -31,11 +31,13 @@ I want to be able to use Gimp, and use that file in my Chromeos or Android Apps.
 Just put this in `/etc/rc.local' 
 
 ```
-FOLDER=~/projects
+FOLDER=/home/yourusername/projects
 for i in $FOLDER/*; do 
   mount --bind "$i" "/media/removable/USB Drive/$FOLDER/$(basename "$i")" 
 done
 ```
+
+> don't forget to replace 'yourusername' with..well..your username
 
 ## Explanation
 
