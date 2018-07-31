@@ -83,12 +83,17 @@ Im using these alias in my `~/.bashrc` for crosh:
 
 ## Awesome javascript editor: Caret-T
 
-Get this [chrome app](https://chrome.google.com/webstore/detail/caret-t/agiednhnlghobdgpgfdnbdaflnngmoij?utm_source=chrome-app-launcher-search
+> UPDATE: I'm using the 'sources'-tab in chrome devtools as my main editor now (see snapshot below). It integrates perfectly with the Crosh (crouton) shell:
+
+<img src="/public/img/devtools.png"/>
+
+
+Before that, I tried this [chrome app](https://chrome.google.com/webstore/detail/caret-t/agiednhnlghobdgpgfdnbdaflnngmoij?utm_source=chrome-app-launcher-search
 ) which has intelli-sense
 
 > I realized the codecompletion works ultrafast in(side) chrome for obvious reasons :D
 
-Make sure you mount the chroot filesystem in your filemanager as shown in the video
+Make sure you mount the chroot filesystem in your filemanager as shown in the video, or (ultimately) store all your sourcecode on an tiny usbstick.
 
 ## Terminal tweaks?
 
