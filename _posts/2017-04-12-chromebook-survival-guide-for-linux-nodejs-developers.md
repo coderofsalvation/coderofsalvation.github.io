@@ -148,6 +148,31 @@ Somehow using `cp` caused cpu spikes (MMC storage related?), but i solved that w
 
 HINT: also do this in your crouton chroots
 
+## My /etc/rc.local
+
+Crouton loads `/etc/rc.local` upon launch, which allows me to trigger these badboys:
+
+```
+# allow linux apps to use ALSA
+chmod a+rw /dev/snd/seq
+
+# allow lots of open inodes (webpack/gulp/nodemon etc)
+sysctl fs.inotify.max_user_watches=1048576
+
+# uncomment this to disable ssh
+#mkdir -p -m0755 /var/run/sshd
+#/usr/sbin/sshd
+
+# allow incoming traffic to ports (handy to test webdev on smartphone etc)
+/sbin/iptables -P INPUT ACCEPT
+
+# remount so that usb has exec access
+mount -o remount,exec,noatime /media/removable/data
+
+# start cron
+exec cron
+```
+
 ## Middleclick paste for xterm on chromebook crouton X11 chroot
 
 I rewired 'shift-backspace' to paste in xterm, by putting this script into `middleclick.sh`:
