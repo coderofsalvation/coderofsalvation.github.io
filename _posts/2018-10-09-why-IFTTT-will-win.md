@@ -53,7 +53,7 @@ And let's look at the unix oneliner again:
 
 ## Now let's look at the competition
 
-Over the years, lots of competitors have arised (Microsoft Flow, Zapier) as well as ESB's (mulesoft etc), as well as 
+Over the years, lots of competitors have arised (Microsoft Flow, Zapier) as well as ESB's (mulesoft,JBoss), as well as 
 opensource solutions like node-red, datafire etc.
 Heck, I've even designed and implemented some solutions for customers myself :)
 
@@ -70,28 +70,35 @@ What if the carefully crafted automation-chain breaks?
 
 > Who to blame? :) 
 
-> In order to pull something off like IFTTT, one really needs to understand the problem both on a human- and technical-level.
+## The secret of IFTTT?
+
+No idea, but here goes :)
+
+> In order to pull something off like IFTTT, I think 3 things are important:
+
+* understand the human challenges
+* understand the technical challenges 
+* filter out noise, and reduce it to its essence
 
 Imho IFTTT got it right from the beginning, by selling simplicity instead of complexity.
-IFTTT is a lion with face of a cow: it makes something incredibly complex very simple.
+IFTTT is a lion with the friendly face of a cow: it makes something incredibly complex, very simple.
 
 # Why I think IFTTT is lightyears ahead
 
-I'm very thankful to have had experience with highrisk, highvolume webintegrations (I've done some important B2B integration-projects with booking.com, airbnb, expedia etc).
-I kindof know what to expect or to offer:
+I'm very thankful to have had experience with highrisk, highvolume webintegrations. I've done some important B2B integration-projects using booking.com, airbnb, expedia etc.
+I kindof know what to expect/offer when using/designing API's:
 
 * a sandbox and production API
 * documentation
 * back-and-forth emailing with the supportdesk
 * certification scenario by phone etc.
 
-Eventhough these companies did an incredible job at helping us, it's not anywhere near this:
+Eventhough these companies did an incredible job at helping us, it's not anywhere near THIS:
 
 <img src="/public/ifttt-onboarding.png"/>
 
 > IFTTT platform turned a very hairy human process into a bunch of green lights. 
 
-The fact that the IFTTT Platform wasn't just designed as a REST api tells me that they're next-level.
+The fact that the IFTTT Platform wasn't just designed as a REST api tells me that they're innovative.
 I've designed some fairly good API onboarding-processes for sales, but IFTTT Platform completely blows that away.
 I definately hope the trigger/recipe/action-paradigm will become a standard in Europe as well.
-It would make life so much easier.
