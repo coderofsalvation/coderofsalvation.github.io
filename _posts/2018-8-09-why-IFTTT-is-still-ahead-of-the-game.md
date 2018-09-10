@@ -108,4 +108,4 @@ I've designed some fairly nice API onboarding-processes for sales, but IFTTT Pla
 Also, the trigger-action-paradigm offers a better future for SaaS-design & collaboration imho.
 I hope it will become a standard, and will wake up other companies as well.
 
-> In case you're curious about IFTTT Platform's onboarding process, I made this [node-ifttt-express repository](https://github.com/coderofsalvation/node-ifttt-express) to setup your own IFTTT Platform applet.
+> In case you're curious about IFTTT Platform's onboarding process: I've made this [node-ifttt-express repository](https://github.com/coderofsalvation/node-ifttt-express) to setup your own IFTTT Platform applet.
