@@ -33,8 +33,7 @@ Yahoo made great efforts to create an eventful web:
 > The downside however is: it needs a developer specialist, database, server infrastructure etc. Automation still doesn't look simple.
 
 Jeff Lindsay, a friend at Gliderlabs (who coined the term *'webhooks'*) did a great job promoting the idea of 'the eventful web'.
-It gave me this revelation: *"Developers like to develop (too much)"*
-No more polling, I was cured!
+It gave me this revelation: *"Developers like to develop (too much)"*. I was instantly cured from my 'polling-brain'.
 
 ## IFTTT 
 
