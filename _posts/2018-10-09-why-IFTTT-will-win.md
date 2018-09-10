@@ -6,34 +6,35 @@ title: Why IFTTT will win
 <img src="/public/img/ifttt.jpg"/>
 
 <div class="message">
-  Hi! In this post I'm explaining why I think IFTTT is three steps ahead with the rest of the world.
+  Hi! In this post I'm explaining why I think IFTTT is lightyears ahead compared to the rest of the world.
 </div>
 
 ## First a bit of history 
 
-When I started out, unix pipes were (and still are) a superpowerful to automate things:
+When I started out, unix pipes were (and still are) superpowerful to automate things:
 
-    $ echo "mail -s "$USER: please check free diskspace" john@mycompany.com" | at 1145 jan 31
+    $ echo "mail -s "$USER: please do a server-update" john@mycompany.com" | at 1145 jan 31
 
-> It looks quite humanreadable to some extent
-
+> It looks quite humanreadable..kindof :)
 
 ## Then Yahoo pipes happened 
 
-Interactive Websites were mostly limited data-entry & form-processing.
+Interactive websites were mostly limited to data-entry & form-processing.
 Yahoo made great efforts to create an eventful web:
 
 <img src="/public/img/yahoopipes.jpg"/>
 
-> Impressively as it was, somehow this doesn't look simple.
+> Impressively as it was, somehow this doesn't look simple :)
 
-## Then REST became a thing
+## SOAP & REST became a thing
 
 <img src="/public/img/rest.png"/>
 
-> The downside however is: now we need a developer specialist, a database infrastructure etc. Automation still doesn't look simple.
+> The downside however is: its needs a developer specialist, a database infrastructure etc. Automation still doesn't look simple.
 
-## At the same IFTTT was launched
+Jeff Lindsay, a friend of mine at Gliderlabs (who coined the term *'webhooks'*) did a great job in educating the world about this.
+
+## IFTTT was already around 
 
 Now look at this:
 
@@ -41,9 +42,9 @@ Now look at this:
 
 And let's look at the unix oneliner again:
 
-    $ echo "mail -s "$USER: please check free diskspace" john@mycompany.com" | at 1145 jan 31
+    $ echo "mail -s "$USER: please do a server-update" john@mycompany.com" | at 1145 jan 31
 
-> Do you notice the simplicity in both approaches?
+> Did you notice the simplicity in both approaches?
 
 * it abstracts code and complexity away 
 * this makes integration code-agnostic
@@ -56,27 +57,27 @@ Over the years, lots of competitors have arised (Microsoft Flow, Zapier) as well
 opensource solutions like node-red, datafire etc.
 Heck, I've even designed and implemented some solutions for customers myself :)
 
-> My / Their misstake?
+> My / Their blind spot?
 
-*"Abstracting away logic, by introducing new logic is not a solution"
+*"Abstracting away logic, by introducing new logic is not a solution"*
 
-Also, the competitors usually promote USP's like 'more conditional/chainable than IFTTT'.
+<img src="https://www.explainxkcd.com/wiki/images/d/d6/manuals.png" />
+
+The competitors usually promote USP's like *'more conditional/chainable than IFTTT'*.
 However, this is a misstake imho.
-Introducing userdefined logic, introduces a new 'specialist'-trap, therefore more human error.
+It introduces a new 'specialist'-trap, therefore invites human error.
 What if the carefully crafted automation-chain breaks?
 
 > Who to blame? :) 
 
-<img src="https://www.explainxkcd.com/wiki/images/d/d6/manuals.png" />
-
-> In order to pull something off like IFTTT, one really needs to understand the problem on a human- and technical-level.
+> In order to pull something off like IFTTT, one really needs to understand the problem both on a human- and technical-level.
 
 Imho IFTTT got it right from the beginning, by selling simplicity instead of complexity.
 IFTTT is a lion with face of a cow: it makes something incredibly complex very simple.
 
 # Why I think IFTTT is lightyears ahead
 
-I'm very thankful to have had experiences with highrisk, highvolume webintegrations (I've done some important B2B integration-projects with booking.com, airbnb, expedia etc).
+I'm very thankful to have had experience with highrisk, highvolume webintegrations (I've done some important B2B integration-projects with booking.com, airbnb, expedia etc).
 I kindof know what to expect or to offer:
 
 * a sandbox and production API
@@ -90,10 +91,7 @@ Eventhough these companies did an incredible job at helping us, it's not anywher
 
 > IFTTT platform turned a very hairy human process into a bunch of green lights. 
 
-The fact that the IFTTT Platform wasn't just designed as a REST api tells me that they know something.
+The fact that the IFTTT Platform wasn't just designed as a REST api tells me that they're next-level.
 I've designed some fairly good API onboarding-processes for sales, but IFTTT Platform completely blows that away.
-
-
-
-
-
+I definately hope the trigger/recipe/action-paradigm will become a standard in Europe as well.
+It would make life so much easier.
