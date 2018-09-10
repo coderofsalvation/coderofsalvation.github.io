@@ -66,9 +66,9 @@ I've even designed and implemented some solutions for customers myself :)
 > Mo code, mo problems. Mo yahoo-pipe-ish solutions, mo [deutchs limit](https://en.wikipedia.org/wiki/Deutsch_limit) 
 
 Offering automations with a *'conditional/chainable character unlike IFTTT'* creates new challenges.
-It's no longer an adapter-platform like IFTTT, but a programming-platform which introduces all kinds of new risks.
+It's no longer an adapter-platform (IFTTT), but a programming-silo which introduces all kinds of new risks.
 
-IFTTT seems to be the only one which is attractive to both developers and nondevelopers.
+> IFTTT seems to be the only one which promotes the eventful web, and a "Don't build silo's"-attitude. This might explain why IFTTT is attractive by nondevelopers and developers.
 
 ## The secret of IFTTT?
 
