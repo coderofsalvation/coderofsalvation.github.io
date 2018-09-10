@@ -42,7 +42,7 @@ IFTTT was already around back then, which looks like this:
 
 <img src="/public/img/ifttt-if-this-then-that.jpg"/>
 
-And I looked at the unix oneliner again:
+Now lets look at the unix oneliner again:
 
     $ echo "mail -s "$USER: please do a server-update" john@mycompany.com" | at 1145 jan 31
 
