@@ -64,14 +64,12 @@ I've even designed and implemented some solutions for customers myself :)
 
 <img src="https://www.explainxkcd.com/wiki/images/d/d6/manuals.png" />
 
-Offering automations which are *'conditional/chainable unlike IFTTT'* isn't really a win, it's a problem imho.
-It claims to take away the need for developers, but at the same time its complexity requires different developers.
-What if a carefully crafted automation-chain breaks?
-> Who to call? :) 
-
-It seems that IFTTT is the only one which hits the sweepspot, by minimizing risks for themselves and their users.
-
 > Mo code, mo problems. Mo yahoo-pipe-ish solutions, mo [deutchs limit](https://en.wikipedia.org/wiki/Deutsch_limit) 
+
+Offering automations with a *'conditional/chainable character unlike IFTTT'* creates new challenges.
+It's no longer an adapter-platform like IFTTT, but a programming-platform which introduces all kinds of new risks.
+
+IFTTT seems to be the only one which is attractive to both developers and nondevelopers.
 
 ## The secret of IFTTT?
 
@@ -81,8 +79,7 @@ I have no idea, but here's my gut-feeling :)
 
 * understand the human needs
 * understand the technical challenges 
-* target both developers and nondevelopers 
-* create a universal solution 
+* create a universal solution for developers and nondevelopers 
 
 Imho IFTTT got it right from the beginning, by selling simplicity instead of complexity.
 It makes something incredibly complex very simple.
