@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why IFTTT will win 
+title: Why IFTTT is ahead of the game
 ---
 
 <img src="/public/img/ifttt.jpg"/>
