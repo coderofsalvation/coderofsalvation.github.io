@@ -6,7 +6,7 @@ title: Why IFTTT is ahead of the game
 <img src="/public/img/ifttt.jpg"/>
 
 <div class="message">
-  Hi! In this post I'll try to explain why I think IFTTT is ahead of the game.
+  Hi! In this post I'll try to explain why I think IFTTT is ahead of the game. Disclaimer: I'm not related with (or paid by) IFTTT in any way.
 </div>
 
 ## First a bit of history 
@@ -37,7 +37,7 @@ It gave me this revelation: *"Developers like to develop (too much)"*
 
 ## IFTTT 
 
-IFTTT was already around back then, so I looked at this:
+IFTTT was already around back then, which looks like this:
 
 <img src="/public/img/ifttt-if-this-then-that.jpg"/>
 
@@ -59,15 +59,18 @@ I've even designed and implemented some solutions for customers myself :)
 
 > The blind spot of the competitors?
 
-*"Abstracting away logic by introducing new logic, is a solution which creates a new problem"*
+*"Abstracting away logic by introducing highlevel scripting to the user, is a solution which creates a new problem"*
 
 <img src="https://www.explainxkcd.com/wiki/images/d/d6/manuals.png" />
 
-Being *'more conditional/chainable than IFTTT'* isn't really a win imho.
-It claims to take away developers, but yet it introduces a new breed again.
+Offering automations which are *'conditional/chainable unlike IFTTT'* isn't really a win, it's a problem imho.
+It claims to take away the need for developers, but at the same time its complexity requires different developers.
 What if a carefully crafted automation-chain breaks?
-
 > Who to call? :) 
+
+It seems that IFTTT is the only one which hits the sweepspot, by minimizing risks for themselves and their users.
+
+> Mo code, mo problems. Mo yahoo-pipe-ish solutions, mo [deutchs limit](https://en.wikipedia.org/wiki/Deutsch_limit) 
 
 ## The secret of IFTTT?
 
@@ -77,15 +80,16 @@ I have no idea, but here's my gut-feeling :)
 
 * understand the human needs
 * understand the technical challenges 
-* create a universal solution (usable for both (non)developers)
+* target both developers and nondevelopers 
+* create a universal solution 
 
 Imho IFTTT got it right from the beginning, by selling simplicity instead of complexity.
-It makes something incredibly complex, very simple.
+It makes something incredibly complex very simple.
 
-# Why I think IFTTT is lightyears ahead
+# Why I think IFTTT is ahead of the game
 
-I'm very thankful to have had experiences with highrisk, highvolume webintegrations. I've done some important B2B integration-projects using booking.com, airbnb, expedia etc.
-I kindof know the challenges of designing & implementing an API or connector, and what developers expect:
+I'm very thankful to have had experiences with highrisk, highvolume webintegrations. I've done some rewarding B2B integration-projects using booking.com, airbnb, expedia etc.
+I know the challenges of designing & implementing an API or connector, and what developers expect:
 
 * a sandbox and production API
 * documentation
@@ -98,9 +102,9 @@ Eventhough these companies did an incredible job at helping us, it's not anywher
 
 > IFTTT platform turns a very hairy human process into a bunch of green lights. 
 
-The fact that the IFTTT Platform wasn't just designed as a REST api, tells me they're ahead of the game.
+The fact that the IFTTT Platform wasn't just designed as a classical REST api + documentation, tells me they're ahead of the game.
 I've designed some fairly nice API onboarding-processes for sales, but IFTTT Platform completely blows that away.
 Also, the trigger-action-paradigm offers a better future for SaaS-design & collaboration imho.
-I hope it will become a standard, also in the opensource community.
+I hope it will become a standard, and will wake up other companies as well.
 
-> In case you're curious, I made this [node-ifttt-express repository](https://github.com/coderofsalvation/node-ifttt-express) to setup your own IFTTT Platform applet.
+> In case you're curious about IFTTT Platform's onboarding process, I made this [node-ifttt-express repository](https://github.com/coderofsalvation/node-ifttt-express) to setup your own IFTTT Platform applet.
