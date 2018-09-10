@@ -64,35 +64,33 @@ I've even designed and implemented some solutions for customers myself :)
 <img src="https://www.explainxkcd.com/wiki/images/d/d6/manuals.png" />
 
 Being *'more conditional/chainable than IFTTT'* isn't really a win imho.
-It introduces a new 'specialist'-trap, therefore it'll introduce human error.
-What if the carefully crafted automation-chain breaks?
+It claims to take away developers, but yet it introduces a new breed again.
+What if a carefully crafted automation-chain breaks?
 
-> Who to blame? :) 
+> Who to call? :) 
 
 ## The secret of IFTTT?
 
-No idea, but here goes :)
+I have no idea, but here's my gut-feeling :)
 
 > In order to pull something off like IFTTT, I think 3 things are important:
 
 * understand the human needs
 * understand the technical challenges 
-* filter out noise, and reduce it to its essence
+* create a universal solution (usable for both (non)developers)
 
 Imho IFTTT got it right from the beginning, by selling simplicity instead of complexity.
-IFTTT is a lion with the friendly face of a cow: it makes something incredibly complex, very simple.
+It makes something incredibly complex, very simple.
 
 # Why I think IFTTT is lightyears ahead
 
 I'm very thankful to have had experiences with highrisk, highvolume webintegrations. I've done some important B2B integration-projects using booking.com, airbnb, expedia etc.
-I kindof know the challenges of designing & implementating an API or connector, and what developers expect:
+I kindof know the challenges of designing & implementing an API or connector, and what developers expect:
 
 * a sandbox and production API
 * documentation
 * back-and-forth emailing with the supportdesk
 * certification scenario by phone etc.
-
-> **Every** line of custom connector-code is a risk (In my case it could mean a family arriving at an overbooked hotel).
 
 Eventhough these companies did an incredible job at helping us, it's not anywhere near something like this:
 
