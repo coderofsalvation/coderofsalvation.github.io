@@ -95,7 +95,7 @@ I kindof know what to expect/offer when using/designing API's:
 
 Eventhough these companies did an incredible job at helping us, it's not anywhere near THIS:
 
-<img src="/public/ifttt-onboarding.png"/>
+<img src="/public/img/ifttt-onboarding.png"/>
 
 > IFTTT platform turned a very hairy human process into a bunch of green lights. 
 
