@@ -6,7 +6,7 @@ title: Why IFTTT will win
 <img src="/public/img/ifttt.jpg"/>
 
 <div class="message">
-  Hi! In this post I'm explaining why I think IFTTT is lightyears ahead compared to the rest of the world.
+  Hi! In this post I'll try to explain why I think IFTTT is ahead of the game.
 </div>
 
 ## First a bit of history 
@@ -32,40 +32,39 @@ Yahoo made great efforts to create an eventful web:
 
 > The downside however is: its needs a developer specialist, a database infrastructure etc. Automation still doesn't look simple.
 
-Jeff Lindsay, a friend of mine at Gliderlabs (who coined the term *'webhooks'*) did a great job in educating the world about this.
+Jeff Lindsay, a friend at Gliderlabs (who coined the term *'webhooks'*) did a great job promoting the idea of 'the eventful web'.
+It gave me this revelation: *"Developers like to develop (too much)"*
 
-## IFTTT was already around 
+## IFTTT 
 
-Now look at this:
+IFTTT was already around back then, so I looked at this:
 
-<img src="/public/ifttt-if-this-then-that.jpg"/>
+<img src="/public/img/ifttt-if-this-then-that.jpg"/>
 
-And let's look at the unix oneliner again:
+And I looked at the unix oneliner again:
 
     $ echo "mail -s "$USER: please do a server-update" john@mycompany.com" | at 1145 jan 31
 
-> Did you notice the simplicity in both approaches?
+> Do you notice the simplicity in both approaches?
 
-* it abstracts code and complexity away 
-* this makes integration code-agnostic
-* this allows emphasis on human language & perception
-* we don't need specialists anymore
+* it's very highlevel: it abstracts code and complexity away 
+* emphasis on on human language & perception
+* we don't need specialists anymore :)
 
 ## Now let's look at the competition
 
-Over the years, lots of competitors have arised (Microsoft Flow, Zapier) as well as ESB's (mulesoft,JBoss), as well as 
+Over the years, lots of competitors have arised (Microsoft Flow, Zapier), ESB's (mulesoft,JBoss), and 
 opensource solutions like node-red, datafire etc.
-Heck, I've even designed and implemented some solutions for customers myself :)
+I've even designed and implemented some solutions for customers myself :)
 
-> My / Their blind spot?
+> The blind spot of the competitors?
 
 *"Abstracting away logic, by introducing new logic is not a solution"*
 
 <img src="https://www.explainxkcd.com/wiki/images/d/d6/manuals.png" />
 
-The competitors usually promote USP's like *'more conditional/chainable than IFTTT'*.
-However, this is a misstake imho.
-It introduces a new 'specialist'-trap, therefore invites human error.
+Being *'more conditional/chainable than IFTTT'* isn't really a win imho.
+It introduces a new 'specialist'-trap, therefore it'll invite human error.
 What if the carefully crafted automation-chain breaks?
 
 > Who to blame? :) 
@@ -101,4 +100,5 @@ Eventhough these companies did an incredible job at helping us, it's not anywher
 
 The fact that the IFTTT Platform wasn't just designed as a REST api tells me that they're innovative.
 I've designed some fairly good API onboarding-processes for sales, but IFTTT Platform completely blows that away.
-I definately hope the trigger/recipe/action-paradigm will become a standard in Europe as well.
+Also, the trigger-action-paradigm offers a bright future for SaaS-design.
+I hope it will become a standard at some point.
