@@ -41,7 +41,7 @@ Back then, it gave me these revelations:
 
 ## IFTTT 
 
-IFTTT was already around back then, and demonstrated this philosphy as well:
+IFTTT was already around back then, and demonstrated an 'evented' philosophy:
 
 <img src="/public/img/ifttt-if-this-then-that.jpg"/>
 
