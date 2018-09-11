@@ -85,13 +85,13 @@ It makes something incredibly complex very simple.
 
 # Why I think IFTTT is ahead of the game
 
-*"ESB's are a architect's dream, but can become a developers nightmare"*
+> Where others offer more complex solutions, IFTTT somewhat follows [the rule of least power](https://en.wikipedia.org/wiki/Rule_of_least_power).
 
 IFTTT seems to be layered in a smart, interconnected way:
 
 | layer |what                | used by | for | how |
 |-------|----------------|----|-----|-----|
-| 1 | the userinterface      | nondevelopers | nondevelopers | sharing applets |
+| 1 | userinterface          | nondevelopers | nondevelopers | sharing applets |
 | 2 | applet service         | developers | nondevelopers | ([see here](https://platform.ifttt.com/docs/api_reference)) |
 | 3 | backoffice integration | developers | products |  embed / list / show / enable / disable applets  ([see here](https://platform.ifttt.com/docs/embedding_applets#list-applets)) |
 
