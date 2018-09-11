@@ -32,12 +32,16 @@ Yahoo made great efforts to create an eventful web:
 
 > The downside however is: it needs code, therefore a developer specialist, database, server infrastructure etc. Automation still doesn't look simple.
 
-Jeff Lindsay, a friend at Gliderlabs (who coined the term *'webhooks'*) did a great job promoting the idea of 'the eventful web'.
-It gave me this revelation: *"Developers like to develop (too much)"*. I was instantly cured from my 'polling-brain'.
+Jeff Lindsay, a friend at Gliderlabs (who coined the term *'webhooks'*) did a great job promoting the idea of 'the evented web'.
+Back then, it gave me these revelations: 
+
+* 'polling-data-syndrome' is a thing 
+* *"Developers like to develop (too much)"*
+* This pushes a 'web as a newspaperstand'-illusion to people
 
 ## IFTTT 
 
-IFTTT was already around back then, which looks like this:
+IFTTT was already around back then, and demonstrated this philosphy as well:
 
 <img src="/public/img/ifttt-if-this-then-that.jpg"/>
 
