@@ -112,6 +112,6 @@ In case you're curious about IFTTT Platform's onboarding process for applet serv
 # Conclusion 
 
 The trigger-action-paradigm offers a more flexible & eventful future for SaaS.
-IFTTT demonstrates that limiting webintegrations to an adapter-platform (unlike zapier) don't really get in the way of developers.
+IFTTT demonstrates that limiting webintegrations to an adapter-platform (unlike zapier) doesn't really gets in the way of developers.
 I hope it will become a standard, and will wake up other companies as well.
 
