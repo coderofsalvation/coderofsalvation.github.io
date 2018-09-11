@@ -85,18 +85,17 @@ It makes something incredibly complex very simple.
 
 # Why I think IFTTT is ahead of the game
 
-Once i heard somebody say: *"ESB's are a architect's dream, and a developers nightmare"*
+*"ESB's are a architect's dream, but can become a developers nightmare"*
 
 IFTTT seems to be layered in a smart, interconnected way:
 
-| layer                 | by | for | how |
-|-----------------------|----|-----|-----|
-| 1. the userinterface      | nondevelopers | nondevelopers | sharing applets |
-| 2. applet service         | developers | nondevelopers | ([see here](https://platform.ifttt.com/docs/api_reference)) |
-| 3. backoffice integration | developers | products |  **embed / list / show / enable / disable applets** |
-|                           |            |          | ([see here](https://platform.ifttt.com/docs/embedding_applets#list-applets)) |
+| layer |what                | used by | for | how |
+|-------|----------------|----|-----|-----|
+| 1 | the userinterface      | nondevelopers | nondevelopers | sharing applets |
+| 2 | applet service         | developers | nondevelopers | ([see here](https://platform.ifttt.com/docs/api_reference)) |
+| 3 | backoffice integration | developers | products |  embed / list / show / enable / disable applets  ([see here](https://platform.ifttt.com/docs/embedding_applets#list-applets)) |
 
-> NOTE: I could only find out about layer 3 by accidentally googling it. Ideally, the distinction between layer 2-3 should be more obvious in the IFTTT Platform docs,
+> NOTE: I've only noticed layer 3 by accidentally googling it. Ideally, the distinction between layer 2-3 could be more obvious in the IFTTT Platform docs,
 
 I was also impressed by this REST endpoint validator:
 
