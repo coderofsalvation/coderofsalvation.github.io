@@ -85,23 +85,29 @@ It makes something incredibly complex very simple.
 
 # Why I think IFTTT is ahead of the game
 
-I'm very thankful to have had experiences with highrisk, highvolume webintegrations. I've done some rewarding B2B integration-projects using booking.com, airbnb, expedia etc.
-I know the challenges of designing & implementing an API or connector, and what developers expect:
+Once i heard somebody say: *"ESB's are a architect's dream, and a developers nightmare"*
 
-* a sandbox and production API
-* documentation
-* back-and-forth emailing with the supportdesk
-* certification scenario by phone etc.
+IFTTT seems to be layered in a smart, interconnected way:
 
-Eventhough these companies did an incredible job at helping us, it's not anywhere near something like this:
+| layer                 | by | for | how |
+|-----------------------|----|-----|-----|
+| 1. the userinterface      | nondevelopers | nondevelopers | sharing applets |
+| 2. applet service         | developers | nondevelopers | ([see here](https://platform.ifttt.com/docs/api_reference)) |
+| 3. backoffice integration | developers | products |  **embed / list / show / enable / disable applets** |
+|                           |            |          | ([see here](https://platform.ifttt.com/docs/embedding_applets#list-applets)) |
+
+> NOTE: I could only find out about layer 3 by accidentally googling it. Ideally, the distinction between layer 2-3 should be more obvious in the IFTTT Platform docs,
+
+I was also impressed by this REST endpoint validator:
 
 <img src="/public/img/ifttt-onboarding.png"/>
 
-> IFTTT platform turns a very hairy human process into a bunch of green lights. 
+> This turns a very hairy human process (usually emailing back'n'forth with support) into a bunch of green lights. 
 
-The fact that the IFTTT Platform wasn't just designed as a classical REST api + documentation, tells me they're ahead of the game.
-I've designed some fairly nice API onboarding-processes for sales, but IFTTT Platform completely blows that away.
-Also, the trigger-action-paradigm offers a better future for SaaS-design & collaboration imho.
+In case you're curious about IFTTT Platform's onboarding process for applet services: I've made this [node-ifttt-express repository](https://github.com/coderofsalvation/node-ifttt-express) to setup your own IFTTT Platform applet.
+
+# Conclusion 
+
+The trigger-action-paradigm offers a more flexible & eventful future for SaaS, which doesn't bug developers imho.
 I hope it will become a standard, and will wake up other companies as well.
 
-> In case you're curious about IFTTT Platform's onboarding process: I've made this [node-ifttt-express repository](https://github.com/coderofsalvation/node-ifttt-express) to setup your own IFTTT Platform applet.
