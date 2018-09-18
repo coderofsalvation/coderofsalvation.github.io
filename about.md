@@ -4,16 +4,16 @@ title: About me
 ---
 
 My name is Leon van Kammen, I was originally born in the beautiful [Stadskanaal](https://www.google.hu/maps/place/Stadskanaal,+Netherlands/@50.5653345,6.6503423,6z/data=!4m2!3m1!1s0x47c83bb57e3000c9:0xb8497bdac29f4022?hl=en) in Groningen/NL.<br>
-> I'm a european DEVTREPENEUR: developer by heart, entrepeneur in mind 
+> I'm a european DEVTREPENEUR: developer by heart, entrepeneur in mind: keep things simple and functional.  
 After graduating as a softwareengineer, I worked in IT, went freelance / entrepeneurial but never left my love for hacking.
-Nowadays I love to work with people who are passionate about api/opensource/SaaS/BaaS/PaaS-tech.
+I love to work with people who are passionate about api integration, open source, SaaS, BaaS, PaaS-tech.
 
 ## Achievements
 
 * designed and implemented API's and webintegrations
 * founding of a tech office in a foreign country for a startup
-* managing of developerteam
-* founded a couple of supercool projects
+* managing of a developerteam
+* (c)founded a couple of supercool ventures
 * experience with travel industry & B2B integrations (booking.com, agoda, expedia, airbnb)
 * Bachelor in software engineering 
 
@@ -24,9 +24,9 @@ Nowadays I love to work with people who are passionate about api/opensource/SaaS
 
 ## My take on software creation
 
-There are 3 ways of making software: the correct way, and the incorrect way, and the succesful way.<br>
-In the end it boils down to transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations real by using [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method).<br>
-My favourite model is the [Chaos model](http://en.wikipedia.org/wiki/Chaos_model) since its one of the few models which promotes non-linear progress. A methodology which also does this well is [kanban](https://en.wikipedia.org/wiki/Kanban)
+Transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations small using [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method).<br>
+My favourite model is the [Chaos model](http://en.wikipedia.org/wiki/Chaos_model) since its one of the few models which promotes non-linear progress. 
+I also like building processes around [kanban](https://en.wikipedia.org/wiki/Kanban) when SCRUM causes too much overhead.
 
 ## Favorite books
 
@@ -37,14 +37,20 @@ My favourite model is the [Chaos model](http://en.wikipedia.org/wiki/Chaos_model
 
 ## Opensource contributions
 
-* [github](http://github.com/coderofsalvation)
-* [npm modules](https://www.npmjs.com/~coderofsalvation)
-* [composer modules](https://packagist.org/packages/coderofsalvation)
-* [stackoverflow](http://stackoverflow.com/users/1964792/coderofsalvation)
+* [~271 github repos](http://github.com/coderofsalvation)
+* [~74 npm modules](https://www.npmjs.com/~coderofsalvation)
+* [~6 composer PHP modules](https://packagist.org/packages/coderofsalvation)
+* [~628 points on stackoverflow](http://stackoverflow.com/users/1964792/coderofsalvation)
+
+## Platforms
+
+Linux, Chromebook / ChromeOS
 
 ## Backyard: things I've worked on
 
-[some portfolio projects](/portfolio)
+[selection of ~50 portfolio projects till 2015](/portfolio)
+
+> NOTE: most projects afterwards were mostly consulting or NDA'ed developerwork
 
 ## Backyard: things I've worked with
 
