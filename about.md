@@ -26,7 +26,7 @@ I love to work with people who are passionate about api integration, open source
 
 Transparency, playfullness, non-attachment to code or design, KISS (KeepItSimpleStupid), and keeping iterations small using [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method).<br>
 My favourite model is the [Chaos model](http://en.wikipedia.org/wiki/Chaos_model) since its one of the few models which promotes non-linear progress. 
-I also like building processes around [kanban](https://en.wikipedia.org/wiki/Kanban) when SCRUM causes too much overhead.
+I like degrading SCRUM to simply [kanban](https://en.wikipedia.org/wiki/Kanban) when SCRUM causes too much overhead.
 
 ## Favorite books
 
