@@ -4,11 +4,11 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-exclude: 
-  - audio
-  - yoga
-  - entrepeneur
-  - tech
+#exclude: 
+#  - audio
+#  - yoga
+#  - entrepeneur
+#  - tech
   
 highlighter: rouge
 #pygments:         true
