@@ -9,6 +9,8 @@ kramdown:
 #  - yoga
 #  - entrepeneur
 #  - tech
+
+keep_files: [audio,yoga,entrepeneur,tech]
   
 highlighter: rouge
 #pygments:         true
