@@ -29,8 +29,6 @@ author:
   url: https://twitter.com/coderofsalvatio
   email: info@leon.vankammen.eu
 
-gems: [jekyll-paginate]
-
 # Custom vars
 version: 1.0.0
 github:
