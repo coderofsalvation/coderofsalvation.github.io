@@ -4,14 +4,9 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-#exclude: 
-#  - audio
-#  - yoga
-#  - entrepeneur
-#  - tech
+exclude: 
+  - _blogs
 
-keep_files: [audio,yoga,entrepeneur,tech]
-  
 highlighter: rouge
 #pygments:         true
 

@@ -22,7 +22,7 @@ pages:
   stage: deploy
   script:
     - bundle exec jekyll build -d public
-    - cp -r {audio,yoga,tech,entrepeneur} public/.
+    - cp -r _blogs/* public/.
   artifacts:
     paths:
     - public
